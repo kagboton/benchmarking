@@ -1,0 +1,42 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Famille/index.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Famille - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+  {% endfor %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Liste des familles</h4>
+  </div>
+
+  <div class="panel-body">
+    <ul class="list-group">
+      {% for famille in listFamilles %}
+
+          <a class="list-group-item" href="{{ path('famille_view', {'id': famille.id}) }}">
+            {{ famille.nom }}
+          </a>
+
+      {% else %}
+        <li>Pas (encore !) de familles</li>
+      {% endfor %}
+    </ul>
+
+    <a href="{{ path('famille_add') }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-plus"></i>
+      Ajouter une famille de fonction
+    </a>
+
+  </div>
+
+
+{% endblock %}

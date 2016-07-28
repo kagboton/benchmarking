@@ -1,0 +1,39 @@
+{# src/BenchmarkingBundle/Resources/view/Default/TechnologieAfficheur/view.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Lecture d'une technologie afficheur - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+  <h2>{{ technologieAfficheur.nom }}</h2>
+
+
+
+    <p>
+        <a href="{{ path('technologiesAfficheur') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste
+        </a>
+        <a href="{{ path('technologieAfficheur_edit', {'id': technologieAfficheur.id}) }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-edit"></i>
+            Modifier la Technologie Afficheur
+        </a>
+        <a href="{{ path('technologieAfficheur_delete', {'id': technologieAfficheur.id}) }}" class="btn btn-danger">
+            <i class="glyphicon glyphicon-trash"></i>
+            Supprimer la Technologie Afficheur
+        </a>
+    </p>
+
+
+{% endblock %}

@@ -1,0 +1,52 @@
+<?php
+
+namespace BenchmarkingBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * ActivationLogique
+ *
+ * @ORM\Table(name="activation_logique")
+ * @ORM\Entity(repositoryClass="BenchmarkingBundle\Repository\ActivationLogiqueRepository")
+ */
+class ActivationLogique
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\AfficheurExistant", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $nomAfficheur;
+
+    /**
+     * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\Image", cascade={"persist"})
+     */
+    private $image;
+
+    /**
+     * @ORM\OneToMany(targetEntity="BenchmarkingBundle\Entity\Fonction", cascade={"persist"}, mappedBy="activationLogique")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $fontions;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+}
+

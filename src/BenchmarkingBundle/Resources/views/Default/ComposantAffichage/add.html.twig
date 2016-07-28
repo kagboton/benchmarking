@@ -1,0 +1,20 @@
+{# src/BenchmarkingBundle/Resources/views/Default/ComposantAffichage/add.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+
+{% block title %}
+  Ajouter un composant d'affichage - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Ajouter un composant d'affichage</h2>
+
+  {{ include("BenchmarkingBundle:Default:ComposantAffichage/form.html.twig") }}
+
+  <p>
+    Ce composant sera ajouté directement après validation du formulaire
+  </p>
+
+{% endblock %}

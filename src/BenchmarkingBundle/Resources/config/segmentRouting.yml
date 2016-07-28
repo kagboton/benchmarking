@@ -1,0 +1,28 @@
+segments:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:Segment:index }
+
+
+segment_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:Segment:view }
+    requirements:
+        id: \d*
+
+segment_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:Segment:add }
+    requirements:
+        id: \d*
+
+segment_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:Segment:edit }
+    requirements:
+        id: \d*
+
+segment_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:Segment:delete }
+    requirements:
+        id: \d*

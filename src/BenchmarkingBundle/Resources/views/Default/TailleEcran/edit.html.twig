@@ -1,0 +1,26 @@
+{# src/BenchmarkingBundle/Resources/view/Default/TailleEcran/edit.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Modifier une taille d'écran - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Modifier une taille d'écran</h2>
+
+  {{ include("BenchmarkingBundle:Default:TailleEcran/form.html.twig") }}
+
+  <p>
+    Modification d'une taille d'écran déjà existante.
+  </p>
+
+  <p>
+    <a href="{{ path('tailleEcran_view', {'id': tailleEcran.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à la taille d'écran
+    </a>
+  </p>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{# src/BenchmarkingBundle/Resources/view/Default/SousTechnologieAfficheur/edit.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Modifier une sous technologie afficheur - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Modifier une sous technologie afficheur</h2>
+
+  {{ include("BenchmarkingBundle:Default:SousTechnologieAfficheur/form.html.twig") }}
+
+  <p>
+    Modification d'une sous technologie afficheur déjà existante.
+  </p>
+
+  <p>
+    <a href="{{ path('sousTechnologieAfficheur_view', {'id': sousTechnologieAfficheur.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à la sous technologie afficheur
+    </a>
+  </p>
+
+{% endblock %}

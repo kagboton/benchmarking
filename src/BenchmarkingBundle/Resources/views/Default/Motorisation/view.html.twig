@@ -1,0 +1,47 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Motorisation/view.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Lecture d'une motorisation - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+    <div class="panel-heading">
+        <h4 class="panel-title">{{ motorisation.nom }}</h4>
+    </div>
+
+
+  <div class="panel-body">
+    {{ motorisation.description }}
+
+      <br><br>
+
+      <p>
+          <a href="{{ path('motorisations') }}" class="btn btn-default">
+              <i class="glyphicon glyphicon-chevron-left"></i>
+              Retour à la liste
+          </a>
+          <a href="{{ path('motorisation_edit', {'id': motorisation.id}) }}" class="btn btn-default">
+              <i class="glyphicon glyphicon-edit"></i>
+              Modifier la motorisation
+          </a>
+          <a href="{{ path('motorisation_delete', {'id': motorisation.id}) }}" class="btn btn-danger">
+              <i class="glyphicon glyphicon-trash"></i>
+              Supprimer la motorisation
+          </a>
+      </p>
+  </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,30 @@
+motorisations:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:Motorisation:index }
+
+
+motorisation_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:Motorisation:view }
+    requirements:
+        id: \d*
+
+motorisation_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:Motorisation:add }
+    requirements:
+        id: \d*
+
+motorisation_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:Motorisation:edit }
+    requirements:
+        id: \d*
+
+motorisation_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:Motorisation:delete }
+    requirements:
+        id: \d*
+
+

@@ -1,0 +1,38 @@
+{# src/BenchmarkingBundle/Resources/view/Default/TailleEcran/view.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Lecture d'une taille d'écran - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+  <h2>{{ tailleEcran.taille }}"</h2>
+
+
+    <p>
+        <a href="{{ path('taillesEcran') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste
+        </a>
+        <a href="{{ path('tailleEcran_edit', {'id': tailleEcran.id}) }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-edit"></i>
+            Modifier la taille d'écran
+        </a>
+        <a href="{{ path('tailleEcran_delete', {'id': tailleEcran.id}) }}" class="btn btn-danger">
+            <i class="glyphicon glyphicon-trash"></i>
+            Supprimer la taille d'écran
+        </a>
+    </p>
+
+
+{% endblock %}

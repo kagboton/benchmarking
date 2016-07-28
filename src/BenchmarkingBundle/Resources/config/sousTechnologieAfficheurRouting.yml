@@ -1,0 +1,27 @@
+sousTechnologiesAfficheur:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:SousTechnologieAfficheur:index }
+
+sousTechnologieAfficheur_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:SousTechnologieAfficheur:view }
+    requirements:
+        id: \d*
+
+sousTechnologieAfficheur_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:SousTechnologieAfficheur:add }
+    requirements:
+        id: \d*
+
+sousTechnologieAfficheur_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:SousTechnologieAfficheur:edit }
+    requirements:
+        id: \d*
+
+sousTechnologieAfficheur_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:SousTechnologieAfficheur:delete }
+    requirements:
+        id: \d*

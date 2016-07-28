@@ -1,0 +1,29 @@
+{# src/BenchmarkingBundle/Resources/view/Default/CommandePhysique/delete.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Supprimer une commande physique - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Supprimer une commande physique</h2>
+
+  <p class="alert alert-danger">
+    Etes-vous certain de vouloir supprimer la commande "{{ commandePhysique.nom }}" ?
+  </p>
+
+  {# On met l'id dans la route de l'action du formulaire #}
+  <form action="{{ path('commandePhysique_delete', {'id': commandePhysique.id}) }}" method="post">
+    <a href="{{ path('commandePhysique_view', {'id': commandePhysique.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à la commande
+    </a>
+    {# Ici j'ai écrit le bouton de soumission à la main #}
+    <input type="submit" value="Supprimer" class="btn btn-danger" />
+    {# Ceci va générer le champ CSRF #}
+    {{ form_rest(form) }}
+  </form>
+
+{% endblock %}

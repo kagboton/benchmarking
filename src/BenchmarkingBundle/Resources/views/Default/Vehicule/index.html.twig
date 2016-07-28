@@ -1,0 +1,218 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Vehicule/index.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+    Liste des véhicules - {{ parent() }}
+{% endblock %}
+
+{% block stylesheets %}
+    <style type="text/css">
+        .btn-product{
+            width: 100%;
+        }
+    </style>
+
+
+{% endblock %}
+
+{% block side_menu %}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">Filtres</h4>
+        </div>
+        <div class="panel-body">
+
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
+{% block benchmarking_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+    <div class="panel-heading">
+        <h2 class="panel-title">Liste des véhicules</h2>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail" >
+                        <img src="{{ asset('img/benchmarking/voitures/mazda3.jpg') }}" class="img-responsive">
+                        <div class="caption">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-6">
+                                    <h3>Mazda 3</h3>
+                                </div>
+                            </div>
+                            <p>Motorisation: Thermique</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="{{ path('vehicule_view', {'id': 1}) }}" class="btn btn-primary btn-product"><span class=""></span> Détails </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>
+                            </div>
+
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail" >
+                        <img src="{{ asset('img/benchmarking/voitures/mercedes_classeC.jpg') }}" class="img-responsive">
+                        <div class="caption">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-6">
+                                    <h3>Mercedes Classe C</h3>
+                                </div>
+                            </div>
+                            <p>Motorisation: Essence</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a class="btn btn-primary btn-product"><span class=""></span> Détails </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>
+                            </div>
+
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail" >
+                        <img src="{{ asset('img/benchmarking/voitures/skoda_octavia.jpg') }}" class="img-responsive">
+                        <div class="caption">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-6">
+                                    <h3>Skoda Octavia</h3>
+                                </div>
+                            </div>
+                            <p>Motorisation: Thermique</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a class="btn btn-primary btn-product"><span class=""></span> Détails </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>
+                            </div>
+
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail" >
+                        <img src="{{ asset('img/benchmarking/voitures/volkswagen_passat.jpg') }}" class="img-responsive">
+                        <div class="caption">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-6">
+                                    <h3>Volkswagen Passat</h3>
+                                </div>
+                            </div>
+                            <p>Motorisation: Diesel</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a class="btn btn-primary btn-product"><span class=""></span> Détails </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>
+                            </div>
+
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail" >
+                        <img src="{{ asset('img/benchmarking/voitures/ford_focus.jpg') }}" class="img-responsive">
+                        <div class="caption">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-6">
+                                    <h3>Ford Focus</h3>
+                                </div>
+                            </div>
+                            <p>Motorisation: Thermique</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a class="btn btn-primary btn-product"><span class=""></span> Détails </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>
+                            </div>
+
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail" >
+                        <img src="{{ asset('img/benchmarking/voitures/citroen_c4_cactus.jpg') }}" class="img-responsive">
+                        <div class="caption">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-6">
+                                    <h3>Citroën C4 Cactus</h3>
+                                </div>
+                            </div>
+                            <p>Motorisation: Thermique</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a class="btn btn-primary btn-product"><span class=""></span> Détails </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>
+                            </div>
+
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail" >
+                        <img src="{{ asset('img/benchmarking/voitures/peugeot_301.jpg') }}" class="img-responsive">
+                        <div class="caption">
+                            <div class="row">
+                                <div class="col-md-12 col-xs-6">
+                                    <h3>Peugeot 301</h3>
+                                </div>
+                            </div>
+                            <p>Motorisation: Thermique</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a class="btn btn-primary btn-product"><span class=""></span> Détails </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>
+                            </div>
+
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <a href="{{ path('vehicule_add') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-plus"></i>
+            Ajouter un véhicule
+        </a>
+    </div>
+
+{% endblock %}

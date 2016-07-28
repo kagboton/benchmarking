@@ -1,0 +1,45 @@
+{# src/BenchmarkingBundle/Resources/view/Default/TypeRetourActivation/index.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Retour Activation - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Liste des retours d'activation</h4>
+
+  </div>
+
+  <div class="panel-body">
+    <ul>
+
+      {% for retourActivation in listRetoursActivation %}
+        <li>
+          <a href="{{ path('retourActivation_view', {'id': retourActivation.id}) }}">
+            {{ retourActivation.nom }}
+          </a>
+        </li>
+      {% else %}
+        <li>Pas (encore !) de retour d'activation</li>
+      {% endfor %}
+    </ul>
+
+    <a href="{{ path('retourActivation_add') }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-plus"></i>
+      Ajouter un retour d'activation
+    </a>
+  </div>
+
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Segment/edit.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Modifier un segment - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Modifier un segment</h4>
+  </div>
+
+  <div class="panel-body">
+    {{ include("BenchmarkingBundle:Default:Segment/form.html.twig") }}
+
+    <p>
+      <a href="{{ path('segment_view', {'id': segment.id}) }}" class="btn btn-default">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Retour au segment
+      </a>
+    </p>
+  </div>
+
+
+{% endblock %}

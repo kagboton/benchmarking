@@ -1,0 +1,40 @@
+{# src/BenchmarkingBundle/Resources/view/Default/AfficheurExistant/index.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Afficheur - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+  <h2>Liste des afficheurs existants</h2>
+
+  <ul>
+
+    {% for afficheur in listAfficheurs %}
+      <li>
+        <a href="{{ path('afficheur_view', {'id': afficheur.id}) }}">
+          {{ afficheur.nom }}
+        </a>
+      </li>
+    {% else %}
+      <li>Pas (encore !) d'afiicheur</li>
+    {% endfor %}
+  </ul>
+
+  <a href="{{ path('afficheur_add') }}" class="btn btn-default">
+    <i class="glyphicon glyphicon-chevron-left"></i>
+    Ajouter un afficheur
+  </a>
+
+
+{% endblock %}

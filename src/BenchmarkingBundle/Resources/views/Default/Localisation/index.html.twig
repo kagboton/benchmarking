@@ -1,0 +1,35 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Localisation/index.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Localisation - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+  <h2>Liste des localisations</h2>
+
+  <ul>
+
+    {% for localisation in listLocalisations %}
+      <li>
+        <a href="{{ path('localisation_view', {'id': localisation.id}) }}">
+          {{ localisation.nom }}
+        </a>
+      </li>
+    {% else %}
+      <li>Pas (encore !) de localisations</li>
+    {% endfor %}
+  </ul>
+
+
+{% endblock %}

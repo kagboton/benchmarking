@@ -1,0 +1,27 @@
+familles:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:Famille:index }
+
+famille_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:Famille:view }
+    requirements:
+        id: \d*
+
+famille_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:Famille:add }
+    requirements:
+        id: \d*
+
+famille_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:Famille:edit }
+    requirements:
+        id: \d*
+
+famille_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:Famille:delete }
+    requirements:
+        id: \d*

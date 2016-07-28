@@ -1,0 +1,10 @@
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+    Profile - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+{% include "FOSUserBundle:Profile:show_content.html.twig" %}
+{% endblock admin_body %}

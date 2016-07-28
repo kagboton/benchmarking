@@ -1,0 +1,26 @@
+{# src/BenchmarkingBundle/Resources/view/Default/CommandePhysique/edit.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Modifier une commande - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Modifier une commande physique</h2>
+
+  {{ include("BenchmarkingBundle:Default:CommandePhysique/form.html.twig") }}
+
+  <p>
+    Modification d'une commande physique déjà existant.
+  </p>
+
+  <p>
+    <a href="{{ path('commandePhysique_view', {'id': commandePhysique.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à la commande
+    </a>
+  </p>
+
+{% endblock %}

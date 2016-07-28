@@ -1,0 +1,26 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Famille/edit.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Modifier une famille - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+  <div class="panel-heading">
+    <h4>Modifier une famille de fonctions</h4>
+  </div>
+
+  <div class="panel-body">
+    {{ include("BenchmarkingBundle:Default:Famille/form.html.twig") }}
+
+
+    <p>
+      <a href="{{ path('famille_view', {'id': famille.id}) }}" class="btn btn-default">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Retour à la famille
+      </a>
+    </p>
+  </div>
+
+{% endblock %}

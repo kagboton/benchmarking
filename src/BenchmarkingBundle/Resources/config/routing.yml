@@ -1,0 +1,82 @@
+benchmarking_homepage:
+    path:     /
+    defaults: { _controller: BenchmarkingBundle:Benchmarking:accueil }
+
+vehicules:
+    path:     /vehicule/liste
+    defaults: { _controller: BenchmarkingBundle:Vehicule:index }
+
+vehicule_view:
+    path:     /vehicule/{id}
+    defaults: { _controller: BenchmarkingBundle:Vehicule:view }
+    requirements:
+        id: \d*
+
+vehicule_recherche:
+    path:     /vehicule/recherche
+    defaults: { _controller: BenchmarkingBundle:Vehicule:recherche }
+
+vehicule:
+    resource: "@BenchmarkingBundle/Resources/config/vehiculeRouting.yml"
+    prefix:   /admin/vehicule
+
+
+fonction:
+    resource: "@BenchmarkingBundle/Resources/config/fonctionRouting.yml"
+    prefix:   /admin/fonction
+
+motorisation:
+    resource: "@BenchmarkingBundle/Resources/config/motorisationRouting.yml"
+    prefix:   /admin/motorisation
+
+marque:
+    resource: "@BenchmarkingBundle/Resources/config/marqueRouting.yml"
+    prefix:   /admin/marque
+
+boiteVitesse:
+    resource: "@BenchmarkingBundle/Resources/config/boiteVitesseRouting.yml"
+    prefix:   /admin/boiteVitesse
+
+segment:
+    resource: "@BenchmarkingBundle/Resources/config/segmentRouting.yml"
+    prefix:   /admin/segment
+
+famille:
+    resource: "@BenchmarkingBundle/Resources/config/familleRouting.yml"
+    prefix:   /admin/famille
+
+commandePhysique:
+    resource: "@BenchmarkingBundle/Resources/config/commandePhysiqueRouting.yml"
+    prefix:   /admin/commandePhysique
+
+afficheur:
+    resource: "@BenchmarkingBundle/Resources/config/afficheurRouting.yml"
+    prefix:   /admin/afficheur
+
+localisation:
+    resource: "@BenchmarkingBundle/Resources/config/localisationRouting.yml"
+    prefix:   /admin/localisation
+
+retourActivation:
+    resource: "@BenchmarkingBundle/Resources/config/retourActivationRouting.yml"
+    prefix:   /admin/retourActivation
+
+technologieAfficheur:
+    resource: "@BenchmarkingBundle/Resources/config/technologieAfficheurRouting.yml"
+    prefix:   /admin/technologieAfficheur
+
+sousTechnologieAfficheur:
+    resource: "@BenchmarkingBundle/Resources/config/sousTechnologieAfficheurRouting.yml"
+    prefix:   /admin/sousTechnologieAfficheur
+
+tailleEcran:
+    resource: "@BenchmarkingBundle/Resources/config/tailleEcranRouting.yml"
+    prefix:   /admin/tailleEcran
+
+formatEcran:
+    resource: "@BenchmarkingBundle/Resources/config/formatEcranRouting.yml"
+    prefix:   /admin/formatEcran
+
+typeTdB:
+    resource: "@BenchmarkingBundle/Resources/config/typeTdBRouting.yml"
+    prefix:   /admin/typeTdB

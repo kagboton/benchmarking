@@ -1,0 +1,27 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Motorisation/edit.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Modifier une motorisation - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Modifier une motorisation</h4>
+  </div>
+
+
+  <div class="panel-body">
+    {{ include("BenchmarkingBundle:Default:Motorisation/form.html.twig") }}
+
+    <p>
+      <a href="{{ path('motorisation_view', {'id': motorisation.id}) }}" class="btn btn-default">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Retour à la motorisation
+      </a>
+    </p>
+  </div>
+
+{% endblock %}

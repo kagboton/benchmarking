@@ -1,0 +1,32 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Fonction/index.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Composants d'affichage - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+  <h2>Liste des composants d'affichage</h2>
+
+    <ul>
+        {% for composantAffichage in listComposantsAffichage %}
+            <li><a href="{{ path('composantAffichage_view', {'id': composantAffichage.id}) }}">{{ composantAffichage.nom }}</a></li>
+
+        {% else %}
+            <li>Pas (encore !) de composants d'affichage</li>
+
+        {% endfor %}
+
+    </ul>
+
+{% endblock %}

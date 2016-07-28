@@ -1,0 +1,260 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Vehicule/index.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+    Mazda - {{ parent() }}
+{% endblock %}
+
+{% block stylesheets %}
+    <style type="text/css">
+        .btn-product{
+            width: 100%;
+        }
+    </style>
+
+
+{% endblock %}
+
+
+
+{% block benchmarking_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+    <div class="panel-heading">
+        <h2 class="panel-title">Mazda 3</h2>
+    </div>
+
+    <div class="panel-body">
+        <div class="container-fluid">
+            <div class="content-wrapper">
+                <div class="item-container">
+                    <div class="container">
+                        <div class="col-md-5  col-sm-6 col-xs-6 thumbnail">
+
+                            <img src="{{ asset('img/benchmarking/voitures/mazda3.jpg') }}" class="img-responsive">
+
+                        </div><!--col-md-4 col-sm-6 col-xs-6-->
+
+
+                        <div class="col-md-3 col-md-offset-1">
+                            <div class="product-title">Mazda 3</div>
+                            <div class="product-desc">Ceci est un message de test </div>
+                            <hr>
+
+                            <div class="btn-group cart">
+                                <button type="button" class="btn btn-success">
+                                    Ajouter pour comparer
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid ">
+                        <ul id="myTab" class="nav nav-tabs nav_tabs">
+
+                            <li class="active"><a href="#service-one" data-toggle="tab">DESCRIPTION</a></li>
+                            <li><a href="#service-two" data-toggle="tab">COMPOSANTS</a></li>
+                            <li><a href="#service-three" data-toggle="tab">FONCTIONS</a></li>
+
+                        </ul>
+                        <div id="myTabContent" class="tab-content">
+                            <div class="tab-pane fade in active" id="service-one">
+
+                                <section class="container">
+
+                                    <h4>Informations générales</h4>
+                                    <table class="col-md-7 table-bordered table-striped table-condensed ">
+                                        <tbody>
+                                        <tr>
+                                            <th>Marque</th>
+                                            <td>Mazda</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Modèle</th>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Année</th>
+                                            <td>2011</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Segment</th>
+                                            <td>B0</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Boîte Vitesse</th>
+                                            <td>Automatique</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Motorisation</th>
+                                            <td>Themique</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Ajouté le</th>
+                                            <td>27/06/2016</td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </section>
+
+                            </div>
+                            <div class="tab-pane fade" id="service-two">
+
+                                <section class="container">
+                                    <h4>Liste des composants</h4>
+                                    <table class="col-md-7 table-bordered table-striped table-condensed ">
+                                        <tbody>
+                                            <tr >
+                                                <th colspan="2">Tableau de bord</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Type TdB</td>
+                                                <td>Full TFT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Technologie afficheur</td>
+                                                <td>TFT Couleur</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sous technologie afficheur</td>
+                                                <td>Normally Black</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Taille écran</td>
+                                                <td>4"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Format écran</td>
+                                                <td>16/9</td>
+                                            </tr>
+
+                                        </tbody>
+
+                                        <tbody>
+                                        <tr >
+                                            <th colspan="2">Ecran central</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Type TdB</td>
+                                            <td>Full TFT</td>
+                                            <td rowspan="5"><a href="{{ asset('img/benchmarking/voitures/mazda3.jpg') }}"><img src="{{ asset('img/benchmarking/voitures/mazda3_mini.jpg') }}" class="img-responsive"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Technologie afficheur</td>
+                                            <td>TFT Couleur</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sous technologie afficheur</td>
+                                            <td>Normally Black</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Taille écran</td>
+                                            <td>4"</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Format écran</td>
+                                            <td>16/9</td>
+                                        </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                        <tr >
+                                            <th colspan="2">HUD</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Type TdB</td>
+                                            <td>Full TFT</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Technologie afficheur</td>
+                                            <td>TFT Couleur</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sous technologie afficheur</td>
+                                            <td>Normally Black</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Taille écran</td>
+                                            <td>2"</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Format écran</td>
+                                            <td>4/3</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                </section>
+
+                            </div>
+                            <div class="tab-pane fade" id="service-three">
+
+                                <section class="container">
+                                    <h4>Liste des fonctions</h4>
+                                    <table class="col-md-7 table-bordered table-striped table-condensed ">
+                                        <tbody>
+                                            <tr >
+                                                <th colspan="2">Limiteur de vitesse</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Activation logique</td>
+                                                <td>Oui</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Activation physique</td>
+                                                <td>Oui</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Retour Activation</td>
+                                                <td>Oui</td>
+                                            </tr>
+                                        </tbody>
+
+
+                                        <tbody>
+                                            <tr >
+                                                <th colspan="2">Stabilisateur de trajectoire</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Activation logique</td>
+                                                <td>Oui</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Activation physique</td>
+                                                <td>Oui</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Retour Activation</td>
+                                                <td>Oui</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </section>
+
+
+                            </div>
+                        </div>
+                        <hr>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

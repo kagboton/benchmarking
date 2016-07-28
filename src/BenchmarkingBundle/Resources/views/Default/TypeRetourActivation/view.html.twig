@@ -1,0 +1,46 @@
+{# src/BenchmarkingBundle/Resources/view/Default/TypeRetourActivation/view.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Lecture d'un retour d'activation - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+    <div class="panel-heading">
+        <h4 class="panel-title">{{ retourActivation.nom }}</h4>
+    </div>
+
+
+    <div class="panel-body">
+        <p>
+            <a href="{{ path('retoursActivation') }}" class="btn btn-default">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+                Retour à la liste
+            </a>
+            <a href="{{ path('retourActivation_edit', {'id': retourActivation.id}) }}" class="btn btn-default">
+                <i class="glyphicon glyphicon-edit"></i>
+                Modifier le retour d'activation
+            </a>
+            <a href="{{ path('retourActivation_delete', {'id': retourActivation.id}) }}" class="btn btn-danger">
+                <i class="glyphicon glyphicon-trash"></i>
+                Supprimer le retour d'activation
+            </a>
+        </p>
+
+    </div>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{# src/BenchmarkingBundle/Resources/view/Default/FormatEcran/edit.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Modifier un Format d'écran - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Modifier un Format d'écran</h2>
+
+  {{ include("BenchmarkingBundle:Default:FormatEcran/form.html.twig") }}
+
+  <p>
+    Modification d'un Format d'écran déjà existant.
+  </p>
+
+  <p>
+    <a href="{{ path('formatEcran_view', {'id': formatEcran.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour au Format d'écran
+    </a>
+  </p>
+
+{% endblock %}

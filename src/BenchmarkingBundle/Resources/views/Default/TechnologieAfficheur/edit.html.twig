@@ -1,0 +1,26 @@
+{# src/BenchmarkingBundle/Resources/view/Default/TechnologieAfficheur/edit.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Modifier une technologie afficheur - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Modifier une technologie afficheur</h2>
+
+  {{ include("BenchmarkingBundle:Default:TechnologieAfficheur/form.html.twig") }}
+
+  <p>
+    Modification d'une technologie afficheur déjà existante.
+  </p>
+
+  <p>
+    <a href="{{ path('technologieAfficheur_view', {'id': technologieAfficheur.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à la technologie afficheur
+    </a>
+  </p>
+
+{% endblock %}

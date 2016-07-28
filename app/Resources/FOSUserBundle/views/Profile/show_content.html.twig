@@ -1,0 +1,48 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="panel-heading">
+    <h4 class="panel-title"> {{ user.prenom }}  {{ user.nom | upper }}</h4>
+</div>
+
+
+<div class="panel-body">
+    <div class="row">
+        <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive"> </div>
+
+        <div class=" col-md-9 col-lg-9 ">
+            <table class="table table-user-information">
+                <tbody>
+                <tr>
+                    <td>Rôle:</td>
+                    <td>Administrateur</td>
+                </tr>
+                    <tr>
+                        <td>Nom:</td>
+                        <td>{{user.nom }}</td>
+                    </tr>
+                    <tr>
+                        <td>Prénom:</td>
+                        <td>{{ user.prenom }}</td>
+                    </tr>
+
+                    <tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td><a href="mailto:info@support.com">{{ user.email }}</a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <a href="{{ path('fos_user_profile_edit') }}"  class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span> Modifier mes informations</a>
+            <a href="{{ path('fos_user_change_password') }}" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span>Changer de mot de passe</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="panel-footer">
+    <a data-original-title="Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+
+</div>

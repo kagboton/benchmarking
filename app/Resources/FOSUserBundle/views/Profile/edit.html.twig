@@ -1,0 +1,9 @@
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+    Modifier profile - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+    {% include "FOSUserBundle:Profile:edit_content.html.twig" %}
+{% endblock admin_body %}

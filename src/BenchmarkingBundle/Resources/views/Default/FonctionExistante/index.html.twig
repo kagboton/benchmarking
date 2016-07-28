@@ -1,0 +1,72 @@
+{# src/BenchmarkingBundle/Resources/view/Default/FonctionExistante/index.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block stylesheet %}
+    {% stylesheets 'bundles/admin/css/accordion-multiview.css' filter='cssrewrite, scssphp'%}
+    <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+    {% endstylesheets %}
+{% endblock %}
+
+{% block title %}
+  Fonctions - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+    <div class="panel-heading">
+        <h4 class="panel-title">Liste des fonctions par famille</h4>
+    </div>
+
+   <div class="panel-body">
+
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-3 col-md-5">
+                   <div class="panel-group" id="accordion">
+                       {% set myVal = 1 %}
+                       {% for famille in listFamilles %}
+                           <div class="panel panel-default">
+                               <div class="panel-heading">
+                                   <h4 class="panel-title">
+                                       <a data-toggle="collapse" data-parent="#accordion" href="#{{ myVal }}">
+                                           {{ famille.nom }}
+                                           <span class="caret"></span>
+                                       </a>
+                                   </h4>
+                               </div>
+                               <div id="{{ myVal }}" class="panel-collapse collapse">
+                                   <ul class="list-group">
+                                       {% for fonction in listFonctions %}
+                                           {% if famille.nom == fonction.famille.nom  %}
+                                               <li class="list-group-item"><a href="{{ path('fonction_view', {'id': fonction.id}) }}">{{ fonction.nom }}</a></li>
+                                           {% endif %}
+                                       {% else %}
+                                           <li>Pas (encore !) de fonctions</li>
+                                       {% endfor %}
+                                   </ul>
+                               </div>
+                           </div>
+                           {% set myVal = myVal + 1 %}
+                       {% endfor %}
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <a href="{{ path('fonction_add') }}" class="btn btn-default">
+           <i class="glyphicon glyphicon-plus"></i>
+           Ajouter une fonction
+       </a>
+
+   </div>
+
+{% endblock %}

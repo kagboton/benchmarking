@@ -1,0 +1,27 @@
+technologiesAfficheur:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:TechnologieAfficheur:index }
+
+technologieAfficheur_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:TechnologieAfficheur:view }
+    requirements:
+        id: \d*
+
+technologieAfficheur_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:TechnologieAfficheur:add }
+    requirements:
+        id: \d*
+
+technologieAfficheur_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:TechnologieAfficheur:edit }
+    requirements:
+        id: \d*
+
+technologieAfficheur_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:TechnologieAfficheur:delete }
+    requirements:
+        id: \d*

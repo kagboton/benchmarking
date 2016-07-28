@@ -1,0 +1,20 @@
+{# src/BenchmarkingBundle/Resources/views/Default/CommandePhysique/add.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+
+{% block title %}
+  Ajouter une commande physique  - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Ajouter une commande physique</h2>
+
+  {{ include("BenchmarkingBundle:Default:CommandePhysique/form.html.twig") }}
+
+  <p>
+    Cette commande sera ajoutée directement après validation du formulaire
+  </p>
+
+{% endblock %}

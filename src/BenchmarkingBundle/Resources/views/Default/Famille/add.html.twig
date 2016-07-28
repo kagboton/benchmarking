@@ -1,0 +1,20 @@
+{# src/BenchmarkingBundle/Resources/views/Default/Famille/add.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+
+{% block title %}
+  Ajouter une famille - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  <div class="panel-heading">
+    <h4>Ajouter une famille de fonctions</h4>
+  </div>
+
+  <div class="panel-body">
+    {{ include("BenchmarkingBundle:Default:Famille/form.html.twig") }}
+  </div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{# src/BenchmarkingBundle/Resources/view/Default/FonctionExistante/edit.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Modifier une fonction - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Modifier une fonction</h4>
+  </div>
+
+  <div class="panel-body">
+    {{ include("BenchmarkingBundle:Default:FonctionExistante/form.html.twig") }}
+
+    <p>
+      <a href="{{ path('fonction_view', {'id': fonction.id}) }}" class="btn btn-default">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Retour à la fonction
+      </a>
+    </p>
+  </div>
+
+
+{% endblock %}

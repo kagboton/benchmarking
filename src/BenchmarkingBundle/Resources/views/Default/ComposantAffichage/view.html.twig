@@ -1,0 +1,38 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Fonction/view.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Lecture d'un composant d'affichage - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+  <h2>{{ composantAffichage.nom }}</h2>
+
+
+    <p>
+        <a href="{{ path('composantsAffichage') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste
+        </a>
+        <a href="{{ path('composantAffichage_edit', {'id': composantAffichage.id}) }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-edit"></i>
+            Modifier le composant
+        </a>
+        <a href="{{ path('composantAffichage_delete', {'id': composantAffichage.id}) }}" class="btn btn-danger">
+            <i class="glyphicon glyphicon-trash"></i>
+            Supprimer le composant
+        </a>
+    </p>
+
+
+{% endblock %}

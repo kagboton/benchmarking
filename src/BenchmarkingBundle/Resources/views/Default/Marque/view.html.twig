@@ -1,0 +1,42 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Marque/view.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Lecture d'une marque - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+    <div class="panel-heading">
+        <h4 class="panel-title">{{ marque.nom }}</h4>
+    </div>
+
+  <div class="panel-body">
+      <p>
+          <a href="{{ path('marques') }}" class="btn btn-default">
+              <i class="glyphicon glyphicon-chevron-left"></i>
+              Retour à la liste
+          </a>
+          <a href="{{ path('marque_edit', {'id': marque.id}) }}" class="btn btn-default">
+              <i class="glyphicon glyphicon-edit"></i>
+              Modifier la marque
+          </a>
+          <a href="{{ path('marque_delete', {'id': marque.id}) }}" class="btn btn-danger">
+              <i class="glyphicon glyphicon-trash"></i>
+              Supprimer la marque
+          </a>
+      </p>
+
+  </div>
+
+
+{% endblock %}

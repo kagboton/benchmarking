@@ -1,0 +1,43 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Marque/index.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Segment - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Liste des segments</h4>
+  </div>
+
+  <div class="panel-body">
+    <ul class="list-group">
+      {% for segment in listSegments %}
+
+          <a class="list-group-item" href="{{ path('segment_view', {'id': segment.id}) }}">
+            {{ segment.nom }}
+          </a>
+
+      {% else %}
+        <li>Pas (encore !) de segments</li>
+      {% endfor %}
+    </ul>
+    <a href="{{ path('segment_add') }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-plus"></i>
+      Ajouter un segment
+    </a>
+  </div>
+
+
+
+{% endblock %}

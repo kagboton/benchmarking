@@ -1,0 +1,40 @@
+{# src/BenchmarkingBundle/Resources/view/Default/TailleEcran/index.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Taille Ecran - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+  <h2>Liste des tailles d'écrans</h2>
+
+  <ul>
+
+    {% for tailleEcran in listTaillesEcran %}
+      <li>
+        <a href="{{ path('tailleEcran_view', {'id': tailleEcran.id}) }}">
+          {{ tailleEcran.taille }}"
+        </a>
+      </li>
+    {% else %}
+      <li>Pas (encore !) de taille d'écran</li>
+    {% endfor %}
+  </ul>
+
+  <a href="{{ path('tailleEcran_add') }}" class="btn btn-default">
+    <i class="glyphicon glyphicon-chevron-left"></i>
+    Ajouter une taille d'écran
+  </a>
+
+
+{% endblock %}

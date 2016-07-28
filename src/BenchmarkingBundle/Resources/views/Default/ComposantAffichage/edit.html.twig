@@ -1,0 +1,26 @@
+{# src/BenchmarkingBundle/Resources/view/Default/ComposantAffichage/edit.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Modifier un composant d'affichage - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Modifier un composant d'affichage</h2>
+
+  {{ include("BenchmarkingBundle:Default:ComposantAffichage/form.html.twig") }}
+
+  <p>
+    Modification d'un composant d'affichage déjà existante.
+  </p>
+
+  <p>
+    <a href="{{ path('composantAffichage_view', {'id': composantAffichag.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour au composant
+    </a>
+  </p>
+
+{% endblock %}

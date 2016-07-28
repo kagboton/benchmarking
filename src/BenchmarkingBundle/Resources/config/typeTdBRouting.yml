@@ -1,0 +1,28 @@
+typesTdB:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:TypeTdB:index }
+
+
+typeTdB_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:TypeTdB:view }
+    requirements:
+        id: \d*
+
+typeTdB_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:TypeTdB:add }
+    requirements:
+        id: \d*
+
+typeTdB_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:TypeTdB:edit }
+    requirements:
+        id: \d*
+
+typeTdB_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:TypeTdB:delete }
+    requirements:
+        id: \d*

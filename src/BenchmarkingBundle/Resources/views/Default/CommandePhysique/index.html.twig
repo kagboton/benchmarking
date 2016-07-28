@@ -1,0 +1,35 @@
+{# src/BenchmarkingBundle/Resources/view/Default/CommandePhysique/index.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Commandes Physiques - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+  <h2>Liste des commandes physiques</h2>
+
+  <ul>
+
+    {% for commandePhysique in listCommandesPhysiques %}
+      <li>
+        <a href="{{ path('commandePhysique_view', {'id': commandePhysique.id}) }}">
+          {{ commandePhysique.nom }}
+        </a>
+      </li>
+    {% else %}
+      <li>Pas (encore !) de commandes physiques</li>
+    {% endfor %}
+  </ul>
+
+
+{% endblock %}

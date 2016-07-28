@@ -1,0 +1,40 @@
+{# src/BenchmarkingBundle/Resources/view/Default/FormatEcran/index.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Format Ecran - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+  <h2>Liste des formats d'écrans</h2>
+
+  <ul>
+
+    {% for formatEcran in listFormatsEcran %}
+      <li>
+        <a href="{{ path('formatEcran_view', {'id': formatEcran.id}) }}">
+          {{ formatEcran.Format }}
+        </a>
+      </li>
+    {% else %}
+      <li>Pas (encore !) de format d'écran</li>
+    {% endfor %}
+  </ul>
+
+  <a href="{{ path('formatEcran_add') }}" class="btn btn-default">
+    <i class="glyphicon glyphicon-chevron-left"></i>
+    Ajouter un Format d'écran
+  </a>
+
+
+{% endblock %}

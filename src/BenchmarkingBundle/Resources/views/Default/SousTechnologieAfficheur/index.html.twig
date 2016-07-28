@@ -1,0 +1,40 @@
+{# src/BenchmarkingBundle/Resources/view/Default/SousTechnologieAfficheur/index.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Sous Technologie Afficheur- {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+  <h2>Liste des sous technologies afficheur</h2>
+
+  <ul>
+
+    {% for sousTechnologieAfficheur in listSousTechnologiesAfficheur %}
+      <li>
+        <a href="{{ path('sousTechnologieAfficheur_view', {'id': sousTechnologieAfficheur.id}) }}">
+          {{ sousTechnologieAfficheur.nom }}
+        </a>
+      </li>
+    {% else %}
+      <li>Pas (encore !) de sous technologies afficheur</li>
+    {% endfor %}
+  </ul>
+
+  <a href="{{ path('sousTechnologieAfficheur_add') }}" class="btn btn-default">
+    <i class="glyphicon glyphicon-chevron-left"></i>
+    Ajouter une sous technologie afficheur
+  </a>
+
+
+{% endblock %}

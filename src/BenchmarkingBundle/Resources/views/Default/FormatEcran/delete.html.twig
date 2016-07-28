@@ -1,0 +1,29 @@
+{# src/BenchmarkingBundle/Resources/view/Default/FormatEcran/delete.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Supprimer un Format d'écran - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Supprimer un Format d'écran</h2>
+
+  <p class="alert alert-danger">
+    Etes-vous certain de vouloir supprimer le Format d'écran "{{ formatEcran.format }}" ?
+  </p>
+
+  {# On met l'id dans la route de l'action du formulaire #}
+  <form action="{{ path('formatEcran_delete', {'id': formatEcran.id}) }}" method="post">
+    <a href="{{ path('formatEcran_view', {'id': formatEcran.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour au Format d'écran
+    </a>
+    {# Ici j'ai écrit le bouton de soumission à la main #}
+    <input type="submit" value="Supprimer" class="btn btn-danger" />
+    {# Ceci va générer le champ CSRF #}
+    {{ form_rest(form) }}
+  </form>
+
+{% endblock %}

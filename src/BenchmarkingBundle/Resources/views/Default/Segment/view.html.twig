@@ -1,0 +1,50 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Segment/view.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Lecture d'un segment - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+    <div class="panel-heading">
+        <h4 class="panel-title">{{ segment.nom }}</h4>
+    </div>
+
+
+
+    <div class="panel-body">
+        {{ segment.description }}
+
+        <br><br>
+
+        <p>
+            <a href="{{ path('segments') }}" class="btn btn-default">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+                Retour à la liste
+            </a>
+            <a href="{{ path('segment_edit', {'id': segment.id}) }}" class="btn btn-default">
+                <i class="glyphicon glyphicon-edit"></i>
+                Modifier le segment
+            </a>
+            <a href="{{ path('segment_delete', {'id': segment.id}) }}" class="btn btn-danger">
+                <i class="glyphicon glyphicon-trash"></i>
+                Supprimer le segment
+            </a>
+        </p>
+
+    </div>
+
+
+
+
+{% endblock %}

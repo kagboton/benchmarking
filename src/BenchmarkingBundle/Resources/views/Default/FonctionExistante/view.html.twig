@@ -1,0 +1,47 @@
+{# src/BenchmarkingBundle/Resources/view/Default/FonctionExistante/view.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Lecture d'une fonction - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+    <div class="panel-heading">
+        <h4 class="panel-title">{{ fonction.nom }}</h4>
+    </div>
+
+
+  <div class="panel-body">
+    {{ fonction.description }}
+    <br><br>
+      <p>
+          <a href="{{ path('fonctions') }}" class="btn btn-default">
+              <i class="glyphicon glyphicon-chevron-left"></i>
+              Retour à la liste
+          </a>
+          <a href="{{ path('fonction_edit', {'id': fonction.id}) }}" class="btn btn-default">
+              <i class="glyphicon glyphicon-edit"></i>
+              Modifier la fonction
+          </a>
+          <a href="{{ path('fonction_delete', {'id': fonction.id}) }}" class="btn btn-danger">
+              <i class="glyphicon glyphicon-trash"></i>
+              Supprimer la fonction
+          </a>
+      </p>
+  </div>
+
+
+
+
+
+{% endblock %}

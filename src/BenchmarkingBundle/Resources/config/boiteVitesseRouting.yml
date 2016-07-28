@@ -1,0 +1,27 @@
+boitesVitesse:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:BoiteVitesse:index }
+
+boiteVitesse_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:BoiteVitesse:view }
+    requirements:
+        id: \d*
+
+boiteVitesse_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:BoiteVitesse:add }
+    requirements:
+        id: \d*
+
+boiteVitesse_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:BoiteVitesse:edit }
+    requirements:
+        id: \d*
+
+boiteVitesse_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:BoiteVitesse:delete }
+    requirements:
+        id: \d*

@@ -1,0 +1,38 @@
+{# src/BenchmarkingBundle/Resources/views/Default/Vehicule/add.html.twig #}
+
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+
+{% stylesheets 'bundles/admin/css/form-wizard-validation.css' filter='cssrewrite, scssphp'%}
+<link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+{% endstylesheets %}
+
+ <title> Ajouter un véhicule - Administration</title>
+
+<div class="col-md-12 content">
+    <div class="panel panel-default">
+
+        <div class="panel-heading">
+            <h4 class="panel-title">Ajouter un véhicule</h4>
+        </div>
+        <div class="panel-body">
+            {{ include("BenchmarkingBundle:Default:Vehicule/form.html.twig") }}
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+{% javascripts
+'bundles/admin/js/form-wizard-validation.js'
+'bundles/admin/js/composants.js'
+'bundles/admin/js/fonctions.js'
+filter='jsqueeze' %}
+<script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}

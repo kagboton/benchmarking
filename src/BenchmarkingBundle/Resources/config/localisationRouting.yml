@@ -1,0 +1,28 @@
+localisations:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:Localisation:index }
+
+localisation_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:Localisation:view }
+    requirements:
+        id: \d*
+
+localisation_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:Localisation:add }
+    requirements:
+        id: \d*
+
+localisation_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:Localisation:edit }
+    requirements:
+        id: \d*
+
+localisation_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:Localisation:delete }
+    requirements:
+        id: \d*
+

@@ -1,0 +1,21 @@
+{# src/BenchmarkingBundle/Resources/views/Default/Motorisation/add.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+
+{% block title %}
+  Ajouter une motorisation - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  <div class="panel-headin">
+    <h4 class="panel-title">Ajouter une motorisation</h4>
+  </div>
+
+  <div class="pane-body">
+    {{ include("BenchmarkingBundle:Default:Motorisation/form.html.twig") }}
+  </div>
+
+
+{% endblock %}

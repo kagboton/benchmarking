@@ -1,0 +1,29 @@
+{# src/BenchmarkingBundle/Resources/view/Default/TypeTdB/delete.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Supprimer un type de tableau de bord - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Supprimer un type de tableau de bord</h2>
+
+  <p class="alert alert-danger">
+    Etes-vous certain de vouloir supprimer le type de tableau de bord "{{ typeTdB.nom }}" ?
+  </p>
+
+  {# On met l'id dans la route de l'action du formulaire #}
+  <form action="{{ path('typeTdB_delete', {'id': typeTdB.id}) }}" method="post">
+    <a href="{{ path('typeTdB_view', {'id': typeTdB.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour au type de tableau de bord
+    </a>
+    {# Ici j'ai écrit le bouton de soumission à la main #}
+    <input type="submit" value="Supprimer" class="btn btn-danger" />
+    {# Ceci va générer le champ CSRF #}
+    {{ form_rest(form) }}
+  </form>
+
+{% endblock %}

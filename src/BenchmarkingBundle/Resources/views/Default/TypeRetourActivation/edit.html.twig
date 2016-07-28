@@ -1,0 +1,26 @@
+{# src/BenchmarkingBundle/Resources/view/Default/TypeRetourActivation/edit.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Modifier un retour d'activation - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Modifier un retour d'activation</h2>
+
+  {{ include("BenchmarkingBundle:Default:TypeRetourActivation/form.html.twig") }}
+
+  <p>
+    Modification d'un retour d'activation existant.
+  </p>
+
+  <p>
+    <a href="{{ path('retourActivation_view', {'id': retourActivation.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour au retour d'activation
+    </a>
+  </p>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{# src/BenchmarkingBundle/Resources/views/Default/TypeRetourActivation/add.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+
+{% block title %}
+  Ajouter un retour d'activation - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Ajouter un retour d'activation</h2>
+
+  {{ include("BenchmarkingBundle:Default:TypeRetourActivation/form.html.twig") }}
+
+  <p>
+    Ce retour d'activation sera ajouté directement après validation du formulaire
+  </p>
+
+{% endblock %}

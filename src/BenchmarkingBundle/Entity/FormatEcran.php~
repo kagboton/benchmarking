@@ -1,0 +1,72 @@
+<?php
+
+namespace BenchmarkingBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * FormatEcran
+ *
+ * @ORM\Table(name="format_ecran")
+ * @ORM\Entity(repositoryClass="BenchmarkingBundle\Repository\FormatEcranRepository")
+ */
+class FormatEcran
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="format", type="string", length=255)
+     */
+    private $format;
+
+    /**
+     * @ORM\OneToMany(targetEntity="BenchmarkingBundle\Entity\ComposantAffichage", cascade={"persist"}, mappedBy="formatEcran")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $composantsAffichage;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set format
+     *
+     * @param string $format
+     *
+     * @return FormatEcran
+     */
+    public function setFormat($format)
+    {
+        $this->format = $format;
+
+        return $this;
+    }
+
+    /**
+     * Get format
+     *
+     * @return string
+     */
+    public function getFormat()
+    {
+        return $this->format;
+    }
+}
+

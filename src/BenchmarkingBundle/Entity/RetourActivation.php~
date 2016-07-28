@@ -1,0 +1,53 @@
+<?php
+
+namespace BenchmarkingBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * RetourActivation
+ *
+ * @ORM\Table(name="retour_activation")
+ * @ORM\Entity(repositoryClass="BenchmarkingBundle\Repository\RetourActivationRepository")
+ */
+class RetourActivation
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+    
+    /**
+     * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\TypeRetourActivation", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $typeRetourActivation;
+
+    /**
+     * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\Image", cascade={"persist"})
+     */
+    private $image;
+
+    /**
+     * @ORM\OneToMany(targetEntity="BenchmarkingBundle\Entity\Fonction", cascade={"persist"}, mappedBy="retourActivation")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $fontions;
+    
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+}
+

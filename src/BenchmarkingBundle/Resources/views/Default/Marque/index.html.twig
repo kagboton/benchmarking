@@ -1,0 +1,43 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Marque/index.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Motorisation - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Liste des marques</h4>
+  </div>
+
+  <div class="panel-body">
+    <ul class="list-group">
+      {% for marque in listMarques %}
+          <a class="list-group-item" href="{{ path('marque_view', {'id': marque.id}) }}">
+            {{ marque.nom }}
+          </a>
+      {% else %}
+        <li>Pas (encore !) de marques</li>
+      {% endfor %}
+    </ul>
+
+    <a href="{{ path('marque_add') }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-plus"></i>
+      Ajouter une marque
+    </a>
+  </div>
+
+
+
+
+{% endblock %}

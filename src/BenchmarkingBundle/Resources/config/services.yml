@@ -1,0 +1,4 @@
+services:
+#    benchmarking.example:
+#        class: BenchmarkingBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

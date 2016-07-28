@@ -1,0 +1,26 @@
+{# src/BenchmarkingBundle/Resources/view/Default/AfficheurExistant/edit.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Modifier un afficheur - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Modifier un afficheur</h2>
+
+  {{ include("BenchmarkingBundle:Default:AfficheurExistant/form.html.twig") }}
+
+  <p>
+    Modification d'un afficheur déjà existant.
+  </p>
+
+  <p>
+    <a href="{{ path('afficheur_view', {'id': afficheur.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à l'afficheur
+    </a>
+  </p>
+
+{% endblock %}

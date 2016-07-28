@@ -1,0 +1,20 @@
+{# src/BenchmarkingBundle/Resources/views/Default/Marque/add.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+
+{% block title %}
+  Ajouter une marque - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Ajouter une marque</h4>
+  </div>
+
+  <div class="panel-body">
+    {{ include("BenchmarkingBundle:Default:Marque/form.html.twig") }}
+  </div>
+
+{% endblock %}

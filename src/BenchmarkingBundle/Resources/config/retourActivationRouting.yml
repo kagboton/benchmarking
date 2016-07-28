@@ -1,0 +1,25 @@
+retoursActivation:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:RetourActivation:index }
+
+retourActivation_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:RetourActivation:view }
+    requirements:
+        id: \d*
+retourActivation_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:RetourActivation:add }
+    requirements:
+        id: \d*
+
+retourActivation_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:RetourActivation:edit }
+    requirements:
+        id: \d*
+retourActivation_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:RetourActivation:delete }
+    requirements:
+        id: \d*

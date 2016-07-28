@@ -1,0 +1,28 @@
+taillesEcran:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:TailleEcran:index }
+
+
+tailleEcran_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:TailleEcran:view }
+    requirements:
+        id: \d*
+
+tailleEcran_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:TailleEcran:add }
+    requirements:
+        id: \d*
+
+tailleEcran_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:TailleEcran:edit }
+    requirements:
+        id: \d*
+
+tailleEcran_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:TailleEcran:delete }
+    requirements:
+        id: \d*

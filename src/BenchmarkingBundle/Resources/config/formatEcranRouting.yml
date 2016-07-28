@@ -1,0 +1,28 @@
+formatsEcran:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:FormatEcran:index }
+
+
+formatEcran_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:FormatEcran:view }
+    requirements:
+        id: \d*
+
+formatEcran_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:FormatEcran:add }
+    requirements:
+        id: \d*
+
+formatEcran_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:FormatEcran:edit }
+    requirements:
+        id: \d*
+
+formatEcran_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:FormatEcran:delete }
+    requirements:
+        id: \d*

@@ -1,0 +1,45 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Famille/view.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Lecture d'une famille - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+    <div class="panel-heading">
+      <h4>{{ famille.nom }}</h4>
+    </div>
+
+    <div class="panel-body">
+        {{ famille.description }}
+
+        <br><br>
+
+        <p>
+            <a href="{{ path('familles') }}" class="btn btn-default">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+                Retour à la liste
+            </a>
+            <a href="{{ path('famille_edit', {'id': famille.id}) }}" class="btn btn-default">
+                <i class="glyphicon glyphicon-edit"></i>
+                Modifier la famille
+            </a>
+            <a href="{{ path('famille_delete', {'id': famille.id}) }}" class="btn btn-danger">
+                <i class="glyphicon glyphicon-trash"></i>
+                Supprimer la famille
+            </a>
+        </p>
+    </div>
+
+
+{% endblock %}

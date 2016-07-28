@@ -1,0 +1,34 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Motorisation/delete.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Supprimer une motorisation - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Supprimer une motorisation</h4>
+  </div>
+
+  <div class="panel-body">
+    <p class="alert alert-danger">
+      Etes-vous certain de vouloir supprimer la motorisation "{{ motorisation.nom }}" ?
+    </p>
+
+    {# On met l'id dans la route de l'action du formulaire #}
+    <form action="{{ path('motorisation_delete', {'id': motorisation.id}) }}" method="post">
+      <a href="{{ path('motorisation_view', {'id': motorisation.id}) }}" class="btn btn-default">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Retour à la motorisation
+      </a>
+      {# Ici j'ai écrit le bouton de soumission à la main #}
+      <input type="submit" value="Supprimer" class="btn btn-danger" />
+      {# Ceci va générer le champ CSRF #}
+      {{ form_rest(form) }}
+    </form>
+  </div>
+
+
+{% endblock %}

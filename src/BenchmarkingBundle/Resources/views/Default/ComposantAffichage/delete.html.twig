@@ -1,0 +1,29 @@
+{# src/BenchmarkingBundle/Resources/view/Default/ComposantAffichage/delete.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Supprimer un composant d'affichage - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Supprimer un composant d'affichage</h2>
+
+  <p class="alert alert-danger">
+    Etes-vous certain de vouloir supprimer le composant  "{{ composantAffichage.nom }}" ?
+  </p>
+
+  {# On met l'id dans la route de l'action du formulaire #}
+  <form action="{{ path('composantAffichage_delete', {'id': composantAffichage.id}) }}" method="post">
+    <a href="{{ path('composantAffichage_view', {'id': composantAffichage.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour au composant
+    </a>
+    {# Ici j'ai écrit le bouton de soumission à la main #}
+    <input type="submit" value="Supprimer" class="btn btn-danger" />
+    {# Ceci va générer le champ CSRF #}
+    {{ form_rest(form) }}
+  </form>
+
+{% endblock %}

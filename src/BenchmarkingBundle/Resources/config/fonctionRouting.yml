@@ -1,0 +1,25 @@
+fonctions:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:Fonction:index }
+
+fonction_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:Fonction:view }
+    requirements:
+        id: \d*
+
+fonction_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:Fonction:add }
+
+fonction_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:Fonction:edit }
+    requirements:
+        id: \d*
+
+fonction_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:Fonction:delete }
+    requirements:
+        id: \d*

@@ -1,0 +1,26 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Marque/edit.html.twig #}
+
+{% extends "AdminBunlde::layout.html.twig" %}
+
+{% block title %}
+  Modifier une marque - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Modifier une marque</h4>
+  </div>
+
+  <div class="panel-body">
+    {{ include("BenchmarkingBundle:Default:Marque/form.html.twig") }}
+
+    <p>
+      <a href="{{ path('marque_view', {'id': marque.id}) }}" class="btn btn-default">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Retour à la marque
+      </a>
+    </p>
+  </div>
+
+{% endblock %}

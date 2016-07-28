@@ -1,0 +1,35 @@
+{# src/BenchmarkingBundle/Resources/view/Default/FonctionExistante/delete.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Supprimer une fonction - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Supprimer une fonction</h4>
+  </div>
+
+  <div class="panel-body">
+    <p class="alert alert-danger">
+      Etes-vous certain de vouloir supprimer la fonction "{{ fonction.nom }}" ?
+    </p>
+
+    {# On met l'id dans la route de l'action du formulaire #}
+    <form action="{{ path('fonction_delete', {'id': fonction.id}) }}" method="post">
+      <a href="{{ path('fonction_view', {'id': fonction.id}) }}" class="btn btn-default">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Retour à la fonction
+      </a>
+      {# Ici j'ai écrit le bouton de soumission à la main #}
+      <input type="submit" value="Supprimer" class="btn btn-danger" />
+      {# Ceci va générer le champ CSRF #}
+      {{ form_rest(form) }}
+    </form>
+
+  </div>
+
+
+{% endblock %}

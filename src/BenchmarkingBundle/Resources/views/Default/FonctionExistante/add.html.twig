@@ -1,0 +1,21 @@
+{# src/BenchmarkingBundle/Resources/views/Default/FonctionExistante/add.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+
+{% block title %}
+  Ajouter une fonction - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  <div class="panel-heading">
+    <h2 class="panel-title">Ajouter une fonction</h2>
+  </div>
+
+  <div class="panel-body">
+    {{ include("BenchmarkingBundle:Default:FonctionExistante/form.html.twig") }}
+  </div>
+
+
+{% endblock %}

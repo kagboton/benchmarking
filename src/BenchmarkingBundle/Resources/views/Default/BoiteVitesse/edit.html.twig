@@ -1,0 +1,26 @@
+{# src/BenchmarkingBundle/Resources/view/Default/BoiteVitesse/edit.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Modifier une boîte à vitesse - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Modifier une boîte à vitesse</h4>
+  </div>
+
+  <div class="panel-body">
+    {{ include("BenchmarkingBundle:Default:BoiteVitesse/form.html.twig") }}
+
+    <p>
+      <a href="{{ path('boiteVitesse_view', {'id': boiteVitesse.id}) }}" class="btn btn-default">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Retour à la boîte à vitesse
+      </a>
+    </p>
+  </div>
+
+{% endblock %}

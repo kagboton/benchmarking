@@ -1,0 +1,30 @@
+marques:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:Marque:index }
+
+
+marque_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:Marque:view }
+    requirements:
+        id: \d*
+
+marque_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:Marque:add }
+    requirements:
+        id: \d*
+
+marque_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:Marque:edit }
+    requirements:
+        id: \d*
+
+marque_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:Marque:delete }
+    requirements:
+        id: \d*
+
+

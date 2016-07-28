@@ -1,0 +1,43 @@
+{# src/BenchmarkingBundle/Resources/view/Default/AfficheurExistant/view.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Lecture d'un afficheur - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+  <h2>{{ afficheur.nom }}</h2>
+
+    <div class="well">
+        {{ afficheur.description }}
+    </div>
+
+
+
+    <p>
+        <a href="{{ path('afficheurs') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste
+        </a>
+        <a href="{{ path('afficheur_edit', {'id': afficheur.id}) }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-edit"></i>
+            Modifier l'afficheur
+        </a>
+        <a href="{{ path('afficheur_delete', {'id': afficheur.id}) }}" class="btn btn-danger">
+            <i class="glyphicon glyphicon-trash"></i>
+            Supprimer l'afficheur
+        </a>
+    </p>
+
+
+{% endblock %}

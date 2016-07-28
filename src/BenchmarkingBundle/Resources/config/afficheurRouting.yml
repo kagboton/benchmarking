@@ -1,0 +1,25 @@
+afficheurs:
+    path:     /liste
+    defaults: { _controller: BenchmarkingBundle:AfficheurExistant:index }
+
+afficheur_view:
+    path:     /{id}
+    defaults: { _controller: BenchmarkingBundle:AfficheurExistant:view }
+    requirements:
+        id: \d*
+afficheur_add:
+    path:     /add
+    defaults: { _controller: BenchmarkingBundle:AfficheurExistant:add }
+    requirements:
+        id: \d*
+
+afficheur_edit:
+    path:     /edit/{id}
+    defaults: { _controller: BenchmarkingBundle:AfficheurExistant:edit }
+    requirements:
+        id: \d*
+afficheur_delete:
+    path:     /delete/{id}
+    defaults: { _controller: BenchmarkingBundle:AfficheurExistant:delete }
+    requirements:
+        id: \d*

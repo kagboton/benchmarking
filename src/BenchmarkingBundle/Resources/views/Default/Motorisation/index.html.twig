@@ -1,0 +1,40 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Motorisation/index.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Motorisation - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Liste des motorisations</h4>
+  </div>
+
+
+  <div class="panel-body">
+    <ul class="list-group">
+
+      {% for motorisation in listMotorisations %}
+
+          <a class="list-group-item" href="{{ path('motorisation_view', {'id': motorisation.id}) }}">
+            {{ motorisation.nom }}
+          </a>
+      {% else %}
+        <li>Pas (encore !) de motorisations</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+
+
+{% endblock %}

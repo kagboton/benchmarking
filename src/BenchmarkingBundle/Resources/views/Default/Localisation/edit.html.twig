@@ -1,0 +1,26 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Localisation/edit.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Modifier une localisation - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Modifier une localisation</h2>
+
+  {{ include("BenchmarkingBundle:Default:Localisation/form.html.twig") }}
+
+  <p>
+    Modification d'une localisation déjà existante.
+  </p>
+
+  <p>
+    <a href="{{ path('localisation_view', {'id': localisation.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à la localisation
+    </a>
+  </p>
+
+{% endblock %}

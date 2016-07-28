@@ -1,0 +1,36 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Marque/delete.html.twig #}
+
+{% extends "AdminBundle::layout/layout.html.twig" %}
+
+{% block title %}
+  Supprimer une marque - {{ parent() }}
+{% endblock %}
+
+{% block admion_body %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Supprimer une marque</h4>
+  </div>
+
+  <div class="panel-body">
+    <p class="alert alert-danger">
+      Etes-vous certain de vouloir supprimer la marque "{{ marque.nom }}" ?
+    </p>
+
+    {# On met l'id dans la route de l'action du formulaire #}
+    <form action="{{ path('marque_delete', {'id': marque.id}) }}" method="post">
+      <a href="{{ path('marque_view', {'id': marque.id}) }}" class="btn btn-default">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Retour à la marque
+      </a>
+      {# Ici j'ai écrit le bouton de soumission à la main #}
+      <input type="submit" value="Supprimer" class="btn btn-danger" />
+      {# Ceci va générer le champ CSRF #}
+      {{ form_rest(form) }}
+    </form>
+  </div>
+
+
+
+
+{% endblock %}

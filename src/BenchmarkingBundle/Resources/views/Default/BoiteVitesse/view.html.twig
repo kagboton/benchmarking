@@ -1,0 +1,45 @@
+{# src/BenchmarkingBundle/Resources/view/Default/BoiteVitesse/view.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Lecture d'une boîte à vitesse - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+    <div class="panel-heading">
+        <h4 class="panel-title">{{ boiteVitesse.nom }}</h4>
+    </div>
+
+
+    <div class="panel-body">
+        {{ boiteVitesse.description }}
+
+        <br><br>
+
+        <p>
+            <a href="{{ path('boitesVitesse') }}" class="btn btn-default">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+                Retour à la liste
+            </a>
+            <a href="{{ path('boiteVitesse_edit', {'id': boiteVitesse.id}) }}" class="btn btn-default">
+                <i class="glyphicon glyphicon-edit"></i>
+                Modifier la boîte à vitesse
+            </a>
+            <a href="{{ path('boiteVitesse_delete', {'id': boiteVitesse.id}) }}" class="btn btn-danger">
+                <i class="glyphicon glyphicon-trash"></i>
+                Supprimer la boîte à vitesse
+            </a>
+        </p>
+    </div>
+
+{% endblock %}

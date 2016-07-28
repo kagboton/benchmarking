@@ -1,0 +1,45 @@
+{# src/BenchmarkingBundle/Resources/view/Default/BoiteVitesse/index.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Boîte à vitesse - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Liste des boîtes à vitesse</h4>
+  </div>
+
+  <div class="panel-body">
+    <ul class="list-group">
+
+      {% for boiteVitesse in listBoitesVitesse %}
+
+          <a class="list-group-item" href="{{ path('boiteVitesse_view', {'id': boiteVitesse.id}) }}">
+            {{ boiteVitesse.nom }}
+          </a>
+
+      {% else %}
+        <li>Pas (encore !) de boîte à vitesse</li>
+      {% endfor %}
+    </ul>
+
+    <a href="{{ path('boiteVitesse_add') }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-plus"></i>
+      Ajouter une boîte à vitesse
+    </a>
+
+  </div>
+
+
+{% endblock %}

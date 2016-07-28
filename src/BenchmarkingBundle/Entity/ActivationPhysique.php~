@@ -1,0 +1,56 @@
+<?php
+
+namespace BenchmarkingBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * ActivationPhysique
+ *
+ * @ORM\Table(name="activationphysique")
+ * @ORM\Entity(repositoryClass="BenchmarkingBundle\Repository\ActivationPhysiqueRepository")
+ */
+class ActivationPhysique
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\Image", cascade={"persist"})
+     */
+    private $image;
+
+    /**
+     * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\Localisation", cascade={"persist"})
+     */
+    private $localisation;
+
+    /**
+     * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\CommandePhysique", cascade={"persist"})
+     */
+    private $commandePhysique;
+
+    /**
+     * @ORM\OneToMany(targetEntity="BenchmarkingBundle\Entity\Fonctions", cascade={"persist"}, mappedBy="activationPhysique")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $fonctions;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+}
+

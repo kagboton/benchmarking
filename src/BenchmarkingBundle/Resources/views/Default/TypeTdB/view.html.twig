@@ -1,0 +1,38 @@
+{# src/BenchmarkingBundle/Resources/view/Default/TypeTdB/view.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Lecture d'un type de tableau de bord - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+  <h2>{{ typeTdB.nom }}</h2>
+
+
+    <p>
+        <a href="{{ path('typesTdB') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste
+        </a>
+        <a href="{{ path('typeTdB_edit', {'id': typeTdB.id}) }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-edit"></i>
+            Modifier le type de tableau de bord
+        </a>
+        <a href="{{ path('typeTdB_delete', {'id': typeTdB.id}) }}" class="btn btn-danger">
+            <i class="glyphicon glyphicon-trash"></i>
+            Supprimer le type de tableau de bord
+        </a>
+    </p>
+
+
+{% endblock %}

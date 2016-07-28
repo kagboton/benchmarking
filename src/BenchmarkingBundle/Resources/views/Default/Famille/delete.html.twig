@@ -1,0 +1,36 @@
+{# src/BenchmarkingBundle/Resources/view/Default/Famille/delete.html.twig #}
+
+{% extends "AdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Supprimer une famille - {{ parent() }}
+{% endblock %}
+
+{% block admin_body %}
+  <div class="panel-heading">
+   <h4 class="panel-title">Supprimer une famille de fonctions</h4>
+  </div>
+
+  <div class="panel-body">
+
+    <p class="alert alert-danger">
+      Etes-vous certain de vouloir supprimer la famille "{{ famille.nom }}" ?
+      Toutes les fonctions associées à cette famille seront supprimées.
+    </p>
+
+    {# On met l'id dans la route de l'action du formulaire #}
+    <form action="{{ path('famille_delete', {'id': famille.id}) }}" method="post">
+      <a href="{{ path('famille_view', {'id': famille.id}) }}" class="btn btn-default">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Retour à la famille
+      </a>
+      {# Ici j'ai écrit le bouton de soumission à la main #}
+
+      <input type="submit"  value="Supprimer" class="btn btn-danger"  />
+      {# Ceci va générer le champ CSRF #}
+      {{ form_rest(form) }}
+    </form>
+
+  </div>
+
+{% endblock %}

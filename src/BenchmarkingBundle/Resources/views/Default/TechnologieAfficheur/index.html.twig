@@ -1,0 +1,40 @@
+{# src/BenchmarkingBundle/Resources/view/Default/TechnologieAfficheur/index.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Technologie Afficheur- {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  {% for flashMessage in app.session.flashbag.get('info') %}
+
+    <p class="alert alert-info">
+      {{ flashMessage }}
+    </p>
+
+  {% endfor %}
+
+  <h2>Liste des technologies afficheur</h2>
+
+  <ul>
+
+    {% for technologieAfficheur in listTechnologiesAfficheur %}
+      <li>
+        <a href="{{ path('technologieAfficheur_view', {'id': technologieAfficheur.id}) }}">
+          {{ technologieAfficheur.nom }}
+        </a>
+      </li>
+    {% else %}
+      <li>Pas (encore !) de technologie afficheur</li>
+    {% endfor %}
+  </ul>
+
+  <a href="{{ path('technologieAfficheur_add') }}" class="btn btn-default">
+    <i class="glyphicon glyphicon-chevron-left"></i>
+    Ajouter une technologie afficheur
+  </a>
+
+
+{% endblock %}

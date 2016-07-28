@@ -1,0 +1,38 @@
+{# src/BenchmarkingBundle/Resources/view/Default/FormatEcran/view.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Lecture d'un Format d'écran - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+    {% for flashMessage in app.session.flashbag.get('info') %}
+
+        <p class="alert alert-info">
+            {{ flashMessage }}
+        </p>
+
+    {% endfor %}
+
+  <h2>{{ formatEcran.Format }}</h2>
+
+
+    <p>
+        <a href="{{ path('formatsEcran') }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Retour à la liste
+        </a>
+        <a href="{{ path('formatEcran_edit', {'id': formatEcran.id}) }}" class="btn btn-default">
+            <i class="glyphicon glyphicon-edit"></i>
+            Modifier le Format d'écran
+        </a>
+        <a href="{{ path('formatEcran_delete', {'id': formatEcran.id}) }}" class="btn btn-danger">
+            <i class="glyphicon glyphicon-trash"></i>
+            Supprimer le Format d'écran
+        </a>
+    </p>
+
+
+{% endblock %}

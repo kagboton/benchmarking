@@ -1,0 +1,20 @@
+{# src/BenchmarkingBundle/Resources/views/Default/TechnologieAfficheur/add.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+
+{% block title %}
+  Ajouter une technologie afficheur - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Ajouter une technologie afficheur</h2>
+
+  {{ include("BenchmarkingBundle:Default:TechnologieAfficheur/form.html.twig") }}
+
+  <p>
+    Cette technologie sera ajoutée directement après validation du formulaire
+  </p>
+
+{% endblock %}

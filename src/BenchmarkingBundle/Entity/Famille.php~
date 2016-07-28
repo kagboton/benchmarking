@@ -1,0 +1,145 @@
+<?php
+
+namespace BenchmarkingBundle\Entity;
+
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Famille
+ *
+ * @ORM\Table(name="famille")
+ * @ORM\Entity
+ */
+class Famille
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255, nullable=false)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="text", nullable=false)
+     */
+    private $description;
+
+
+    /**
+     * @ORM\OneToMany(targetEntity="BenchmarkingBundle\Entity\FonctionExistante", cascade={"persist"}, mappedBy="famille")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $fonctionsExistante;
+    
+        
+    public function __construct()
+    {
+        $this->fonctionsExistante = new ArrayCollection();
+    }
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     *
+     * @return Famille
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     *
+     * @return Famille
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Add fonction
+     *
+     * @param \BenchmarkingBundle\Entity\Fonction $fonction
+     *
+     * @return Famille
+     */
+    public function addFonction(\BenchmarkingBundle\Entity\Fonction $fonction)
+    {
+        $this->fonctions[] = $fonction;
+        $fonction->setFamille($this);
+
+        return $this;
+    }
+
+    /**
+     * Remove fonction
+     *
+     * @param \BenchmarkingBundle\Entity\Fonction $fonction
+     */
+    public function removeFonction(\BenchmarkingBundle\Entity\Fonction $fonction)
+    {
+        $this->fonctions->removeElement($fonction);
+    }
+
+    /**
+     * Get fonctions
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getFonctions()
+    {
+        return $this->fonctions;
+    }
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %} Benchmarking - Administration {% endblock %}</title>
+
+        {# On charge le CSS de bootstrap depuis le site directement #}
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+
+        {% stylesheets 'bundles/admin/css/simple-admin.css' filter='cssrewrite, scssphp'%}
+        <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+        {% endstylesheets %}
+
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+        {% block stylesheets %}
+        {% endblock %}
+    </head>
+
+    <body>
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle navbar-toggle-sidebar collapsed">
+                    MENU
+                </button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ path('admin_homepage') }}">
+                    Administration
+                </a>
+            </div><!-- /.navbar-header -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left" method="GET" role="search">
+                    <div class="form-group">
+                        <input type="text" name="q" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{ path('benchmarking_homepage') }}" target="_blank">Benchmarking</a></li>
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> {{ app.user.prenom }} {{ app.user.nom }} <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('fos_user_profile_show') }}"><span class="glyphicon glyphicon-user"></span> Profile </a></li>
+                                <li><a href="{{ path('fos_user_profile_edit') }}"><span class="glyphicon glyphicon-cog"></span> Paramètres </a></li>
+                                <li><a href="{{ path('fos_user_security_logout') }}"><span class="glyphicon glyphicon-off"></span> Déconnexion </a></li>
+                            </ul>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid main-container">
+        <div class="col-md-2 sidebar">
+            <div class="row">
+                <!-- uncomment code for absolute positioning tweek see top comment in css -->
+                <div class="absolute-wrapper"> </div>
+                <!-- Menu -->
+                <div class="side-menu">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <!-- Main Menu -->
+                        <div class="side-menu-container">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="{{ path('admin_homepage') }}"><span class="glyphicon glyphicon-dashboard"></span> Tableau de bord</a></li>
+                                <li class="panel panel-default" id="dropdown">
+                                    <a data-toggle="collapse" href="#familles-fonctions">
+                                        <span class="glyphicon glyphicon-th-list"></span> Familles & Fonctions  <span class="caret"></span>
+                                    </a>
+                                    <div id="familles-fonctions" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul class="nav navbar-nav">
+                                                <li><a href="{{ path('familles') }}">Familles</a></li>
+                                                <li><a href="{{ path('fonctions') }}">Fonctions</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="panel panel-default" id="dropdown">
+                                    <a data-toggle="collapse" href="#affichages">
+                                        <span class="glyphicon glyphicon-picture"></span> Affichages <span class="caret"></span>
+                                    </a>
+                                    <div id="affichages" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul class="nav navbar-nav">
+                                                <li><a href="{{ path('afficheurs') }}">Afficheurs</a></li>
+                                                <li><a href="{{ path('technologiesAfficheur') }}">Technologies Afficheur</a></li>
+                                                <li><a href="{{ path('sousTechnologiesAfficheur') }}">Sous Technologies Afficheur</a></li>
+                                                <li><a href="{{ path('typesTdB') }}">Type Tableau de bord</a></li>
+                                                <li><a href="{{ path('formatsEcran') }}">Format écran</a></li>
+                                                <li><a href="{{ path('retoursActivation') }}">Type Retour Activation</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li class="panel panel-default" id="dropdown">
+                                    <a data-toggle="collapse" href="#commandes">
+                                        <span class="glyphicon glyphicon-cog"></span> Commandes <span class="caret"></span>
+                                    </a>
+                                    <div id="commandes" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul class="nav navbar-nav">
+                                                <li><a href="#">Commandes Physiques</a></li>
+                                                <li><a href="#">Localisations</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="panel panel-default" id="dropdown">
+                                    <a data-toggle="collapse" href="#divers">
+                                        <span class="glyphicon glyphicon-file"></span> Divers <span class="caret"></span>
+                                    </a>
+                                    <div id="divers" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul class="nav navbar-nav">
+                                                <li><a href="{{ path('segments') }}">Segment</a></li>
+                                                <li><a href="{{ path('motorisations') }}">Motorisation</a></li>
+                                                <li><a href="{{ path('marques') }}">Marque</a></li>
+                                                <li><a href="{{ path('boitesVitesse') }}">Boite à Vitesse</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="panel panel-default" id="dropdown">
+                                    <a data-toggle="collapse" href="#vehicules">
+                                        <span class="glyphicon glyphicon-road"></span> Véhicules  <span class="caret"></span>
+                                    </a>
+                                    <div id="vehicules" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <ul class="nav navbar-nav">
+                                                <li><a href="{{ path('vehicule_add') }}"><span class="glyphicon glyphicon-plus"></span> Ajouter un véhicule</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div><!-- /.side-menu-container -->
+                    </nav>
+                </div><!-- /.side-menu -->
+            </div><!-- /.row -->
+        </div><!-- /.col-md-2 sidebar -->
+
+        <div class="col-md-10 content">
+            <div class="panel panel-default">
+                {% block admin_body %}
+                    <div class="panel-heading">
+                        Tableau de bord
+                    </div>
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                {% endblock %}
+            </div>
+        </div>
+
+
+        <footer class="pull-left footer">
+            <p class="col-md-12">
+            <hr class="divider">
+            Copyright &COPY; 2016 <a href="#">UET Système IHM Innovants</a>
+            </p>
+        </footer>
+    </div>
+
+
+
+    {% block javascripts %}
+
+        {# Ajoutez ces lignes JavaScript si vous comptez vous servir des fonctionnalités du bootstrap Twitter #}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        {% javascripts 'bundles/admin/js/simple-admin.js' filter='jsqueeze' %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+
+    {% endblock %}
+    </body>
+</html>

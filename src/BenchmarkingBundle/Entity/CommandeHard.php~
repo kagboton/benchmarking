@@ -1,0 +1,253 @@
+<?php
+
+namespace BenchmarkingBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * CommandeHard
+ *
+ * @ORM\Table(name="commandehard")
+ * @ORM\Entity(repositoryClass="BenchmarkingBundle\Repository\CommandeHardRepository")
+ */
+class CommandeHard
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="text")
+     */
+    private $description;
+
+    /**
+     * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\Image", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $image;
+
+    /**
+     * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\TypeCmdHard", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $typeCmdHard;
+
+    /**
+     * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\Localisation", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $localisation;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="BenchmarkingBundle\Entity\EcranCentral", cascade={"persist"}, inversedBy="commandesHard")
+     *
+     */
+    private $ecranCentral;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="BenchmarkingBundle\Entity\TableauDeBord", cascade={"persist"}, inversedBy="commandesSoft")
+     *
+     */
+    private $tableauDeBord;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="BenchmarkingBundle\Entity\ModuleClimatisation", cascade={"persist"}, inversedBy="commandesHard")
+     *
+     */
+    private $moduleClimatisation;
+
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     *
+     * @return CommandeHard
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     *
+     * @return CommandeHard
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set image
+     *
+     * @param \BenchmarkingBundle\Entity\Image $image
+     *
+     * @return CommandeHard
+     */
+    public function setImage(\BenchmarkingBundle\Entity\Image $image)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return \BenchmarkingBundle\Entity\Image
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * Set typeCmdHard
+     *
+     * @param \BenchmarkingBundle\Entity\TypeCmdHard $typeCmdHard
+     *
+     * @return CommandeHard
+     */
+    public function setTypeCmdHard(\BenchmarkingBundle\Entity\TypeCmdHard $typeCmdHard)
+    {
+        $this->typeCmdHard = $typeCmdHard;
+
+        return $this;
+    }
+
+    /**
+     * Get typeCmdHard
+     *
+     * @return \BenchmarkingBundle\Entity\TypeCmdHard
+     */
+    public function getTypeCmdHard()
+    {
+        return $this->typeCmdHard;
+    }
+
+    /**
+     * Set localisation
+     *
+     * @param \BenchmarkingBundle\Entity\Localisation $localisation
+     *
+     * @return CommandeHard
+     */
+    public function setLocalisation(\BenchmarkingBundle\Entity\Localisation $localisation)
+    {
+        $this->localisation = $localisation;
+
+        return $this;
+    }
+
+    /**
+     * Get localisation
+     *
+     * @return \BenchmarkingBundle\Entity\Localisation
+     */
+    public function getLocalisation()
+    {
+        return $this->localisation;
+    }
+
+    /**
+     * Set ecranCentral
+     *
+     * @param \BenchmarkingBundle\Entity\EcranCentral $ecranCentral
+     *
+     * @return CommandeHard
+     */
+    public function setEcranCentral(\BenchmarkingBundle\Entity\EcranCentral $ecranCentral = null)
+    {
+        $this->ecranCentral = $ecranCentral;
+
+        return $this;
+    }
+
+    /**
+     * Get ecranCentral
+     *
+     * @return \BenchmarkingBundle\Entity\EcranCentral
+     */
+    public function getEcranCentral()
+    {
+        return $this->ecranCentral;
+    }
+
+    /**
+     * Set moduleClimatisation
+     *
+     * @param \BenchmarkingBundle\Entity\ModuleClimatisation $moduleClimatisation
+     *
+     * @return CommandeHard
+     */
+    public function setModuleClimatisation(\BenchmarkingBundle\Entity\ModuleClimatisation $moduleClimatisation = null)
+    {
+        $this->moduleClimatisation = $moduleClimatisation;
+
+        return $this;
+    }
+
+    /**
+     * Get moduleClimatisation
+     *
+     * @return \BenchmarkingBundle\Entity\ModuleClimatisation
+     */
+    public function getModuleClimatisation()
+    {
+        return $this->moduleClimatisation;
+    }
+}

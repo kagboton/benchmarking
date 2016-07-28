@@ -1,0 +1,29 @@
+{# src/BenchmarkingBundle/Resources/view/Default/SousTechnologieAfficheur/delete.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Supprimer une sous technologie afficheur - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <h2>Supprimer une sous technologie afficheur</h2>
+
+  <p class="alert alert-danger">
+    Etes-vous certain de vouloir supprimer la sous technologie afficheur "{{ sousTechnologieAfficheur.nom }}" ?
+  </p>
+
+  {# On met l'id dans la route de l'action du formulaire #}
+  <form action="{{ path('sousTechnologieAfficheur_delete', {'id': sousTechnologieAfficheur.id}) }}" method="post">
+    <a href="{{ path('sousTechnologieAfficheur_view', {'id': sousTechnologieAfficheur.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à la sous technologie afficheur
+    </a>
+    {# Ici j'ai écrit le bouton de soumission à la main #}
+    <input type="submit" value="Supprimer" class="btn btn-danger" />
+    {# Ceci va générer le champ CSRF #}
+    {{ form_rest(form) }}
+  </form>
+
+{% endblock %}
