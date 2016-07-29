@@ -57,7 +57,7 @@ $(document).ready(function() {
 
     function addDeleteLink($prototype) {
         // Création du lien
-        var $deleteLink = $('<a href="#" class="btn btn-danger">Supprimer</a>');
+        var $deleteLink = $('<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Supprimer</a>');
 
         // Ajout du lien
         $prototype.append($deleteLink);

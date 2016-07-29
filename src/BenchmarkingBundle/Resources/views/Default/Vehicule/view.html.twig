@@ -3,7 +3,7 @@
 {% extends "::layout/layout.html.twig" %}
 
 {% block title %}
-    Mazda - {{ parent() }}
+    {{ vehicule.marque.nom }} {{ vehicule.nom }} - {{ parent() }}
 {% endblock %}
 
 {% block stylesheets %}
@@ -29,7 +29,7 @@
     {% endfor %}
 
     <div class="panel-heading">
-        <h2 class="panel-title">Mazda 3</h2>
+        <h2 class="panel-title">{{ vehicule.marque.nom }} {{ vehicule.nom }}</h2>
     </div>
 
     <div class="panel-body">

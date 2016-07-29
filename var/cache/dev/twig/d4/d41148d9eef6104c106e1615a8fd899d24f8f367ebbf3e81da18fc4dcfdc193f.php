@@ -15,8 +15,8 @@ class __TwigTemplate_d29d5405d06f4160265b4f9dabf540f5edf792974906393f66db425434f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fd34a65b8920166830b01a9f20b0470007affeb25b7637e979c7b94c32131740 = $this->env->getExtension("native_profiler");
-        $__internal_fd34a65b8920166830b01a9f20b0470007affeb25b7637e979c7b94c32131740->enter($__internal_fd34a65b8920166830b01a9f20b0470007affeb25b7637e979c7b94c32131740_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BenchmarkingBundle:Default:Vehicule/form.html.twig"));
+        $__internal_557cb7f8c1ed6152f73fa4db9c7071712c0be79fc73d683cc528cfcf1af1a6fa = $this->env->getExtension("native_profiler");
+        $__internal_557cb7f8c1ed6152f73fa4db9c7071712c0be79fc73d683cc528cfcf1af1a6fa->enter($__internal_557cb7f8c1ed6152f73fa4db9c7071712c0be79fc73d683cc528cfcf1af1a6fa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BenchmarkingBundle:Default:Vehicule/form.html.twig"));
 
         // line 2
         echo "
@@ -82,15 +82,10 @@ class __TwigTemplate_d29d5405d06f4160265b4f9dabf540f5edf792974906393f66db425434f
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "boiteVitesse", array()), 'row');
         echo "
                     </div>
+
                     <div class=\"form-group\">
                         ";
-        // line 45
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "annee", array()), 'row');
-        echo "
-                    </div>
-                    <div class=\"form-group\">
-                        ";
-        // line 48
+        // line 46
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "image", array()), 'row');
         echo "
                     </div>
@@ -104,7 +99,7 @@ class __TwigTemplate_d29d5405d06f4160265b4f9dabf540f5edf792974906393f66db425434f
 
                     <div class=\"form-group\">
                         ";
-        // line 59
+        // line 57
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "composantsAffichage", array()), 'row');
         echo "
                         <a href=\"#\" id=\"add_composantAffichage\" class=\"btn btn-default\"><span class=\"glyphicon glyphicon-plus\"></span> Ajouter un composant</a>
@@ -119,17 +114,18 @@ class __TwigTemplate_d29d5405d06f4160265b4f9dabf540f5edf792974906393f66db425434f
                 <div class=\"col-md-12\">
                     <div class=\"form-group\">
                         ";
-        // line 71
+        // line 69
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "fonctions", array()), 'row');
         echo "
                         <a href=\"#\" id=\"add_fonction\" class=\"btn btn-default\"><span class=\"glyphicon glyphicon-plus\"></span> Ajouter une fonction</a>
                     </div>
                     <button class=\"btn btn-default prevBtn btn-lg pull-left\" type=\"button\" >Précédent</button>
-                    <button class=\"btn btn-success btn-lg pull-right\" type=\"submit\">Finish!</button>
-
+                   ";
+        // line 74
+        echo "
 
                     ";
-        // line 78
+        // line 76
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
 
@@ -140,7 +136,7 @@ class __TwigTemplate_d29d5405d06f4160265b4f9dabf540f5edf792974906393f66db425434f
 </div>
 ";
         
-        $__internal_fd34a65b8920166830b01a9f20b0470007affeb25b7637e979c7b94c32131740->leave($__internal_fd34a65b8920166830b01a9f20b0470007affeb25b7637e979c7b94c32131740_prof);
+        $__internal_557cb7f8c1ed6152f73fa4db9c7071712c0be79fc73d683cc528cfcf1af1a6fa->leave($__internal_557cb7f8c1ed6152f73fa4db9c7071712c0be79fc73d683cc528cfcf1af1a6fa_prof);
 
     }
 
@@ -156,7 +152,7 @@ class __TwigTemplate_d29d5405d06f4160265b4f9dabf540f5edf792974906393f66db425434f
 
     public function getDebugInfo()
     {
-        return array (  133 => 78,  123 => 71,  108 => 59,  94 => 48,  88 => 45,  82 => 42,  76 => 39,  70 => 36,  64 => 33,  58 => 30,  52 => 27,  48 => 26,  22 => 2,);
+        return array (  129 => 76,  125 => 74,  118 => 69,  103 => 57,  89 => 46,  82 => 42,  76 => 39,  70 => 36,  64 => 33,  58 => 30,  52 => 27,  48 => 26,  22 => 2,);
     }
 }
 /* {# src/BenchmarkingBundle/Resources/views/Default/Vehicule/form.html.twig #}*/
@@ -202,9 +198,7 @@ class __TwigTemplate_d29d5405d06f4160265b4f9dabf540f5edf792974906393f66db425434f
 /*                     <div class="form-group">*/
 /*                         {{ form_row(form.boiteVitesse) }}*/
 /*                     </div>*/
-/*                     <div class="form-group">*/
-/*                         {{ form_row(form.annee) }}*/
-/*                     </div>*/
+/* */
 /*                     <div class="form-group">*/
 /*                         {{ form_row(form.image) }}*/
 /*                     </div>*/
@@ -233,7 +227,7 @@ class __TwigTemplate_d29d5405d06f4160265b4f9dabf540f5edf792974906393f66db425434f
 /*                         <a href="#" id="add_fonction" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Ajouter une fonction</a>*/
 /*                     </div>*/
 /*                     <button class="btn btn-default prevBtn btn-lg pull-left" type="button" >Précédent</button>*/
-/*                     <button class="btn btn-success btn-lg pull-right" type="submit">Finish!</button>*/
+/*                    {# <button class="btn btn-success btn-lg pull-right" type="submit">Finish!</button>#}*/
 /* */
 /* */
 /*                     {{ form_end(form) }}*/

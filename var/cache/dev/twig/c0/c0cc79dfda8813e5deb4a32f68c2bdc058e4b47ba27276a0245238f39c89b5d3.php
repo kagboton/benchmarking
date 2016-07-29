@@ -22,20 +22,20 @@ class __TwigTemplate_97bde80f44ceeb7dc4d49e8133ce45077e5f354af92c2079bc3845da866
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1af1a3385981c6c82e34e5c5ae6d34e2110338ced06e107272b8b682d9fd9447 = $this->env->getExtension("native_profiler");
-        $__internal_1af1a3385981c6c82e34e5c5ae6d34e2110338ced06e107272b8b682d9fd9447->enter($__internal_1af1a3385981c6c82e34e5c5ae6d34e2110338ced06e107272b8b682d9fd9447_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Benchmarking/Default/TypeRetourActivation/view.html.twig"));
+        $__internal_fe66a13164d54ac55826643ba43981c6e6e5cd9cbe5cc73a5b2ce3a86cef7204 = $this->env->getExtension("native_profiler");
+        $__internal_fe66a13164d54ac55826643ba43981c6e6e5cd9cbe5cc73a5b2ce3a86cef7204->enter($__internal_fe66a13164d54ac55826643ba43981c6e6e5cd9cbe5cc73a5b2ce3a86cef7204_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Benchmarking/Default/TypeRetourActivation/view.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_1af1a3385981c6c82e34e5c5ae6d34e2110338ced06e107272b8b682d9fd9447->leave($__internal_1af1a3385981c6c82e34e5c5ae6d34e2110338ced06e107272b8b682d9fd9447_prof);
+        $__internal_fe66a13164d54ac55826643ba43981c6e6e5cd9cbe5cc73a5b2ce3a86cef7204->leave($__internal_fe66a13164d54ac55826643ba43981c6e6e5cd9cbe5cc73a5b2ce3a86cef7204_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_cf95d7ab90350b10318a7ec2f8dc479799ae51368d29fce82772a357b6ba7320 = $this->env->getExtension("native_profiler");
-        $__internal_cf95d7ab90350b10318a7ec2f8dc479799ae51368d29fce82772a357b6ba7320->enter($__internal_cf95d7ab90350b10318a7ec2f8dc479799ae51368d29fce82772a357b6ba7320_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_1cc779dc207a673668cdad0c62c30aaa47e38edc37c56bccaa01d294e2884992 = $this->env->getExtension("native_profiler");
+        $__internal_1cc779dc207a673668cdad0c62c30aaa47e38edc37c56bccaa01d294e2884992->enter($__internal_1cc779dc207a673668cdad0c62c30aaa47e38edc37c56bccaa01d294e2884992_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 6
         echo "  Lecture d'un retour d'activation - ";
@@ -43,15 +43,15 @@ class __TwigTemplate_97bde80f44ceeb7dc4d49e8133ce45077e5f354af92c2079bc3845da866
         echo "
 ";
         
-        $__internal_cf95d7ab90350b10318a7ec2f8dc479799ae51368d29fce82772a357b6ba7320->leave($__internal_cf95d7ab90350b10318a7ec2f8dc479799ae51368d29fce82772a357b6ba7320_prof);
+        $__internal_1cc779dc207a673668cdad0c62c30aaa47e38edc37c56bccaa01d294e2884992->leave($__internal_1cc779dc207a673668cdad0c62c30aaa47e38edc37c56bccaa01d294e2884992_prof);
 
     }
 
     // line 9
     public function block_benchmarking_body($context, array $blocks = array())
     {
-        $__internal_c7069d053cc19c3de06b2bf0d36545493fb3b1c92ea976e7275ce1c9682f8761 = $this->env->getExtension("native_profiler");
-        $__internal_c7069d053cc19c3de06b2bf0d36545493fb3b1c92ea976e7275ce1c9682f8761->enter($__internal_c7069d053cc19c3de06b2bf0d36545493fb3b1c92ea976e7275ce1c9682f8761_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "benchmarking_body"));
+        $__internal_5aa0b4539584a09025f337a5f9861380cb4fa0e92a9d258022fbb250575d6a25 = $this->env->getExtension("native_profiler");
+        $__internal_5aa0b4539584a09025f337a5f9861380cb4fa0e92a9d258022fbb250575d6a25->enter($__internal_5aa0b4539584a09025f337a5f9861380cb4fa0e92a9d258022fbb250575d6a25_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "benchmarking_body"));
 
         // line 10
         echo "
@@ -76,41 +76,48 @@ class __TwigTemplate_97bde80f44ceeb7dc4d49e8133ce45077e5f354af92c2079bc3845da866
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 18
         echo "
-  <h2>";
-        // line 19
+    <div class=\"panel-heading\">
+        <h4 class=\"panel-title\">";
+        // line 20
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["retourActivation"]) ? $context["retourActivation"] : $this->getContext($context, "retourActivation")), "nom", array()), "html", null, true);
-        echo "</h2>
+        echo "</h4>
+    </div>
 
 
-
-    <p>
-        <a href=\"";
-        // line 24
+    <div class=\"panel-body\">
+        <p>
+            <a href=\"";
+        // line 26
         echo $this->env->getExtension('routing')->getPath("retoursActivation");
         echo "\" class=\"btn btn-default\">
-            <i class=\"glyphicon glyphicon-chevron-left\"></i>
-            Retour à la liste
-        </a>
-        <a href=\"";
-        // line 28
+                <i class=\"glyphicon glyphicon-chevron-left\"></i>
+                Retour à la liste
+            </a>
+            <a href=\"";
+        // line 30
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("retourActivation_edit", array("id" => $this->getAttribute((isset($context["retourActivation"]) ? $context["retourActivation"] : $this->getContext($context, "retourActivation")), "id", array()))), "html", null, true);
         echo "\" class=\"btn btn-default\">
-            <i class=\"glyphicon glyphicon-edit\"></i>
-            Modifier le retour d'activation
-        </a>
-        <a href=\"";
-        // line 32
+                <i class=\"glyphicon glyphicon-edit\"></i>
+                Modifier le retour d'activation
+            </a>
+            <a href=\"";
+        // line 34
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("retourActivation_delete", array("id" => $this->getAttribute((isset($context["retourActivation"]) ? $context["retourActivation"] : $this->getContext($context, "retourActivation")), "id", array()))), "html", null, true);
         echo "\" class=\"btn btn-danger\">
-            <i class=\"glyphicon glyphicon-trash\"></i>
-            Supprimer le retour d'activation
-        </a>
-    </p>
+                <i class=\"glyphicon glyphicon-trash\"></i>
+                Supprimer le retour d'activation
+            </a>
+        </p>
+
+    </div>
+
+
+
 
 
 ";
         
-        $__internal_c7069d053cc19c3de06b2bf0d36545493fb3b1c92ea976e7275ce1c9682f8761->leave($__internal_c7069d053cc19c3de06b2bf0d36545493fb3b1c92ea976e7275ce1c9682f8761_prof);
+        $__internal_5aa0b4539584a09025f337a5f9861380cb4fa0e92a9d258022fbb250575d6a25->leave($__internal_5aa0b4539584a09025f337a5f9861380cb4fa0e92a9d258022fbb250575d6a25_prof);
 
     }
 
@@ -126,7 +133,7 @@ class __TwigTemplate_97bde80f44ceeb7dc4d49e8133ce45077e5f354af92c2079bc3845da866
 
     public function getDebugInfo()
     {
-        return array (  103 => 32,  96 => 28,  89 => 24,  81 => 19,  78 => 18,  68 => 14,  64 => 12,  60 => 11,  57 => 10,  51 => 9,  41 => 6,  35 => 5,  11 => 3,);
+        return array (  105 => 34,  98 => 30,  91 => 26,  82 => 20,  78 => 18,  68 => 14,  64 => 12,  60 => 11,  57 => 10,  51 => 9,  41 => 6,  35 => 5,  11 => 3,);
     }
 }
 /* {# src/BenchmarkingBundle/Resources/view/Default/TypeRetourActivation/view.html.twig #}*/
@@ -147,24 +154,31 @@ class __TwigTemplate_97bde80f44ceeb7dc4d49e8133ce45077e5f354af92c2079bc3845da866
 /* */
 /*     {% endfor %}*/
 /* */
-/*   <h2>{{ retourActivation.nom }}</h2>*/
+/*     <div class="panel-heading">*/
+/*         <h4 class="panel-title">{{ retourActivation.nom }}</h4>*/
+/*     </div>*/
+/* */
+/* */
+/*     <div class="panel-body">*/
+/*         <p>*/
+/*             <a href="{{ path('retoursActivation') }}" class="btn btn-default">*/
+/*                 <i class="glyphicon glyphicon-chevron-left"></i>*/
+/*                 Retour à la liste*/
+/*             </a>*/
+/*             <a href="{{ path('retourActivation_edit', {'id': retourActivation.id}) }}" class="btn btn-default">*/
+/*                 <i class="glyphicon glyphicon-edit"></i>*/
+/*                 Modifier le retour d'activation*/
+/*             </a>*/
+/*             <a href="{{ path('retourActivation_delete', {'id': retourActivation.id}) }}" class="btn btn-danger">*/
+/*                 <i class="glyphicon glyphicon-trash"></i>*/
+/*                 Supprimer le retour d'activation*/
+/*             </a>*/
+/*         </p>*/
+/* */
+/*     </div>*/
 /* */
 /* */
 /* */
-/*     <p>*/
-/*         <a href="{{ path('retoursActivation') }}" class="btn btn-default">*/
-/*             <i class="glyphicon glyphicon-chevron-left"></i>*/
-/*             Retour à la liste*/
-/*         </a>*/
-/*         <a href="{{ path('retourActivation_edit', {'id': retourActivation.id}) }}" class="btn btn-default">*/
-/*             <i class="glyphicon glyphicon-edit"></i>*/
-/*             Modifier le retour d'activation*/
-/*         </a>*/
-/*         <a href="{{ path('retourActivation_delete', {'id': retourActivation.id}) }}" class="btn btn-danger">*/
-/*             <i class="glyphicon glyphicon-trash"></i>*/
-/*             Supprimer le retour d'activation*/
-/*         </a>*/
-/*     </p>*/
 /* */
 /* */
 /* {% endblock %}*/

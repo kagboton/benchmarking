@@ -42,10 +42,7 @@ class VehiculeType extends AbstractType
                 'choice_label' => 'nom'
             ))
 
-            ->add('annee', ChoiceType::class, array(
-                'required' => true,
-                'choices' => $this->buildYearChoices()
-            ))
+                        
             ->add('image', ImageType::class, array(
                 'label' => 'Photo du véhicule'
             ))

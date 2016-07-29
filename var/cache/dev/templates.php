@@ -179,6 +179,8 @@
   'BenchmarkingBundle:Default/Vehicule:add.html.twig' => 'D:\\Public\\Programmes\\wamp\\www\\benchmarking\\src\\BenchmarkingBundle/Resources/views/Default/Vehicule/add.html.twig',
   'BenchmarkingBundle:Default/Vehicule:form.html.twig' => 'D:\\Public\\Programmes\\wamp\\www\\benchmarking\\src\\BenchmarkingBundle/Resources/views/Default/Vehicule/form.html.twig',
   'BenchmarkingBundle:Default/Vehicule:index.html.twig' => 'D:\\Public\\Programmes\\wamp\\www\\benchmarking\\src\\BenchmarkingBundle/Resources/views/Default/Vehicule/index.html.twig',
+  'BenchmarkingBundle:Default/Vehicule:recherche.html.twig' => 'D:\\Public\\Programmes\\wamp\\www\\benchmarking\\src\\BenchmarkingBundle/Resources/views/Default/Vehicule/recherche.html.twig',
+  'BenchmarkingBundle:Default/Vehicule:view.html.twig' => 'D:\\Public\\Programmes\\wamp\\www\\benchmarking\\src\\BenchmarkingBundle/Resources/views/Default/Vehicule/view.html.twig',
   'PagesBundle:Default/Pages/layout:page.html.twig' => 'D:\\Public\\Programmes\\wamp\\www\\benchmarking\\src\\PagesBundle/Resources/views/Default/Pages/layout/page.html.twig',
   'PagesBundle:Default/Pages/modulesUsed:menu.html.twig' => 'D:\\Public\\Programmes\\wamp\\www\\benchmarking\\src\\PagesBundle/Resources/views/Default/Pages/modulesUsed/menu.html.twig',
   'UtilisateursBundle:Default/modulesUsed:utilisateurs.html.twig' => 'D:\\Public\\Programmes\\wamp\\www\\benchmarking\\src\\UtilisateursBundle/Resources/views/Default/modulesUsed/utilisateurs.html.twig',

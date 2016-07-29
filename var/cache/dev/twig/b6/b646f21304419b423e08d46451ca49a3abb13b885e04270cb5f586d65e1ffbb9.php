@@ -24,20 +24,20 @@ class __TwigTemplate_ac532ac5836c5e8de03727cfa6d7f31b3e42c70602031c7f764ac2e4fd5
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ce9599288b8344e6bc1a3d658012dc00fec7061e4d108aefd274e2a9f265c8d7 = $this->env->getExtension("native_profiler");
-        $__internal_ce9599288b8344e6bc1a3d658012dc00fec7061e4d108aefd274e2a9f265c8d7->enter($__internal_ce9599288b8344e6bc1a3d658012dc00fec7061e4d108aefd274e2a9f265c8d7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BenchmarkingBundle:Default:Vehicule/index.html.twig"));
+        $__internal_04b971d8ffc248607473220380b2550bbfbff4f1a23bc3f1117b6df54ec46a28 = $this->env->getExtension("native_profiler");
+        $__internal_04b971d8ffc248607473220380b2550bbfbff4f1a23bc3f1117b6df54ec46a28->enter($__internal_04b971d8ffc248607473220380b2550bbfbff4f1a23bc3f1117b6df54ec46a28_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BenchmarkingBundle:Default:Vehicule/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ce9599288b8344e6bc1a3d658012dc00fec7061e4d108aefd274e2a9f265c8d7->leave($__internal_ce9599288b8344e6bc1a3d658012dc00fec7061e4d108aefd274e2a9f265c8d7_prof);
+        $__internal_04b971d8ffc248607473220380b2550bbfbff4f1a23bc3f1117b6df54ec46a28->leave($__internal_04b971d8ffc248607473220380b2550bbfbff4f1a23bc3f1117b6df54ec46a28_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_0cd6d7ae6fbfe7a8e08900b6c24c818d1a1ec55a937bb46fcfcd134c3ca642bd = $this->env->getExtension("native_profiler");
-        $__internal_0cd6d7ae6fbfe7a8e08900b6c24c818d1a1ec55a937bb46fcfcd134c3ca642bd->enter($__internal_0cd6d7ae6fbfe7a8e08900b6c24c818d1a1ec55a937bb46fcfcd134c3ca642bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_75c00cbb17da127184f7ea7b52b6fdc79cb3f5e2498803b178a53171c3c60ae2 = $this->env->getExtension("native_profiler");
+        $__internal_75c00cbb17da127184f7ea7b52b6fdc79cb3f5e2498803b178a53171c3c60ae2->enter($__internal_75c00cbb17da127184f7ea7b52b6fdc79cb3f5e2498803b178a53171c3c60ae2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 6
         echo "    Liste des véhicules - ";
@@ -45,15 +45,15 @@ class __TwigTemplate_ac532ac5836c5e8de03727cfa6d7f31b3e42c70602031c7f764ac2e4fd5
         echo "
 ";
         
-        $__internal_0cd6d7ae6fbfe7a8e08900b6c24c818d1a1ec55a937bb46fcfcd134c3ca642bd->leave($__internal_0cd6d7ae6fbfe7a8e08900b6c24c818d1a1ec55a937bb46fcfcd134c3ca642bd_prof);
+        $__internal_75c00cbb17da127184f7ea7b52b6fdc79cb3f5e2498803b178a53171c3c60ae2->leave($__internal_75c00cbb17da127184f7ea7b52b6fdc79cb3f5e2498803b178a53171c3c60ae2_prof);
 
     }
 
     // line 9
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_ca740bbaa5e829805f0954b557d2d51fb137b5e9794d5edea05b7b40254de1f0 = $this->env->getExtension("native_profiler");
-        $__internal_ca740bbaa5e829805f0954b557d2d51fb137b5e9794d5edea05b7b40254de1f0->enter($__internal_ca740bbaa5e829805f0954b557d2d51fb137b5e9794d5edea05b7b40254de1f0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_71516c867d446703d7c2d059b3fdc9b256cc43272895a582a758e62022a5a38e = $this->env->getExtension("native_profiler");
+        $__internal_71516c867d446703d7c2d059b3fdc9b256cc43272895a582a758e62022a5a38e->enter($__internal_71516c867d446703d7c2d059b3fdc9b256cc43272895a582a758e62022a5a38e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 10
         echo "    <style type=\"text/css\">
@@ -65,15 +65,15 @@ class __TwigTemplate_ac532ac5836c5e8de03727cfa6d7f31b3e42c70602031c7f764ac2e4fd5
 
 ";
         
-        $__internal_ca740bbaa5e829805f0954b557d2d51fb137b5e9794d5edea05b7b40254de1f0->leave($__internal_ca740bbaa5e829805f0954b557d2d51fb137b5e9794d5edea05b7b40254de1f0_prof);
+        $__internal_71516c867d446703d7c2d059b3fdc9b256cc43272895a582a758e62022a5a38e->leave($__internal_71516c867d446703d7c2d059b3fdc9b256cc43272895a582a758e62022a5a38e_prof);
 
     }
 
     // line 19
     public function block_side_menu($context, array $blocks = array())
     {
-        $__internal_d4b7e4f1bb98b3ec1a528f13a7c1acd6c726c1ed74952accf58bc13cfea03359 = $this->env->getExtension("native_profiler");
-        $__internal_d4b7e4f1bb98b3ec1a528f13a7c1acd6c726c1ed74952accf58bc13cfea03359->enter($__internal_d4b7e4f1bb98b3ec1a528f13a7c1acd6c726c1ed74952accf58bc13cfea03359_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "side_menu"));
+        $__internal_a1340634178fb97dd12c604a77f591b5888b7cde21d696f5feae44ce78825b43 = $this->env->getExtension("native_profiler");
+        $__internal_a1340634178fb97dd12c604a77f591b5888b7cde21d696f5feae44ce78825b43->enter($__internal_a1340634178fb97dd12c604a77f591b5888b7cde21d696f5feae44ce78825b43_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "side_menu"));
 
         // line 20
         echo "    <div class=\"panel panel-default\">
@@ -87,15 +87,15 @@ class __TwigTemplate_ac532ac5836c5e8de03727cfa6d7f31b3e42c70602031c7f764ac2e4fd5
 
 ";
         
-        $__internal_d4b7e4f1bb98b3ec1a528f13a7c1acd6c726c1ed74952accf58bc13cfea03359->leave($__internal_d4b7e4f1bb98b3ec1a528f13a7c1acd6c726c1ed74952accf58bc13cfea03359_prof);
+        $__internal_a1340634178fb97dd12c604a77f591b5888b7cde21d696f5feae44ce78825b43->leave($__internal_a1340634178fb97dd12c604a77f591b5888b7cde21d696f5feae44ce78825b43_prof);
 
     }
 
     // line 33
     public function block_benchmarking_body($context, array $blocks = array())
     {
-        $__internal_5a3e49a30e803f5915cfa860797fc3a64fa7b6dcce3eebb992ceb5ff7b55a6db = $this->env->getExtension("native_profiler");
-        $__internal_5a3e49a30e803f5915cfa860797fc3a64fa7b6dcce3eebb992ceb5ff7b55a6db->enter($__internal_5a3e49a30e803f5915cfa860797fc3a64fa7b6dcce3eebb992ceb5ff7b55a6db_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "benchmarking_body"));
+        $__internal_912f0de18b19966fcc7ef360445728c9b776a76d053928cfd23e60cdb8fde068 = $this->env->getExtension("native_profiler");
+        $__internal_912f0de18b19966fcc7ef360445728c9b776a76d053928cfd23e60cdb8fde068->enter($__internal_912f0de18b19966fcc7ef360445728c9b776a76d053928cfd23e60cdb8fde068_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "benchmarking_body"));
 
         // line 34
         echo "
@@ -127,194 +127,96 @@ class __TwigTemplate_ac532ac5836c5e8de03727cfa6d7f31b3e42c70602031c7f764ac2e4fd5
     <div class=\"panel-body\">
         <div class=\"row\">
             <div class=\"col-md-12\">
-                <div class=\"col-sm-6 col-md-4\">
-                    <div class=\"thumbnail\" >
-                        <img src=\"";
-        // line 52
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/benchmarking/voitures/mazda3.jpg"), "html", null, true);
-        echo "\" class=\"img-responsive\">
-                        <div class=\"caption\">
-                            <div class=\"row\">
-                                <div class=\"col-md-12 col-xs-6\">
-                                    <h3>Mazda 3</h3>
+
+                ";
+        // line 51
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["listVehicules"]) ? $context["listVehicules"] : $this->getContext($context, "listVehicules")));
+        $context['_iterated'] = false;
+        foreach ($context['_seq'] as $context["_key"] => $context["vehicule"]) {
+            // line 52
+            echo "
+                    <div class=\"col-sm-6 col-md-4\">
+                        <div class=\"thumbnail panel panel-default\" >
+
+
+                            ";
+            // line 57
+            if ( !(null === $this->getAttribute($context["vehicule"], "image", array()))) {
+                // line 58
+                echo "                                <img src=\"";
+                echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl($this->getAttribute($this->getAttribute($context["vehicule"], "image", array()), "webPath", array())), "html", null, true);
+                echo "\" alt=\"";
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["vehicule"], "image", array()), "alt", array()), "html", null, true);
+                echo "\" class=\"img-responsive\">
+                            ";
+            }
+            // line 60
+            echo "
+                            <div class=\"caption\">
+                                <div class=\"row panel-heading\">
+                                    <div class=\"col-md-12 col-xs-6 \">
+                                        <h3 class=\"panel-title\">";
+            // line 64
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["vehicule"], "marque", array()), "nom", array()), "html", null, true);
+            echo " ";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["vehicule"], "nom", array()), "html", null, true);
+            echo "</h3>
+                                    </div>
                                 </div>
-                            </div>
-                            <p>Motorisation: Thermique</p>
-                            <div class=\"row\">
-                                <div class=\"col-md-6\">
-                                    <a href=\"";
-        // line 62
-        echo $this->env->getExtension('routing')->getPath("vehicule_view", array("id" => 1));
-        echo "\" class=\"btn btn-primary btn-product\"><span class=\"\"></span> Détails </a>
+
+                                <div class=\"panel-body\">
+                                    <p>Segment: ";
+            // line 69
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["vehicule"], "segment", array()), "nom", array()), "html", null, true);
+            echo "</p>
+                                    <p>Motorisation: ";
+            // line 70
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["vehicule"], "motorisation", array()), "nom", array()), "html", null, true);
+            echo "</p>
+                                    <p>Boîte à Vitesse: ";
+            // line 71
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["vehicule"], "boiteVitesse", array()), "nom", array()), "html", null, true);
+            echo "</p>
+                                    <p>Ajouté le: ";
+            // line 72
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["vehicule"], "date", array()), "d/m/Y"), "html", null, true);
+            echo "</p>
+                                    <div class=\"row\">
+                                        <div class=\"col-md-6\">
+                                            <a href=\"";
+            // line 75
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("vehicule_view", array("id" => $this->getAttribute($context["vehicule"], "id", array()))), "html", null, true);
+            echo "\" class=\"btn btn-primary btn-product\"><span class=\"\"></span> Détails </a>
+                                        </div>
+                                        <div class=\"col-md-6\">
+                                            <a href=\"#\" class=\"btn btn-success btn-product\"><span class=\"\"></span> Comparer </a></div>
+                                    </div>
                                 </div>
-                                <div class=\"col-md-6\">
-                                    <a href=\"#\" class=\"btn btn-success btn-product\"><span class=\"\"></span> Comparer </a></div>
                             </div>
 
-                            <p> </p>
                         </div>
                     </div>
-                </div>
-                <div class=\"col-sm-6 col-md-4\">
-                    <div class=\"thumbnail\" >
-                        <img src=\"";
-        // line 74
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/benchmarking/voitures/mercedes_classeC.jpg"), "html", null, true);
-        echo "\" class=\"img-responsive\">
-                        <div class=\"caption\">
-                            <div class=\"row\">
-                                <div class=\"col-md-12 col-xs-6\">
-                                    <h3>Mercedes Classe C</h3>
-                                </div>
-                            </div>
-                            <p>Motorisation: Essence</p>
-                            <div class=\"row\">
-                                <div class=\"col-md-6\">
-                                    <a class=\"btn btn-primary btn-product\"><span class=\"\"></span> Détails </a>
-                                </div>
-                                <div class=\"col-md-6\">
-                                    <a href=\"#\" class=\"btn btn-success btn-product\"><span class=\"\"></span> Comparer </a></div>
-                            </div>
 
-                            <p> </p>
-                        </div>
-                    </div>
-                </div>
-                <div class=\"col-sm-6 col-md-4\">
-                    <div class=\"thumbnail\" >
-                        <img src=\"";
-        // line 96
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/benchmarking/voitures/skoda_octavia.jpg"), "html", null, true);
-        echo "\" class=\"img-responsive\">
-                        <div class=\"caption\">
-                            <div class=\"row\">
-                                <div class=\"col-md-12 col-xs-6\">
-                                    <h3>Skoda Octavia</h3>
-                                </div>
-                            </div>
-                            <p>Motorisation: Thermique</p>
-                            <div class=\"row\">
-                                <div class=\"col-md-6\">
-                                    <a class=\"btn btn-primary btn-product\"><span class=\"\"></span> Détails </a>
-                                </div>
-                                <div class=\"col-md-6\">
-                                    <a href=\"#\" class=\"btn btn-success btn-product\"><span class=\"\"></span> Comparer </a></div>
-                            </div>
-
-                            <p> </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=\"col-sm-6 col-md-4\">
-                    <div class=\"thumbnail\" >
-                        <img src=\"";
-        // line 119
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/benchmarking/voitures/volkswagen_passat.jpg"), "html", null, true);
-        echo "\" class=\"img-responsive\">
-                        <div class=\"caption\">
-                            <div class=\"row\">
-                                <div class=\"col-md-12 col-xs-6\">
-                                    <h3>Volkswagen Passat</h3>
-                                </div>
-                            </div>
-                            <p>Motorisation: Diesel</p>
-                            <div class=\"row\">
-                                <div class=\"col-md-6\">
-                                    <a class=\"btn btn-primary btn-product\"><span class=\"\"></span> Détails </a>
-                                </div>
-                                <div class=\"col-md-6\">
-                                    <a href=\"#\" class=\"btn btn-success btn-product\"><span class=\"\"></span> Comparer </a></div>
-                            </div>
-
-                            <p> </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=\"col-sm-6 col-md-4\">
-                    <div class=\"thumbnail\" >
-                        <img src=\"";
-        // line 142
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/benchmarking/voitures/ford_focus.jpg"), "html", null, true);
-        echo "\" class=\"img-responsive\">
-                        <div class=\"caption\">
-                            <div class=\"row\">
-                                <div class=\"col-md-12 col-xs-6\">
-                                    <h3>Ford Focus</h3>
-                                </div>
-                            </div>
-                            <p>Motorisation: Thermique</p>
-                            <div class=\"row\">
-                                <div class=\"col-md-6\">
-                                    <a class=\"btn btn-primary btn-product\"><span class=\"\"></span> Détails </a>
-                                </div>
-                                <div class=\"col-md-6\">
-                                    <a href=\"#\" class=\"btn btn-success btn-product\"><span class=\"\"></span> Comparer </a></div>
-                            </div>
-
-                            <p> </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=\"col-sm-6 col-md-4\">
-                    <div class=\"thumbnail\" >
-                        <img src=\"";
-        // line 165
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/benchmarking/voitures/citroen_c4_cactus.jpg"), "html", null, true);
-        echo "\" class=\"img-responsive\">
-                        <div class=\"caption\">
-                            <div class=\"row\">
-                                <div class=\"col-md-12 col-xs-6\">
-                                    <h3>Citroën C4 Cactus</h3>
-                                </div>
-                            </div>
-                            <p>Motorisation: Thermique</p>
-                            <div class=\"row\">
-                                <div class=\"col-md-6\">
-                                    <a class=\"btn btn-primary btn-product\"><span class=\"\"></span> Détails </a>
-                                </div>
-                                <div class=\"col-md-6\">
-                                    <a href=\"#\" class=\"btn btn-success btn-product\"><span class=\"\"></span> Comparer </a></div>
-                            </div>
-
-                            <p> </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=\"col-sm-6 col-md-4\">
-                    <div class=\"thumbnail\" >
-                        <img src=\"";
-        // line 188
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/benchmarking/voitures/peugeot_301.jpg"), "html", null, true);
-        echo "\" class=\"img-responsive\">
-                        <div class=\"caption\">
-                            <div class=\"row\">
-                                <div class=\"col-md-12 col-xs-6\">
-                                    <h3>Peugeot 301</h3>
-                                </div>
-                            </div>
-                            <p>Motorisation: Thermique</p>
-                            <div class=\"row\">
-                                <div class=\"col-md-6\">
-                                    <a class=\"btn btn-primary btn-product\"><span class=\"\"></span> Détails </a>
-                                </div>
-                                <div class=\"col-md-6\">
-                                    <a href=\"#\" class=\"btn btn-success btn-product\"><span class=\"\"></span> Comparer </a></div>
-                            </div>
-
-                            <p> </p>
-                        </div>
-                    </div>
-                </div>
+                ";
+            $context['_iterated'] = true;
+        }
+        if (!$context['_iterated']) {
+            // line 87
+            echo "                    <li class=\"alert alert-info\">Aucune voiture n'a encore été ajoutée</li>
+                ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['vehicule'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 89
+        echo "
 
             </div>
 
         </div>
         <a href=\"";
-        // line 212
+        // line 94
         echo $this->env->getExtension('routing')->getPath("vehicule_add");
         echo "\" class=\"btn btn-default\">
             <i class=\"glyphicon glyphicon-plus\"></i>
@@ -324,7 +226,7 @@ class __TwigTemplate_ac532ac5836c5e8de03727cfa6d7f31b3e42c70602031c7f764ac2e4fd5
 
 ";
         
-        $__internal_5a3e49a30e803f5915cfa860797fc3a64fa7b6dcce3eebb992ceb5ff7b55a6db->leave($__internal_5a3e49a30e803f5915cfa860797fc3a64fa7b6dcce3eebb992ceb5ff7b55a6db_prof);
+        $__internal_912f0de18b19966fcc7ef360445728c9b776a76d053928cfd23e60cdb8fde068->leave($__internal_912f0de18b19966fcc7ef360445728c9b776a76d053928cfd23e60cdb8fde068_prof);
 
     }
 
@@ -340,7 +242,7 @@ class __TwigTemplate_ac532ac5836c5e8de03727cfa6d7f31b3e42c70602031c7f764ac2e4fd5
 
     public function getDebugInfo()
     {
-        return array (  318 => 212,  291 => 188,  265 => 165,  239 => 142,  213 => 119,  187 => 96,  162 => 74,  147 => 62,  134 => 52,  122 => 42,  112 => 38,  108 => 36,  104 => 35,  101 => 34,  95 => 33,  79 => 20,  73 => 19,  59 => 10,  53 => 9,  43 => 6,  37 => 5,  11 => 3,);
+        return array (  220 => 94,  213 => 89,  206 => 87,  189 => 75,  183 => 72,  179 => 71,  175 => 70,  171 => 69,  161 => 64,  155 => 60,  147 => 58,  145 => 57,  138 => 52,  133 => 51,  122 => 42,  112 => 38,  108 => 36,  104 => 35,  101 => 34,  95 => 33,  79 => 20,  73 => 19,  59 => 10,  53 => 9,  43 => 6,  37 => 5,  11 => 3,);
     }
 }
 /* {# src/BenchmarkingBundle/Resources/view/Default/Vehicule/index.html.twig #}*/
@@ -392,164 +294,46 @@ class __TwigTemplate_ac532ac5836c5e8de03727cfa6d7f31b3e42c70602031c7f764ac2e4fd5
 /*     <div class="panel-body">*/
 /*         <div class="row">*/
 /*             <div class="col-md-12">*/
-/*                 <div class="col-sm-6 col-md-4">*/
-/*                     <div class="thumbnail" >*/
-/*                         <img src="{{ asset('img/benchmarking/voitures/mazda3.jpg') }}" class="img-responsive">*/
-/*                         <div class="caption">*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-12 col-xs-6">*/
-/*                                     <h3>Mazda 3</h3>*/
+/* */
+/*                 {% for vehicule in listVehicules %}*/
+/* */
+/*                     <div class="col-sm-6 col-md-4">*/
+/*                         <div class="thumbnail panel panel-default" >*/
+/* */
+/* */
+/*                             {% if vehicule.image is not null %}*/
+/*                                 <img src="{{asset(vehicule.image.webPath)}}" alt="{{ vehicule.image.alt }}" class="img-responsive">*/
+/*                             {% endif %}*/
+/* */
+/*                             <div class="caption">*/
+/*                                 <div class="row panel-heading">*/
+/*                                     <div class="col-md-12 col-xs-6 ">*/
+/*                                         <h3 class="panel-title">{{ vehicule.marque.nom }} {{ vehicule.nom }}</h3>*/
+/*                                     </div>*/
 /*                                 </div>*/
-/*                             </div>*/
-/*                             <p>Motorisation: Thermique</p>*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a href="{{ path('vehicule_view', {'id': 1}) }}" class="btn btn-primary btn-product"><span class=""></span> Détails </a>*/
+/* */
+/*                                 <div class="panel-body">*/
+/*                                     <p>Segment: {{ vehicule.segment.nom }}</p>*/
+/*                                     <p>Motorisation: {{ vehicule.motorisation.nom }}</p>*/
+/*                                     <p>Boîte à Vitesse: {{ vehicule.boiteVitesse.nom }}</p>*/
+/*                                     <p>Ajouté le: {{ vehicule.date|date('d/m/Y') }}</p>*/
+/*                                     <div class="row">*/
+/*                                         <div class="col-md-6">*/
+/*                                             <a href="{{ path('vehicule_view', {'id': vehicule.id}) }}" class="btn btn-primary btn-product"><span class=""></span> Détails </a>*/
+/*                                         </div>*/
+/*                                         <div class="col-md-6">*/
+/*                                             <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>*/
+/*                                     </div>*/
 /*                                 </div>*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>*/
 /*                             </div>*/
 /* */
-/*                             <p> </p>*/
 /*                         </div>*/
 /*                     </div>*/
-/*                 </div>*/
-/*                 <div class="col-sm-6 col-md-4">*/
-/*                     <div class="thumbnail" >*/
-/*                         <img src="{{ asset('img/benchmarking/voitures/mercedes_classeC.jpg') }}" class="img-responsive">*/
-/*                         <div class="caption">*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-12 col-xs-6">*/
-/*                                     <h3>Mercedes Classe C</h3>*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <p>Motorisation: Essence</p>*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a class="btn btn-primary btn-product"><span class=""></span> Détails </a>*/
-/*                                 </div>*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>*/
-/*                             </div>*/
 /* */
-/*                             <p> </p>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                 </div>*/
-/*                 <div class="col-sm-6 col-md-4">*/
-/*                     <div class="thumbnail" >*/
-/*                         <img src="{{ asset('img/benchmarking/voitures/skoda_octavia.jpg') }}" class="img-responsive">*/
-/*                         <div class="caption">*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-12 col-xs-6">*/
-/*                                     <h3>Skoda Octavia</h3>*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <p>Motorisation: Thermique</p>*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a class="btn btn-primary btn-product"><span class=""></span> Détails </a>*/
-/*                                 </div>*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>*/
-/*                             </div>*/
+/*                 {% else %}*/
+/*                     <li class="alert alert-info">Aucune voiture n'a encore été ajoutée</li>*/
+/*                 {% endfor %}*/
 /* */
-/*                             <p> </p>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                 </div>*/
-/* */
-/*                 <div class="col-sm-6 col-md-4">*/
-/*                     <div class="thumbnail" >*/
-/*                         <img src="{{ asset('img/benchmarking/voitures/volkswagen_passat.jpg') }}" class="img-responsive">*/
-/*                         <div class="caption">*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-12 col-xs-6">*/
-/*                                     <h3>Volkswagen Passat</h3>*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <p>Motorisation: Diesel</p>*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a class="btn btn-primary btn-product"><span class=""></span> Détails </a>*/
-/*                                 </div>*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>*/
-/*                             </div>*/
-/* */
-/*                             <p> </p>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                 </div>*/
-/* */
-/*                 <div class="col-sm-6 col-md-4">*/
-/*                     <div class="thumbnail" >*/
-/*                         <img src="{{ asset('img/benchmarking/voitures/ford_focus.jpg') }}" class="img-responsive">*/
-/*                         <div class="caption">*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-12 col-xs-6">*/
-/*                                     <h3>Ford Focus</h3>*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <p>Motorisation: Thermique</p>*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a class="btn btn-primary btn-product"><span class=""></span> Détails </a>*/
-/*                                 </div>*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>*/
-/*                             </div>*/
-/* */
-/*                             <p> </p>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                 </div>*/
-/* */
-/*                 <div class="col-sm-6 col-md-4">*/
-/*                     <div class="thumbnail" >*/
-/*                         <img src="{{ asset('img/benchmarking/voitures/citroen_c4_cactus.jpg') }}" class="img-responsive">*/
-/*                         <div class="caption">*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-12 col-xs-6">*/
-/*                                     <h3>Citroën C4 Cactus</h3>*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <p>Motorisation: Thermique</p>*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a class="btn btn-primary btn-product"><span class=""></span> Détails </a>*/
-/*                                 </div>*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>*/
-/*                             </div>*/
-/* */
-/*                             <p> </p>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                 </div>*/
-/* */
-/*                 <div class="col-sm-6 col-md-4">*/
-/*                     <div class="thumbnail" >*/
-/*                         <img src="{{ asset('img/benchmarking/voitures/peugeot_301.jpg') }}" class="img-responsive">*/
-/*                         <div class="caption">*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-12 col-xs-6">*/
-/*                                     <h3>Peugeot 301</h3>*/
-/*                                 </div>*/
-/*                             </div>*/
-/*                             <p>Motorisation: Thermique</p>*/
-/*                             <div class="row">*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a class="btn btn-primary btn-product"><span class=""></span> Détails </a>*/
-/*                                 </div>*/
-/*                                 <div class="col-md-6">*/
-/*                                     <a href="#" class="btn btn-success btn-product"><span class=""></span> Comparer </a></div>*/
-/*                             </div>*/
-/* */
-/*                             <p> </p>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                 </div>*/
 /* */
 /*             </div>*/
 /* */

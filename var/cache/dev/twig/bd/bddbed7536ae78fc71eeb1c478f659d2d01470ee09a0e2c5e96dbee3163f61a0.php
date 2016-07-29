@@ -23,36 +23,40 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_914f9e44604cbc78e9a850b46ec0f4621d0c59613647cefbd96328cc688eacb9 = $this->env->getExtension("native_profiler");
-        $__internal_914f9e44604cbc78e9a850b46ec0f4621d0c59613647cefbd96328cc688eacb9->enter($__internal_914f9e44604cbc78e9a850b46ec0f4621d0c59613647cefbd96328cc688eacb9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BenchmarkingBundle:Default:Vehicule/view.html.twig"));
+        $__internal_991925061398b3239b38d79da5d4fe48159db1ea5d862379dddc582658588eb8 = $this->env->getExtension("native_profiler");
+        $__internal_991925061398b3239b38d79da5d4fe48159db1ea5d862379dddc582658588eb8->enter($__internal_991925061398b3239b38d79da5d4fe48159db1ea5d862379dddc582658588eb8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BenchmarkingBundle:Default:Vehicule/view.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_914f9e44604cbc78e9a850b46ec0f4621d0c59613647cefbd96328cc688eacb9->leave($__internal_914f9e44604cbc78e9a850b46ec0f4621d0c59613647cefbd96328cc688eacb9_prof);
+        $__internal_991925061398b3239b38d79da5d4fe48159db1ea5d862379dddc582658588eb8->leave($__internal_991925061398b3239b38d79da5d4fe48159db1ea5d862379dddc582658588eb8_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_2194d4eada6d70258c2390e7a8baa0445c860970a72694aa2fa435f66e4b96dd = $this->env->getExtension("native_profiler");
-        $__internal_2194d4eada6d70258c2390e7a8baa0445c860970a72694aa2fa435f66e4b96dd->enter($__internal_2194d4eada6d70258c2390e7a8baa0445c860970a72694aa2fa435f66e4b96dd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_42e7d6d452a95345cfb4fdbe1e79881cee1b61305c112cc27cfd12aa5a1f609f = $this->env->getExtension("native_profiler");
+        $__internal_42e7d6d452a95345cfb4fdbe1e79881cee1b61305c112cc27cfd12aa5a1f609f->enter($__internal_42e7d6d452a95345cfb4fdbe1e79881cee1b61305c112cc27cfd12aa5a1f609f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 6
-        echo "    Mazda - ";
+        echo "    ";
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "marque", array()), "nom", array()), "html", null, true);
+        echo " ";
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "nom", array()), "html", null, true);
+        echo " - ";
         $this->displayParentBlock("title", $context, $blocks);
         echo "
 ";
         
-        $__internal_2194d4eada6d70258c2390e7a8baa0445c860970a72694aa2fa435f66e4b96dd->leave($__internal_2194d4eada6d70258c2390e7a8baa0445c860970a72694aa2fa435f66e4b96dd_prof);
+        $__internal_42e7d6d452a95345cfb4fdbe1e79881cee1b61305c112cc27cfd12aa5a1f609f->leave($__internal_42e7d6d452a95345cfb4fdbe1e79881cee1b61305c112cc27cfd12aa5a1f609f_prof);
 
     }
 
     // line 9
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_5c5f408290f8d3286d21d2ab50215a517bab01dfec25d5be5183977b4644cfff = $this->env->getExtension("native_profiler");
-        $__internal_5c5f408290f8d3286d21d2ab50215a517bab01dfec25d5be5183977b4644cfff->enter($__internal_5c5f408290f8d3286d21d2ab50215a517bab01dfec25d5be5183977b4644cfff_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_794c29dbf5e26a76eb89f09039baeae429289a4a2392ad13d1926b2ca135699c = $this->env->getExtension("native_profiler");
+        $__internal_794c29dbf5e26a76eb89f09039baeae429289a4a2392ad13d1926b2ca135699c->enter($__internal_794c29dbf5e26a76eb89f09039baeae429289a4a2392ad13d1926b2ca135699c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 10
         echo "    <style type=\"text/css\">
@@ -64,15 +68,15 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 
 ";
         
-        $__internal_5c5f408290f8d3286d21d2ab50215a517bab01dfec25d5be5183977b4644cfff->leave($__internal_5c5f408290f8d3286d21d2ab50215a517bab01dfec25d5be5183977b4644cfff_prof);
+        $__internal_794c29dbf5e26a76eb89f09039baeae429289a4a2392ad13d1926b2ca135699c->leave($__internal_794c29dbf5e26a76eb89f09039baeae429289a4a2392ad13d1926b2ca135699c_prof);
 
     }
 
     // line 21
     public function block_benchmarking_body($context, array $blocks = array())
     {
-        $__internal_427771d8cf9f35a34b78d24a4e732ee9a7850a0536a7ce1727e3047564f081ad = $this->env->getExtension("native_profiler");
-        $__internal_427771d8cf9f35a34b78d24a4e732ee9a7850a0536a7ce1727e3047564f081ad->enter($__internal_427771d8cf9f35a34b78d24a4e732ee9a7850a0536a7ce1727e3047564f081ad_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "benchmarking_body"));
+        $__internal_f6c6f18b0e144dda4b70a7e8e4ff274e2937540a20220401270d0acde08595c9 = $this->env->getExtension("native_profiler");
+        $__internal_f6c6f18b0e144dda4b70a7e8e4ff274e2937540a20220401270d0acde08595c9->enter($__internal_f6c6f18b0e144dda4b70a7e8e4ff274e2937540a20220401270d0acde08595c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "benchmarking_body"));
 
         // line 22
         echo "
@@ -98,7 +102,12 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
         // line 30
         echo "
     <div class=\"panel-heading\">
-        <h2 class=\"panel-title\">Mazda 3</h2>
+        <h2 class=\"panel-title\">";
+        // line 32
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "marque", array()), "nom", array()), "html", null, true);
+        echo " ";
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "nom", array()), "html", null, true);
+        echo "</h2>
     </div>
 
     <div class=\"panel-body\">
@@ -336,7 +345,7 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 
 ";
         
-        $__internal_427771d8cf9f35a34b78d24a4e732ee9a7850a0536a7ce1727e3047564f081ad->leave($__internal_427771d8cf9f35a34b78d24a4e732ee9a7850a0536a7ce1727e3047564f081ad_prof);
+        $__internal_f6c6f18b0e144dda4b70a7e8e4ff274e2937540a20220401270d0acde08595c9->leave($__internal_f6c6f18b0e144dda4b70a7e8e4ff274e2937540a20220401270d0acde08595c9_prof);
 
     }
 
@@ -352,7 +361,7 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 
     public function getDebugInfo()
     {
-        return array (  227 => 153,  113 => 42,  99 => 30,  89 => 26,  85 => 24,  81 => 23,  78 => 22,  72 => 21,  58 => 10,  52 => 9,  42 => 6,  36 => 5,  11 => 3,);
+        return array (  236 => 153,  122 => 42,  107 => 32,  103 => 30,  93 => 26,  89 => 24,  85 => 23,  82 => 22,  76 => 21,  62 => 10,  56 => 9,  42 => 6,  36 => 5,  11 => 3,);
     }
 }
 /* {# src/BenchmarkingBundle/Resources/view/Default/Vehicule/index.html.twig #}*/
@@ -360,7 +369,7 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 /* {% extends "::layout/layout.html.twig" %}*/
 /* */
 /* {% block title %}*/
-/*     Mazda - {{ parent() }}*/
+/*     {{ vehicule.marque.nom }} {{ vehicule.nom }} - {{ parent() }}*/
 /* {% endblock %}*/
 /* */
 /* {% block stylesheets %}*/
@@ -386,7 +395,7 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 /*     {% endfor %}*/
 /* */
 /*     <div class="panel-heading">*/
-/*         <h2 class="panel-title">Mazda 3</h2>*/
+/*         <h2 class="panel-title">{{ vehicule.marque.nom }} {{ vehicule.nom }}</h2>*/
 /*     </div>*/
 /* */
 /*     <div class="panel-body">*/

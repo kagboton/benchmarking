@@ -19,8 +19,8 @@ class __TwigTemplate_df63061b4a9f3c0b532d9510a8ca28d16f0eac478f24e6aed83ec472ec1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f9f1d61daf1acf3e1975dcea9127b0853f5c2e2548054cc9df89f200f4f7fb77 = $this->env->getExtension("native_profiler");
-        $__internal_f9f1d61daf1acf3e1975dcea9127b0853f5c2e2548054cc9df89f200f4f7fb77->enter($__internal_f9f1d61daf1acf3e1975dcea9127b0853f5c2e2548054cc9df89f200f4f7fb77_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Admin/layout.html.twig"));
+        $__internal_d3c9036819683b78b12861a2edd5fd70b5aef953897cf67bf9729801cf2a4e54 = $this->env->getExtension("native_profiler");
+        $__internal_d3c9036819683b78b12861a2edd5fd70b5aef953897cf67bf9729801cf2a4e54->enter($__internal_d3c9036819683b78b12861a2edd5fd70b5aef953897cf67bf9729801cf2a4e54_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Admin/layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -104,7 +104,7 @@ class __TwigTemplate_df63061b4a9f3c0b532d9510a8ca28d16f0eac478f24e6aed83ec472ec1
                 <ul class=\"nav navbar-nav navbar-right\">
                     <li><a href=\"";
         // line 51
-        echo $this->env->getExtension('routing')->getPath("recherche");
+        echo $this->env->getExtension('routing')->getPath("benchmarking_homepage");
         echo "\" target=\"_blank\">Benchmarking</a></li>
                     ";
         // line 52
@@ -182,12 +182,30 @@ class __TwigTemplate_df63061b4a9f3c0b532d9510a8ca28d16f0eac478f24e6aed83ec472ec1
                                     <div id=\"affichages\" class=\"panel-collapse collapse\">
                                         <div class=\"panel-body\">
                                             <ul class=\"nav navbar-nav\">
-                                                <li><a href=\"#\">Afficheurs</a></li>
-                                                <li><a href=\"#\">Technologies Affichage</a></li>
-                                                <li><a href=\"#\">Sous Technologies Affichage</a></li>
-                                                <li><a href=\"#\">Type Tableau de bord</a></li>
-                                                <li><a href=\"#\">Format écran</a></li>
-                                                <li><a href=\"#\">Type Retour Activation</a></li>
+                                                <li><a href=\"";
+        // line 100
+        echo $this->env->getExtension('routing')->getPath("afficheurs");
+        echo "\">Afficheurs</a></li>
+                                                <li><a href=\"";
+        // line 101
+        echo $this->env->getExtension('routing')->getPath("technologiesAfficheur");
+        echo "\">Technologies Afficheur</a></li>
+                                                <li><a href=\"";
+        // line 102
+        echo $this->env->getExtension('routing')->getPath("sousTechnologiesAfficheur");
+        echo "\">Sous Technologies Afficheur</a></li>
+                                                <li><a href=\"";
+        // line 103
+        echo $this->env->getExtension('routing')->getPath("typesTdB");
+        echo "\">Type Tableau de bord</a></li>
+                                                <li><a href=\"";
+        // line 104
+        echo $this->env->getExtension('routing')->getPath("formatsEcran");
+        echo "\">Format écran</a></li>
+                                                <li><a href=\"";
+        // line 105
+        echo $this->env->getExtension('routing')->getPath("retoursActivation");
+        echo "\">Type Retour Activation</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -287,40 +305,40 @@ class __TwigTemplate_df63061b4a9f3c0b532d9510a8ca28d16f0eac478f24e6aed83ec472ec1
         echo "    </body>
 </html>";
         
-        $__internal_f9f1d61daf1acf3e1975dcea9127b0853f5c2e2548054cc9df89f200f4f7fb77->leave($__internal_f9f1d61daf1acf3e1975dcea9127b0853f5c2e2548054cc9df89f200f4f7fb77_prof);
+        $__internal_d3c9036819683b78b12861a2edd5fd70b5aef953897cf67bf9729801cf2a4e54->leave($__internal_d3c9036819683b78b12861a2edd5fd70b5aef953897cf67bf9729801cf2a4e54_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_4c3e53edb99cf2f80ffc4b93648f6b675c38fe7df105dec448ee942514b6930b = $this->env->getExtension("native_profiler");
-        $__internal_4c3e53edb99cf2f80ffc4b93648f6b675c38fe7df105dec448ee942514b6930b->enter($__internal_4c3e53edb99cf2f80ffc4b93648f6b675c38fe7df105dec448ee942514b6930b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_9de0a8486421f028dea1d6fddec37a601f29ff467b966a872a8376bbb81c0796 = $this->env->getExtension("native_profiler");
+        $__internal_9de0a8486421f028dea1d6fddec37a601f29ff467b966a872a8376bbb81c0796->enter($__internal_9de0a8486421f028dea1d6fddec37a601f29ff467b966a872a8376bbb81c0796_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo " Benchmarking - Administration ";
         
-        $__internal_4c3e53edb99cf2f80ffc4b93648f6b675c38fe7df105dec448ee942514b6930b->leave($__internal_4c3e53edb99cf2f80ffc4b93648f6b675c38fe7df105dec448ee942514b6930b_prof);
+        $__internal_9de0a8486421f028dea1d6fddec37a601f29ff467b966a872a8376bbb81c0796->leave($__internal_9de0a8486421f028dea1d6fddec37a601f29ff467b966a872a8376bbb81c0796_prof);
 
     }
 
     // line 18
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_0c8a375ace16ba0aa1276fe19617ffe7ffeb8c8227b3f4e67819c2bace1c6bb9 = $this->env->getExtension("native_profiler");
-        $__internal_0c8a375ace16ba0aa1276fe19617ffe7ffeb8c8227b3f4e67819c2bace1c6bb9->enter($__internal_0c8a375ace16ba0aa1276fe19617ffe7ffeb8c8227b3f4e67819c2bace1c6bb9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_7428fbb380ca750bce53f874d9763eaeaf691e717f12df77e0ee150be548bae9 = $this->env->getExtension("native_profiler");
+        $__internal_7428fbb380ca750bce53f874d9763eaeaf691e717f12df77e0ee150be548bae9->enter($__internal_7428fbb380ca750bce53f874d9763eaeaf691e717f12df77e0ee150be548bae9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 19
         echo "        ";
         
-        $__internal_0c8a375ace16ba0aa1276fe19617ffe7ffeb8c8227b3f4e67819c2bace1c6bb9->leave($__internal_0c8a375ace16ba0aa1276fe19617ffe7ffeb8c8227b3f4e67819c2bace1c6bb9_prof);
+        $__internal_7428fbb380ca750bce53f874d9763eaeaf691e717f12df77e0ee150be548bae9->leave($__internal_7428fbb380ca750bce53f874d9763eaeaf691e717f12df77e0ee150be548bae9_prof);
 
     }
 
     // line 165
     public function block_admin_body($context, array $blocks = array())
     {
-        $__internal_1f31f8574de9172dd13f7b727f072a56ec965c7f46aa3e90ba90b2944868a49c = $this->env->getExtension("native_profiler");
-        $__internal_1f31f8574de9172dd13f7b727f072a56ec965c7f46aa3e90ba90b2944868a49c->enter($__internal_1f31f8574de9172dd13f7b727f072a56ec965c7f46aa3e90ba90b2944868a49c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "admin_body"));
+        $__internal_ff3726fdd1c1f72a6deb453227329708a68ba4fecff610f936d2b9a399bbddc0 = $this->env->getExtension("native_profiler");
+        $__internal_ff3726fdd1c1f72a6deb453227329708a68ba4fecff610f936d2b9a399bbddc0->enter($__internal_ff3726fdd1c1f72a6deb453227329708a68ba4fecff610f936d2b9a399bbddc0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "admin_body"));
 
         // line 166
         echo "                    <div class=\"panel-heading\">
@@ -336,15 +354,15 @@ class __TwigTemplate_df63061b4a9f3c0b532d9510a8ca28d16f0eac478f24e6aed83ec472ec1
                     </div>
                 ";
         
-        $__internal_1f31f8574de9172dd13f7b727f072a56ec965c7f46aa3e90ba90b2944868a49c->leave($__internal_1f31f8574de9172dd13f7b727f072a56ec965c7f46aa3e90ba90b2944868a49c_prof);
+        $__internal_ff3726fdd1c1f72a6deb453227329708a68ba4fecff610f936d2b9a399bbddc0->leave($__internal_ff3726fdd1c1f72a6deb453227329708a68ba4fecff610f936d2b9a399bbddc0_prof);
 
     }
 
     // line 192
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_bb3aabf17f7763637cec03c125b13571a5b57972fd81cf80e97c6e4d36cdae39 = $this->env->getExtension("native_profiler");
-        $__internal_bb3aabf17f7763637cec03c125b13571a5b57972fd81cf80e97c6e4d36cdae39->enter($__internal_bb3aabf17f7763637cec03c125b13571a5b57972fd81cf80e97c6e4d36cdae39_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_b713c58ce424a526059a6be12c03b114027fce8cb9d50c08de0504f08fd80eb9 = $this->env->getExtension("native_profiler");
+        $__internal_b713c58ce424a526059a6be12c03b114027fce8cb9d50c08de0504f08fd80eb9->enter($__internal_b713c58ce424a526059a6be12c03b114027fce8cb9d50c08de0504f08fd80eb9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 193
         echo "
@@ -376,7 +394,7 @@ class __TwigTemplate_df63061b4a9f3c0b532d9510a8ca28d16f0eac478f24e6aed83ec472ec1
         echo "
     ";
         
-        $__internal_bb3aabf17f7763637cec03c125b13571a5b57972fd81cf80e97c6e4d36cdae39->leave($__internal_bb3aabf17f7763637cec03c125b13571a5b57972fd81cf80e97c6e4d36cdae39_prof);
+        $__internal_b713c58ce424a526059a6be12c03b114027fce8cb9d50c08de0504f08fd80eb9->leave($__internal_b713c58ce424a526059a6be12c03b114027fce8cb9d50c08de0504f08fd80eb9_prof);
 
     }
 
@@ -392,7 +410,7 @@ class __TwigTemplate_df63061b4a9f3c0b532d9510a8ca28d16f0eac478f24e6aed83ec472ec1
 
     public function getDebugInfo()
     {
-        return array (  376 => 201,  362 => 199,  358 => 198,  353 => 195,  350 => 193,  344 => 192,  326 => 166,  320 => 165,  313 => 19,  307 => 18,  295 => 5,  287 => 203,  285 => 192,  269 => 178,  267 => 165,  248 => 149,  232 => 136,  228 => 135,  224 => 134,  220 => 133,  171 => 87,  167 => 86,  156 => 78,  138 => 62,  131 => 58,  127 => 57,  123 => 56,  116 => 54,  113 => 53,  111 => 52,  107 => 51,  90 => 37,  71 => 20,  69 => 18,  64 => 16,  60 => 14,  46 => 12,  42 => 11,  37 => 8,  32 => 5,  26 => 1,);
+        return array (  394 => 201,  380 => 199,  376 => 198,  371 => 195,  368 => 193,  362 => 192,  344 => 166,  338 => 165,  331 => 19,  325 => 18,  313 => 5,  305 => 203,  303 => 192,  287 => 178,  285 => 165,  266 => 149,  250 => 136,  246 => 135,  242 => 134,  238 => 133,  207 => 105,  203 => 104,  199 => 103,  195 => 102,  191 => 101,  187 => 100,  171 => 87,  167 => 86,  156 => 78,  138 => 62,  131 => 58,  127 => 57,  123 => 56,  116 => 54,  113 => 53,  111 => 52,  107 => 51,  90 => 37,  71 => 20,  69 => 18,  64 => 16,  60 => 14,  46 => 12,  42 => 11,  37 => 8,  32 => 5,  26 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -445,7 +463,7 @@ class __TwigTemplate_df63061b4a9f3c0b532d9510a8ca28d16f0eac478f24e6aed83ec472ec1
 /*                     <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>*/
 /*                 </form>*/
 /*                 <ul class="nav navbar-nav navbar-right">*/
-/*                     <li><a href="{{ path('recherche') }}" target="_blank">Benchmarking</a></li>*/
+/*                     <li><a href="{{ path('benchmarking_homepage') }}" target="_blank">Benchmarking</a></li>*/
 /*                     {% if is_granted('ROLE_ADMIN') %}*/
 /*                         <li class="dropdown">*/
 /*                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> {{ app.user.prenom }} {{ app.user.nom }} <span class="caret"></span></a>*/
@@ -494,12 +512,12 @@ class __TwigTemplate_df63061b4a9f3c0b532d9510a8ca28d16f0eac478f24e6aed83ec472ec1
 /*                                     <div id="affichages" class="panel-collapse collapse">*/
 /*                                         <div class="panel-body">*/
 /*                                             <ul class="nav navbar-nav">*/
-/*                                                 <li><a href="#">Afficheurs</a></li>*/
-/*                                                 <li><a href="#">Technologies Affichage</a></li>*/
-/*                                                 <li><a href="#">Sous Technologies Affichage</a></li>*/
-/*                                                 <li><a href="#">Type Tableau de bord</a></li>*/
-/*                                                 <li><a href="#">Format écran</a></li>*/
-/*                                                 <li><a href="#">Type Retour Activation</a></li>*/
+/*                                                 <li><a href="{{ path('afficheurs') }}">Afficheurs</a></li>*/
+/*                                                 <li><a href="{{ path('technologiesAfficheur') }}">Technologies Afficheur</a></li>*/
+/*                                                 <li><a href="{{ path('sousTechnologiesAfficheur') }}">Sous Technologies Afficheur</a></li>*/
+/*                                                 <li><a href="{{ path('typesTdB') }}">Type Tableau de bord</a></li>*/
+/*                                                 <li><a href="{{ path('formatsEcran') }}">Format écran</a></li>*/
+/*                                                 <li><a href="{{ path('retoursActivation') }}">Type Retour Activation</a></li>*/
 /*                                             </ul>*/
 /*                                         </div>*/
 /*                                     </div>*/

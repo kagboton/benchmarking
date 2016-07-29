@@ -22,20 +22,20 @@ class __TwigTemplate_433f4e975e82c7c7cb339f7e634a733ae8dfa6829a235e5dece50f585bc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_040f41881fe7919b0b47ca183addbd6b47f807c66814a00fd0ce6098811be5d6 = $this->env->getExtension("native_profiler");
-        $__internal_040f41881fe7919b0b47ca183addbd6b47f807c66814a00fd0ce6098811be5d6->enter($__internal_040f41881fe7919b0b47ca183addbd6b47f807c66814a00fd0ce6098811be5d6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Benchmarking/Default/TypeRetourActivation/index.html.twig"));
+        $__internal_767043cd635bb9cbdf1fcded3f117b48500c8c1a37a1d1125d5013bfd51b59ff = $this->env->getExtension("native_profiler");
+        $__internal_767043cd635bb9cbdf1fcded3f117b48500c8c1a37a1d1125d5013bfd51b59ff->enter($__internal_767043cd635bb9cbdf1fcded3f117b48500c8c1a37a1d1125d5013bfd51b59ff_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Benchmarking/Default/TypeRetourActivation/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_040f41881fe7919b0b47ca183addbd6b47f807c66814a00fd0ce6098811be5d6->leave($__internal_040f41881fe7919b0b47ca183addbd6b47f807c66814a00fd0ce6098811be5d6_prof);
+        $__internal_767043cd635bb9cbdf1fcded3f117b48500c8c1a37a1d1125d5013bfd51b59ff->leave($__internal_767043cd635bb9cbdf1fcded3f117b48500c8c1a37a1d1125d5013bfd51b59ff_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_bfe5e81e5e81db6b77738b87ff4331eb70ea703dc85896ceca55ca312c394b82 = $this->env->getExtension("native_profiler");
-        $__internal_bfe5e81e5e81db6b77738b87ff4331eb70ea703dc85896ceca55ca312c394b82->enter($__internal_bfe5e81e5e81db6b77738b87ff4331eb70ea703dc85896ceca55ca312c394b82_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_92b1bc1dde3ebdf2a663e41d8dee39781da405062a7cf272070a60445dc38040 = $this->env->getExtension("native_profiler");
+        $__internal_92b1bc1dde3ebdf2a663e41d8dee39781da405062a7cf272070a60445dc38040->enter($__internal_92b1bc1dde3ebdf2a663e41d8dee39781da405062a7cf272070a60445dc38040_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 6
         echo "  Retour Activation - ";
@@ -43,15 +43,15 @@ class __TwigTemplate_433f4e975e82c7c7cb339f7e634a733ae8dfa6829a235e5dece50f585bc
         echo "
 ";
         
-        $__internal_bfe5e81e5e81db6b77738b87ff4331eb70ea703dc85896ceca55ca312c394b82->leave($__internal_bfe5e81e5e81db6b77738b87ff4331eb70ea703dc85896ceca55ca312c394b82_prof);
+        $__internal_92b1bc1dde3ebdf2a663e41d8dee39781da405062a7cf272070a60445dc38040->leave($__internal_92b1bc1dde3ebdf2a663e41d8dee39781da405062a7cf272070a60445dc38040_prof);
 
     }
 
     // line 9
     public function block_benchmarking_body($context, array $blocks = array())
     {
-        $__internal_23133d520520a9d285b8c1cbe3a425881673589b7e5f19f6ec196e5f7fd5c882 = $this->env->getExtension("native_profiler");
-        $__internal_23133d520520a9d285b8c1cbe3a425881673589b7e5f19f6ec196e5f7fd5c882->enter($__internal_23133d520520a9d285b8c1cbe3a425881673589b7e5f19f6ec196e5f7fd5c882_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "benchmarking_body"));
+        $__internal_5cfa93be71e1b1a7208b374db323bd9f86488bf1fdf65556a8800b8dd4f7de81 = $this->env->getExtension("native_profiler");
+        $__internal_5cfa93be71e1b1a7208b374db323bd9f86488bf1fdf65556a8800b8dd4f7de81->enter($__internal_5cfa93be71e1b1a7208b374db323bd9f86488bf1fdf65556a8800b8dd4f7de81_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "benchmarking_body"));
 
         // line 10
         echo "
@@ -76,53 +76,59 @@ class __TwigTemplate_433f4e975e82c7c7cb339f7e634a733ae8dfa6829a235e5dece50f585bc
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 18
         echo "
-  <h2>Liste des retours d'activation</h2>
+  <div class=\"panel-heading\">
+    <h4 class=\"panel-title\">Liste des retours d'activation</h4>
 
-  <ul>
+  </div>
 
-    ";
-        // line 23
+  <div class=\"panel-body\">
+    <ul>
+
+      ";
+        // line 27
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["listRetoursActivation"]) ? $context["listRetoursActivation"] : $this->getContext($context, "listRetoursActivation")));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["retourActivation"]) {
-            // line 24
-            echo "      <li>
-        <a href=\"";
-            // line 25
+            // line 28
+            echo "        <li>
+          <a href=\"";
+            // line 29
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("retourActivation_view", array("id" => $this->getAttribute($context["retourActivation"], "id", array()))), "html", null, true);
             echo "\">
-          ";
-            // line 26
+            ";
+            // line 30
             echo twig_escape_filter($this->env, $this->getAttribute($context["retourActivation"], "nom", array()), "html", null, true);
             echo "
-        </a>
-      </li>
-    ";
+          </a>
+        </li>
+      ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 30
-            echo "      <li>Pas (encore !) de retour d'activation</li>
-    ";
+            // line 34
+            echo "        <li>Pas (encore !) de retour d'activation</li>
+      ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['retourActivation'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 32
-        echo "  </ul>
+        // line 36
+        echo "    </ul>
 
-  <a href=\"";
-        // line 34
+    <a href=\"";
+        // line 38
         echo $this->env->getExtension('routing')->getPath("retourActivation_add");
         echo "\" class=\"btn btn-default\">
-    <i class=\"glyphicon glyphicon-chevron-left\"></i>
-    Ajouter un retour d'activation
-  </a>
+      <i class=\"glyphicon glyphicon-plus\"></i>
+      Ajouter un retour d'activation
+    </a>
+  </div>
+
 
 ";
         
-        $__internal_23133d520520a9d285b8c1cbe3a425881673589b7e5f19f6ec196e5f7fd5c882->leave($__internal_23133d520520a9d285b8c1cbe3a425881673589b7e5f19f6ec196e5f7fd5c882_prof);
+        $__internal_5cfa93be71e1b1a7208b374db323bd9f86488bf1fdf65556a8800b8dd4f7de81->leave($__internal_5cfa93be71e1b1a7208b374db323bd9f86488bf1fdf65556a8800b8dd4f7de81_prof);
 
     }
 
@@ -138,7 +144,7 @@ class __TwigTemplate_433f4e975e82c7c7cb339f7e634a733ae8dfa6829a235e5dece50f585bc
 
     public function getDebugInfo()
     {
-        return array (  117 => 34,  113 => 32,  106 => 30,  97 => 26,  93 => 25,  90 => 24,  85 => 23,  78 => 18,  68 => 14,  64 => 12,  60 => 11,  57 => 10,  51 => 9,  41 => 6,  35 => 5,  11 => 3,);
+        return array (  121 => 38,  117 => 36,  110 => 34,  101 => 30,  97 => 29,  94 => 28,  89 => 27,  78 => 18,  68 => 14,  64 => 12,  60 => 11,  57 => 10,  51 => 9,  41 => 6,  35 => 5,  11 => 3,);
     }
 }
 /* {# src/BenchmarkingBundle/Resources/view/Default/TypeRetourActivation/index.html.twig #}*/
@@ -159,25 +165,31 @@ class __TwigTemplate_433f4e975e82c7c7cb339f7e634a733ae8dfa6829a235e5dece50f585bc
 /* */
 /*   {% endfor %}*/
 /* */
-/*   <h2>Liste des retours d'activation</h2>*/
+/*   <div class="panel-heading">*/
+/*     <h4 class="panel-title">Liste des retours d'activation</h4>*/
 /* */
-/*   <ul>*/
+/*   </div>*/
 /* */
-/*     {% for retourActivation in listRetoursActivation %}*/
-/*       <li>*/
-/*         <a href="{{ path('retourActivation_view', {'id': retourActivation.id}) }}">*/
-/*           {{ retourActivation.nom }}*/
-/*         </a>*/
-/*       </li>*/
-/*     {% else %}*/
-/*       <li>Pas (encore !) de retour d'activation</li>*/
-/*     {% endfor %}*/
-/*   </ul>*/
+/*   <div class="panel-body">*/
+/*     <ul>*/
 /* */
-/*   <a href="{{ path('retourActivation_add') }}" class="btn btn-default">*/
-/*     <i class="glyphicon glyphicon-chevron-left"></i>*/
-/*     Ajouter un retour d'activation*/
-/*   </a>*/
+/*       {% for retourActivation in listRetoursActivation %}*/
+/*         <li>*/
+/*           <a href="{{ path('retourActivation_view', {'id': retourActivation.id}) }}">*/
+/*             {{ retourActivation.nom }}*/
+/*           </a>*/
+/*         </li>*/
+/*       {% else %}*/
+/*         <li>Pas (encore !) de retour d'activation</li>*/
+/*       {% endfor %}*/
+/*     </ul>*/
+/* */
+/*     <a href="{{ path('retourActivation_add') }}" class="btn btn-default">*/
+/*       <i class="glyphicon glyphicon-plus"></i>*/
+/*       Ajouter un retour d'activation*/
+/*     </a>*/
+/*   </div>*/
+/* */
 /* */
 /* {% endblock %}*/
 /* */

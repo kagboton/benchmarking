@@ -39,7 +39,7 @@ class Vehicule
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="annee", type="date")
+     * @ORM\Column(name="annee", type="datetime")
      */
     private $annee;
 
@@ -94,6 +94,7 @@ class Vehicule
     public function __construct()
     {
         $this->date = new \Datetime();
+        $this->annee = new \DateTime();
         $this->fonctions = new ArrayCollection();
         $this->composantsAffichage = new ArrayCollection();
     }
