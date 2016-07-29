@@ -23,7 +23,6 @@ class RetourActivation
     
     /**
      * @ORM\ManyToOne(targetEntity="BenchmarkingBundle\Entity\TypeRetourActivation", cascade={"persist"})
-     * @ORM\JoinColumn(nullable=false)
      */
     private $typeRetourActivation;
 

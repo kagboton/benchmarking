@@ -2,28 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="284b7821-b5b4-4afd-86fb-2d289490481f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/delete.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_7c9ugeid1jekliqtblurrlq1r1" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/sessions/dev/sess_hbd5me90tbtmc2if83s8ohura1" afterPath="$PROJECT_DIR$/var/sessions/dev/sess_hbd5me90tbtmc2if83s8ohura1" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AdminBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/AdminBundle/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout/layout.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BenchmarkingBundle/Controller/VehiculeController.php" afterPath="$PROJECT_DIR$/src/BenchmarkingBundle/Controller/VehiculeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BenchmarkingBundle/Entity/RetourActivation.php" afterPath="$PROJECT_DIR$/src/BenchmarkingBundle/Entity/RetourActivation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BenchmarkingBundle/Entity/Vehicule.php" afterPath="$PROJECT_DIR$/src/BenchmarkingBundle/Entity/Vehicule.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BenchmarkingBundle/Form/RetourActivationType.php" afterPath="$PROJECT_DIR$/src/BenchmarkingBundle/Form/RetourActivationType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BenchmarkingBundle/Form/VehiculeType.php" afterPath="$PROJECT_DIR$/src/BenchmarkingBundle/Form/VehiculeType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BenchmarkingBundle/Repository/VehiculeRepository.php" afterPath="$PROJECT_DIR$/src/BenchmarkingBundle/Repository/VehiculeRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/add.html.twig" afterPath="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/add.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/formAdd.html.twig" afterPath="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/formAdd.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/index.html.twig" afterPath="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/view.html.twig" afterPath="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/view.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/04/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65236765744964405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/04/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65236765744964405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/0b/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5265746f757241637469766174696f6e24696d616765405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/0b/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5265746f757241637469766174696f6e24696d616765405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/0c/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65246e6f6d405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/0c/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65246e6f6d405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/10/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5265746f757241637469766174696f6e246964405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/10/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5265746f757241637469766174696f6e246964405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/12/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65237365744d6172717565405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/12/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65237365744d6172717565405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/15/5b42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524616e6e6565405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/15/5b42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524616e6e6565405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/28/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523736574496d616765405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/28/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523736574496d616765405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/2b/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524636f6d706f73616e7473416666696368616765405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/2b/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524636f6d706f73616e7473416666696368616765405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/2e/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5265746f757241637469766174696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/2e/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5265746f757241637469766174696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/32/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c652464617465405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/32/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c652464617465405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/32/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524696d616765405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/32/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524696d616765405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/38/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65236765744d6f746f7269736174696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/38/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65236765744d6f746f7269736174696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
@@ -31,15 +27,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/3b/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65236765744d6172717565405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/3b/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65236765744d6172717565405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/48/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524626f69746556697465737365405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/48/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524626f69746556697465737365405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/4a/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523676574466f6e6374696f6e73405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/4a/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523676574466f6e6374696f6e73405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/50/5b42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524666f6e6374696f6e73405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/50/5b42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524666f6e6374696f6e73405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/5a/5b5b435d42656e63686d61726b696e6742756e646c655c436f6e74726f6c6c65725c5665686963756c65436f6e74726f6c6c65722376696577416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/5a/5b5b435d42656e63686d61726b696e6742756e646c655c436f6e74726f6c6c65725c5665686963756c65436f6e74726f6c6c65722376696577416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/5a/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c652372656d6f7665466f6e6374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/5a/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c652372656d6f7665466f6e6374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/5d/5b5b435d42656e63686d61726b696e6742756e646c655c436f6e74726f6c6c65725c5665686963756c65436f6e74726f6c6c657223696e646578416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/5d/5b5b435d42656e63686d61726b696e6742756e646c655c436f6e74726f6c6c65725c5665686963756c65436f6e74726f6c6c657223696e646578416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/5d/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524666f6e6374696f6e73405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/5d/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524666f6e6374696f6e73405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/65/5b42656e63686d61726b696e6742756e646c655c456e746974795c5265746f757241637469766174696f6e24747970655265746f757241637469766174696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/65/5b42656e63686d61726b696e6742756e646c655c456e746974795c5265746f757241637469766174696f6e24747970655265746f757241637469766174696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/72/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523676574426f69746556697465737365405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/72/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523676574426f69746556697465737365405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/7f/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523676574496d616765405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/7f/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523676574496d616765405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/80/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523676574416e6e6565405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/80/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523676574416e6e6565405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/82/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/82/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/83/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c652372656d6f7665436f6d706f73616e74416666696368616765405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/83/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c652372656d6f7665436f6d706f73616e74416666696368616765405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/87/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5265746f757241637469766174696f6e24666f6e6374696f6e73405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/87/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5265746f757241637469766174696f6e24666f6e6374696f6e73405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/8d/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523736574416e6e6565405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/8d/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523736574416e6e6565405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/8e/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65246964405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/8e/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65246964405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/9a/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c652373657444617465405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/9a/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c652373657444617465405b416e6e6f745d5d5b315d.doctrinecache.data" />
@@ -56,19 +55,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/d0/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523676574436f6d706f73616e7473416666696368616765405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/d0/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6523676574436f6d706f73616e7473416666696368616765405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/d1/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65247365676d656e74405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/d1/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65247365676d656e74405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/d4/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65246d6f746f7269736174696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/d4/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65246d6f746f7269736174696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/dc/5b42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524636f6d706f73616e7473416666696368616765405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/dc/5b42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c6524636f6d706f73616e7473416666696368616765405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/e0/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65235f5f636f6e737472756374405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/e0/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65235f5f636f6e737472756374405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/f0/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65246d6172717565405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/f0/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5665686963756c65246d6172717565405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/f1/5b5b435d42656e63686d61726b696e6742756e646c655c436f6e74726f6c6c65725c5665686963756c65436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/f1/5b5b435d42656e63686d61726b696e6742756e646c655c436f6e74726f6c6c65725c5665686963756c65436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php" afterPath="$PROJECT_DIR$/var/cache/dev/appDevUrlMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/annotations/f9/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5265746f757241637469766174696f6e24747970655265746f757241637469766174696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/var/cache/dev/annotations/f9/5b5b435d42656e63686d61726b696e6742756e646c655c456e746974795c5265746f757241637469766174696f6e24747970655265746f757241637469766174696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/var/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/34/34363aad0035493807cb6e4622dc4cbf4390511002613b7c6753b88ec1c5fa59.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/34/34363aad0035493807cb6e4622dc4cbf4390511002613b7c6753b88ec1c5fa59.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/43/434cdad0a4476fdc31bb1a024748ed7d88bca80c05f7c312ef3e22b8b7b1081f.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/43/434cdad0a4476fdc31bb1a024748ed7d88bca80c05f7c312ef3e22b8b7b1081f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/49/494f01c4281c063c2667379260d7911ddab4828f99076504d69ac7477aacdecd.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/49/494f01c4281c063c2667379260d7911ddab4828f99076504d69ac7477aacdecd.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/b6/b646f21304419b423e08d46451ca49a3abb13b885e04270cb5f586d65e1ffbb9.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/b6/b646f21304419b423e08d46451ca49a3abb13b885e04270cb5f586d65e1ffbb9.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/a3/a319e0d54633a3903b7885db2170cfbc008b0a483f4b18c2103f023ab80c487f.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/a3/a319e0d54633a3903b7885db2170cfbc008b0a483f4b18c2103f023ab80c487f.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/twig/bd/bddbed7536ae78fc71eeb1c478f659d2d01470ee09a0e2c5e96dbee3163f61a0.php" afterPath="$PROJECT_DIR$/var/cache/dev/twig/bd/bddbed7536ae78fc71eeb1c478f659d2d01470ee09a0e2c5e96dbee3163f61a0.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/dev.log" afterPath="$PROJECT_DIR$/var/logs/dev.log" />
     </list>
@@ -109,11 +103,53 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ComposantAffichage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Entity/ComposantAffichage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="view.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/view.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="58" column="190" selection-start-line="58" selection-start-column="190" selection-end-line="58" selection-end-column="190" />
+            <state relative-caret-position="375">
+              <caret line="189" column="54" selection-start-line="189" selection-start-column="54" selection-end-line="189" selection-end-column="54" />
+              <folding>
+                <marker date="1469795604187" expanded="true" signature="1799:2100" ph="{% if is_granted('ROLE_ADMIN') ...%}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/layout/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="77" column="128" selection-start-line="77" selection-start-column="128" selection-end-line="77" selection-end-column="128" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/menu.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fonction.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Entity/Fonction.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -122,80 +158,40 @@
       <file leaf-file-name="VehiculeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Controller/VehiculeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="477">
+              <caret line="162" column="2" selection-start-line="162" selection-start-column="2" selection-end-line="162" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VehiculeRepository.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Repository/VehiculeRepository.php">
+      <file leaf-file-name="Vehicule.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Entity/Vehicule.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="93" column="111" selection-start-line="93" selection-start-column="111" selection-end-line="93" selection-end-column="111" />
               <folding>
-                <element signature="e#49#79#0#PHP" expanded="true" />
+                <element signature="e#45#93#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/delete.html.twig">
+      <file leaf-file-name="formAdd.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/formAdd.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="327">
+              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/layout/layout.html.twig">
+      <file leaf-file-name="RetourActivation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Entity/RetourActivation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="45" column="78" selection-start-line="45" selection-start-column="78" selection-end-line="45" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/TypeTdB/delete.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/TypeTdB/view.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="30" column="62" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="segmentRouting.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/config/segmentRouting.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="27" selection-end-column="15" />
+            <state relative-caret-position="255">
+              <caret line="24" column="105" selection-start-line="24" selection-start-column="105" selection-end-line="24" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -209,8 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/BoiteVitesse/add.html.twig" />
-        <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/BoiteVitesse/delete.html.twig" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/BoiteVitesse/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/BoiteVitesse/form.html.twig" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/BoiteVitesse/index.html.twig" />
@@ -238,7 +232,6 @@
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/public/js/filter.js" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/public/css/filter.css" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Recherche/layout/recherche.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layout/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/recherche.html.twig" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/TypeRetourActivation/index.html.twig" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/TypeRetourActivation/view.html.twig" />
@@ -250,16 +243,19 @@
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/form.html.twig" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Form/RetourActivationType.php" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Form/VehiculeType.php" />
-        <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/formAdd.html.twig" />
-        <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Entity/Vehicule.php" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/add.html.twig" />
         <option value="$PROJECT_DIR$/src/AdminBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/delete.html.twig" />
-        <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/view.html.twig" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/index.html.twig" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Controller/VehiculeController.php" />
         <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Repository/VehiculeRepository.php" />
+        <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Entity/Vehicule.php" />
+        <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Entity/RetourActivation.php" />
+        <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/view.html.twig" />
+        <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/menu.html.twig" />
+        <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Controller/VehiculeController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/layout/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/formAdd.html.twig" />
       </list>
     </option>
   </component>
@@ -557,7 +553,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Repository" />
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -616,6 +612,86 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AdminBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="benchmarking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="benchmarking" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="benchmarking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="benchmarking" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="benchmarking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="benchmarking" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="benchmarking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="benchmarking" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -705,12 +781,12 @@
       <workItem from="1469320631573" duration="5710000" />
       <workItem from="1469435144033" duration="18000" />
       <workItem from="1469436717117" duration="83363000" />
-      <workItem from="1469720537329" duration="18315000" />
+      <workItem from="1469720537329" duration="23334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316965000" />
+    <option name="totallyTimeSpent" value="321984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
@@ -744,7 +820,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24127465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25114855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32520324" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -784,42 +860,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AdminBundle/Controller/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Controller/ComposantAffichageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Form/FamilleType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Form/ComposantAffichageType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -942,14 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/TypeTdB/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="59" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Controller/TypeTdBController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -982,14 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/form.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="46" column="26" selection-start-line="24" selection-start-column="20" selection-end-line="46" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Form/RetourActivationType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1002,24 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Entity/Vehicule.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
-          <folding>
-            <element signature="e#45#93#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/formAdd.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1056,14 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/add.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/config/segmentRouting.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1088,34 +1086,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/view.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="58" column="190" selection-start-line="58" selection-start-column="190" selection-end-line="58" selection-end-column="190" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/delete.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="45" column="78" selection-start-line="45" selection-start-column="78" selection-end-line="45" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1128,21 +1102,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Controller/VehiculeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Repository/VehiculeRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#49#79#0#PHP" expanded="true" />
+            <element signature="e#49#79#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/TypeTdB/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="16" selection-start-line="22" selection-start-column="4" selection-end-line="30" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Entity/ComposantAffichage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Entity/RetourActivation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="105" selection-start-line="24" selection-start-column="105" selection-end-line="24" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="46" column="26" selection-start-line="24" selection-start-column="20" selection-end-line="46" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/add.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Entity/Vehicule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="93" column="111" selection-start-line="93" selection-start-column="111" selection-end-line="93" selection-end-column="111" />
+          <folding>
+            <element signature="e#45#93#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Entity/AfficheurExistant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Entity/Fonction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/view.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="189" column="54" selection-start-line="189" selection-start-column="54" selection-end-line="189" selection-end-column="54" />
+          <folding>
+            <marker date="1469795604187" expanded="true" signature="1799:2100" ph="{% if is_granted('ROLE_ADMIN') ...%}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Controller/VehiculeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="162" column="2" selection-start-line="162" selection-start-column="2" selection-end-line="162" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="77" column="128" selection-start-line="77" selection-start-column="128" selection-end-line="77" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BenchmarkingBundle/Resources/views/Default/Vehicule/formAdd.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

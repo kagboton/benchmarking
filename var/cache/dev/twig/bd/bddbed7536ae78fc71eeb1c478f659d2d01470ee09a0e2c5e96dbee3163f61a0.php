@@ -23,20 +23,20 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_2f603dce00e58d37078c5f46dc02aaf471698530711d49e437cf15478abb7769 = $this->env->getExtension("native_profiler");
-        $__internal_2f603dce00e58d37078c5f46dc02aaf471698530711d49e437cf15478abb7769->enter($__internal_2f603dce00e58d37078c5f46dc02aaf471698530711d49e437cf15478abb7769_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BenchmarkingBundle:Default:Vehicule/view.html.twig"));
+        $__internal_e7740321db1f23e8c7cf8b142e34772c12e038b87879e3a80f65706903ed868a = $this->env->getExtension("native_profiler");
+        $__internal_e7740321db1f23e8c7cf8b142e34772c12e038b87879e3a80f65706903ed868a->enter($__internal_e7740321db1f23e8c7cf8b142e34772c12e038b87879e3a80f65706903ed868a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BenchmarkingBundle:Default:Vehicule/view.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_2f603dce00e58d37078c5f46dc02aaf471698530711d49e437cf15478abb7769->leave($__internal_2f603dce00e58d37078c5f46dc02aaf471698530711d49e437cf15478abb7769_prof);
+        $__internal_e7740321db1f23e8c7cf8b142e34772c12e038b87879e3a80f65706903ed868a->leave($__internal_e7740321db1f23e8c7cf8b142e34772c12e038b87879e3a80f65706903ed868a_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_68ca397264045df99f76ee7c44ed91005b422173adfe117b726c6657793a649f = $this->env->getExtension("native_profiler");
-        $__internal_68ca397264045df99f76ee7c44ed91005b422173adfe117b726c6657793a649f->enter($__internal_68ca397264045df99f76ee7c44ed91005b422173adfe117b726c6657793a649f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_e75c360336845d4d28838606c34e74354e7c4b2a0bcfa3edfea1f9c24af7013e = $this->env->getExtension("native_profiler");
+        $__internal_e75c360336845d4d28838606c34e74354e7c4b2a0bcfa3edfea1f9c24af7013e->enter($__internal_e75c360336845d4d28838606c34e74354e7c4b2a0bcfa3edfea1f9c24af7013e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 6
         echo "    ";
@@ -48,15 +48,15 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
         echo "
 ";
         
-        $__internal_68ca397264045df99f76ee7c44ed91005b422173adfe117b726c6657793a649f->leave($__internal_68ca397264045df99f76ee7c44ed91005b422173adfe117b726c6657793a649f_prof);
+        $__internal_e75c360336845d4d28838606c34e74354e7c4b2a0bcfa3edfea1f9c24af7013e->leave($__internal_e75c360336845d4d28838606c34e74354e7c4b2a0bcfa3edfea1f9c24af7013e_prof);
 
     }
 
     // line 9
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_b6691825941e3eac9e54101d165df1facc31f3bf2551a82c246fae3fc502517a = $this->env->getExtension("native_profiler");
-        $__internal_b6691825941e3eac9e54101d165df1facc31f3bf2551a82c246fae3fc502517a->enter($__internal_b6691825941e3eac9e54101d165df1facc31f3bf2551a82c246fae3fc502517a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_84fce0ebbc04aad62c07b79c26f240b2eb9aad488067bafefd67f85f6dd04c35 = $this->env->getExtension("native_profiler");
+        $__internal_84fce0ebbc04aad62c07b79c26f240b2eb9aad488067bafefd67f85f6dd04c35->enter($__internal_84fce0ebbc04aad62c07b79c26f240b2eb9aad488067bafefd67f85f6dd04c35_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 10
         echo "    <style type=\"text/css\">
@@ -67,15 +67,15 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 
 ";
         
-        $__internal_b6691825941e3eac9e54101d165df1facc31f3bf2551a82c246fae3fc502517a->leave($__internal_b6691825941e3eac9e54101d165df1facc31f3bf2551a82c246fae3fc502517a_prof);
+        $__internal_84fce0ebbc04aad62c07b79c26f240b2eb9aad488067bafefd67f85f6dd04c35->leave($__internal_84fce0ebbc04aad62c07b79c26f240b2eb9aad488067bafefd67f85f6dd04c35_prof);
 
     }
 
     // line 20
     public function block_benchmarking_body($context, array $blocks = array())
     {
-        $__internal_cb00c9e8753c1d3da361c71b2baf454bbb2617af2643397bb5a8a36f64412f17 = $this->env->getExtension("native_profiler");
-        $__internal_cb00c9e8753c1d3da361c71b2baf454bbb2617af2643397bb5a8a36f64412f17->enter($__internal_cb00c9e8753c1d3da361c71b2baf454bbb2617af2643397bb5a8a36f64412f17_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "benchmarking_body"));
+        $__internal_de5aae1e0052cc6326ef71ff98b133b5ec423f19fb2e4ce28db5b784e3eac3f1 = $this->env->getExtension("native_profiler");
+        $__internal_de5aae1e0052cc6326ef71ff98b133b5ec423f19fb2e4ce28db5b784e3eac3f1->enter($__internal_de5aae1e0052cc6326ef71ff98b133b5ec423f19fb2e4ce28db5b784e3eac3f1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "benchmarking_body"));
 
         // line 21
         echo "
@@ -145,8 +145,8 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
                                     Ajouter pour comparer
                                 </button>
                             </div>
-                            <br>
-                            <div>
+
+                            <p>
                                 ";
         // line 58
         if ($this->env->getExtension('security')->isGranted("ROLE_ADMIN")) {
@@ -157,7 +157,7 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
                                 ";
         }
         // line 61
-        echo "                            </div>
+        echo "                            </p>
 
 
                         </div>
@@ -240,96 +240,73 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 
                                 <section class=\"container\">
                                     <h4>Liste des composants</h4>
+
                                     <table class=\"col-md-7 table-bordered table-striped table-condensed \">
-                                        <tbody>
-                                            <tr >
-                                                <th colspan=\"2\">Tableau de bord</th>
-                                            </tr>
-                                            <tr>
-                                                <td>Type TdB</td>
-                                                <td>Full TFT</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Technologie afficheur</td>
-                                                <td>TFT Couleur</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sous technologie afficheur</td>
-                                                <td>Normally Black</td>
-                                            </tr>
 
-                                            <tr>
-                                                <td>Taille écran</td>
-                                                <td>4\"</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Format écran</td>
-                                                <td>16/9</td>
-                                            </tr>
+                                        ";
+        // line 126
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "composantsAffichage", array()));
+        foreach ($context['_seq'] as $context["_key"] => $context["composant"]) {
+            // line 127
+            echo "                                            <tbody>
+                                                <tr >
+                                                    <th colspan=\"2\">";
+            // line 129
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["composant"], "nomAfficheur", array()), "nom", array()), "html", null, true);
+            echo "</th>
+                                                </tr>
+                                                ";
+            // line 131
+            if (($this->getAttribute($this->getAttribute($context["composant"], "nomAfficheur", array()), "nom", array()) == "Tableau de bord")) {
+                // line 132
+                echo "                                                <tr>
+                                                    <td>Type TdB</td>
+                                                    <td>";
+                // line 134
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["composant"], "typeTdB", array()), "nom", array()), "html", null, true);
+                echo "</td>
+                                                </tr>
+                                                ";
+            }
+            // line 137
+            echo "                                                <tr>
+                                                    <td>Technologie afficheur</td>
+                                                    <td>";
+            // line 139
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["composant"], "technologieAfficheur", array()), "nom", array()), "html", null, true);
+            echo "</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sous technologie afficheur</td>
+                                                    <td>";
+            // line 143
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["composant"], "sousTechnologieAfficheur", array()), "nom", array()), "html", null, true);
+            echo "</td>
+                                                </tr>
 
-                                        </tbody>
-
-                                        <tbody>
-                                        <tr >
-                                            <th colspan=\"2\">Ecran central</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Type TdB</td>
-                                            <td>Full TFT</td>
-                                            <td rowspan=\"5\"><a href=\"";
-        // line 159
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/benchmarking/voitures/mazda3.jpg"), "html", null, true);
-        echo "\"><img src=\"";
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/benchmarking/voitures/mazda3_mini.jpg"), "html", null, true);
-        echo "\" class=\"img-responsive\"></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Technologie afficheur</td>
-                                            <td>TFT Couleur</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sous technologie afficheur</td>
-                                            <td>Normally Black</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Taille écran</td>
-                                            <td>4\"</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Format écran</td>
-                                            <td>16/9</td>
-                                        </tr>
-                                        </tbody>
-
-                                        <tbody>
-                                        <tr >
-                                            <th colspan=\"2\">HUD</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Type TdB</td>
-                                            <td>Full TFT</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Technologie afficheur</td>
-                                            <td>TFT Couleur</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sous technologie afficheur</td>
-                                            <td>Normally Black</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Taille écran</td>
-                                            <td>2\"</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Format écran</td>
-                                            <td>4/3</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-
+                                                <tr>
+                                                    <td>Taille écran</td>
+                                                    <td>";
+            // line 148
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["composant"], "tailleEcran", array()), "taille", array()), "html", null, true);
+            echo "</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Format écran</td>
+                                                    <td>";
+            // line 152
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["composant"], "formatEcran", array()), "format", array()), "html", null, true);
+            echo "</td>
+                                                </tr>
+                                            </tbody>
+                                        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['composant'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 156
+        echo "                                    </table>
                                 </section>
 
                             </div>
@@ -338,42 +315,77 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
                                 <section class=\"container\">
                                     <h4>Liste des fonctions</h4>
                                     <table class=\"col-md-7 table-bordered table-striped table-condensed \">
-                                        <tbody>
+                                        ";
+        // line 165
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "fonctions", array()));
+        foreach ($context['_seq'] as $context["_key"] => $context["fonction"]) {
+            // line 166
+            echo "                                            <tbody>
                                             <tr >
-                                                <th colspan=\"2\">Limiteur de vitesse</th>
+                                                <th colspan=\"2\">";
+            // line 168
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["fonction"], "nomFonction", array()), "nom", array()), "html", null, true);
+            echo "</th>
                                             </tr>
+
                                             <tr>
                                                 <td>Activation logique</td>
-                                                <td>Oui</td>
-                                            </tr>
+                                                ";
+            // line 173
+            if ( !(null === $this->getAttribute($context["fonction"], "activationLogique", array()))) {
+                // line 174
+                echo "                                                    <td>Oui</td>
+                                                ";
+            } else {
+                // line 176
+                echo "                                                    <td>Non</td>
+                                                ";
+            }
+            // line 178
+            echo "                                            </tr>
                                             <tr>
                                                 <td>Activation physique</td>
-                                                <td>Oui</td>
-                                            </tr>
+                                                ";
+            // line 181
+            if ( !(null === $this->getAttribute($context["fonction"], "activationPhysique", array()))) {
+                // line 182
+                echo "                                                    <td>Oui</td>
+                                                ";
+            } else {
+                // line 184
+                echo "                                                    <td>Non</td>
+                                                ";
+            }
+            // line 186
+            echo "                                            </tr>
+
                                             <tr>
                                                 <td>Retour Activation</td>
-                                                <td>Oui</td>
-                                            </tr>
-                                        </tbody>
+                                                ";
+            // line 190
+            if ( !(null === $this->getAttribute($context["fonction"], "retourActivation", array()))) {
+                // line 191
+                echo "                                                    <td><span class=\"glyphicon glyphicon-ok\"></span></td>
+                                                ";
+            } else {
+                // line 193
+                echo "                                                    <td>Non</td>
+                                                ";
+            }
+            // line 195
+            echo "                                            </tr>
 
 
-                                        <tbody>
-                                            <tr >
-                                                <th colspan=\"2\">Stabilisateur de trajectoire</th>
-                                            </tr>
-                                            <tr>
-                                                <td>Activation logique</td>
-                                                <td>Oui</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Activation physique</td>
-                                                <td>Oui</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Retour Activation</td>
-                                                <td>Oui</td>
-                                            </tr>
-                                        </tbody>
+                                            </tbody>
+                                        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['fonction'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 200
+        echo "
+
                                     </table>
 
                                 </section>
@@ -390,7 +402,7 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 
 ";
         
-        $__internal_cb00c9e8753c1d3da361c71b2baf454bbb2617af2643397bb5a8a36f64412f17->leave($__internal_cb00c9e8753c1d3da361c71b2baf454bbb2617af2643397bb5a8a36f64412f17_prof);
+        $__internal_de5aae1e0052cc6326ef71ff98b133b5ec423f19fb2e4ce28db5b784e3eac3f1->leave($__internal_de5aae1e0052cc6326ef71ff98b133b5ec423f19fb2e4ce28db5b784e3eac3f1_prof);
 
     }
 
@@ -406,7 +418,7 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 
     public function getDebugInfo()
     {
-        return array (  281 => 159,  230 => 111,  223 => 107,  216 => 103,  209 => 99,  201 => 94,  194 => 90,  187 => 86,  160 => 61,  154 => 59,  152 => 58,  136 => 47,  130 => 43,  122 => 41,  120 => 40,  106 => 31,  102 => 29,  92 => 25,  88 => 23,  84 => 22,  81 => 21,  75 => 20,  62 => 10,  56 => 9,  42 => 6,  36 => 5,  11 => 3,);
+        return array (  387 => 200,  377 => 195,  373 => 193,  369 => 191,  367 => 190,  361 => 186,  357 => 184,  353 => 182,  351 => 181,  346 => 178,  342 => 176,  338 => 174,  336 => 173,  328 => 168,  324 => 166,  320 => 165,  309 => 156,  299 => 152,  292 => 148,  284 => 143,  277 => 139,  273 => 137,  267 => 134,  263 => 132,  261 => 131,  256 => 129,  252 => 127,  248 => 126,  230 => 111,  223 => 107,  216 => 103,  209 => 99,  201 => 94,  194 => 90,  187 => 86,  160 => 61,  154 => 59,  152 => 58,  136 => 47,  130 => 43,  122 => 41,  120 => 40,  106 => 31,  102 => 29,  92 => 25,  88 => 23,  84 => 22,  81 => 21,  75 => 20,  62 => 10,  56 => 9,  42 => 6,  36 => 5,  11 => 3,);
     }
 }
 /* {# src/BenchmarkingBundle/Resources/view/Default/Vehicule/index.html.twig #}*/
@@ -464,12 +476,12 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 /*                                     Ajouter pour comparer*/
 /*                                 </button>*/
 /*                             </div>*/
-/*                             <br>*/
-/*                             <div>*/
+/* */
+/*                             <p>*/
 /*                                 {% if is_granted('ROLE_ADMIN') %}*/
 /*                                     <a href="{{ path('vehicule_delete', {'id': vehicule.id}) }}"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Supprimé le véhicule</button></a>*/
 /*                                 {% endif %}*/
-/*                             </div>*/
+/*                             </p>*/
 /* */
 /* */
 /*                         </div>*/
@@ -531,91 +543,40 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 /* */
 /*                                 <section class="container">*/
 /*                                     <h4>Liste des composants</h4>*/
+/* */
 /*                                     <table class="col-md-7 table-bordered table-striped table-condensed ">*/
-/*                                         <tbody>*/
-/*                                             <tr >*/
-/*                                                 <th colspan="2">Tableau de bord</th>*/
-/*                                             </tr>*/
-/*                                             <tr>*/
-/*                                                 <td>Type TdB</td>*/
-/*                                                 <td>Full TFT</td>*/
-/*                                             </tr>*/
-/*                                             <tr>*/
-/*                                                 <td>Technologie afficheur</td>*/
-/*                                                 <td>TFT Couleur</td>*/
-/*                                             </tr>*/
-/*                                             <tr>*/
-/*                                                 <td>Sous technologie afficheur</td>*/
-/*                                                 <td>Normally Black</td>*/
-/*                                             </tr>*/
 /* */
-/*                                             <tr>*/
-/*                                                 <td>Taille écran</td>*/
-/*                                                 <td>4"</td>*/
-/*                                             </tr>*/
-/*                                             <tr>*/
-/*                                                 <td>Format écran</td>*/
-/*                                                 <td>16/9</td>*/
-/*                                             </tr>*/
+/*                                         {% for composant in vehicule.composantsAffichage %}*/
+/*                                             <tbody>*/
+/*                                                 <tr >*/
+/*                                                     <th colspan="2">{{ composant.nomAfficheur.nom }}</th>*/
+/*                                                 </tr>*/
+/*                                                 {% if composant.nomAfficheur.nom  == "Tableau de bord" %}*/
+/*                                                 <tr>*/
+/*                                                     <td>Type TdB</td>*/
+/*                                                     <td>{{ composant.typeTdB.nom }}</td>*/
+/*                                                 </tr>*/
+/*                                                 {% endif %}*/
+/*                                                 <tr>*/
+/*                                                     <td>Technologie afficheur</td>*/
+/*                                                     <td>{{ composant.technologieAfficheur.nom }}</td>*/
+/*                                                 </tr>*/
+/*                                                 <tr>*/
+/*                                                     <td>Sous technologie afficheur</td>*/
+/*                                                     <td>{{ composant.sousTechnologieAfficheur.nom }}</td>*/
+/*                                                 </tr>*/
 /* */
-/*                                         </tbody>*/
-/* */
-/*                                         <tbody>*/
-/*                                         <tr >*/
-/*                                             <th colspan="2">Ecran central</th>*/
-/*                                         </tr>*/
-/*                                         <tr>*/
-/*                                             <td>Type TdB</td>*/
-/*                                             <td>Full TFT</td>*/
-/*                                             <td rowspan="5"><a href="{{ asset('img/benchmarking/voitures/mazda3.jpg') }}"><img src="{{ asset('img/benchmarking/voitures/mazda3_mini.jpg') }}" class="img-responsive"></a></td>*/
-/*                                         </tr>*/
-/*                                         <tr>*/
-/*                                             <td>Technologie afficheur</td>*/
-/*                                             <td>TFT Couleur</td>*/
-/*                                         </tr>*/
-/*                                         <tr>*/
-/*                                             <td>Sous technologie afficheur</td>*/
-/*                                             <td>Normally Black</td>*/
-/*                                         </tr>*/
-/* */
-/*                                         <tr>*/
-/*                                             <td>Taille écran</td>*/
-/*                                             <td>4"</td>*/
-/*                                         </tr>*/
-/*                                         <tr>*/
-/*                                             <td>Format écran</td>*/
-/*                                             <td>16/9</td>*/
-/*                                         </tr>*/
-/*                                         </tbody>*/
-/* */
-/*                                         <tbody>*/
-/*                                         <tr >*/
-/*                                             <th colspan="2">HUD</th>*/
-/*                                         </tr>*/
-/*                                         <tr>*/
-/*                                             <td>Type TdB</td>*/
-/*                                             <td>Full TFT</td>*/
-/*                                         </tr>*/
-/*                                         <tr>*/
-/*                                             <td>Technologie afficheur</td>*/
-/*                                             <td>TFT Couleur</td>*/
-/*                                         </tr>*/
-/*                                         <tr>*/
-/*                                             <td>Sous technologie afficheur</td>*/
-/*                                             <td>Normally Black</td>*/
-/*                                         </tr>*/
-/* */
-/*                                         <tr>*/
-/*                                             <td>Taille écran</td>*/
-/*                                             <td>2"</td>*/
-/*                                         </tr>*/
-/*                                         <tr>*/
-/*                                             <td>Format écran</td>*/
-/*                                             <td>4/3</td>*/
-/*                                         </tr>*/
-/*                                         </tbody>*/
+/*                                                 <tr>*/
+/*                                                     <td>Taille écran</td>*/
+/*                                                     <td>{{ composant.tailleEcran.taille }}</td>*/
+/*                                                 </tr>*/
+/*                                                 <tr>*/
+/*                                                     <td>Format écran</td>*/
+/*                                                     <td>{{ composant.formatEcran.format }}</td>*/
+/*                                                 </tr>*/
+/*                                             </tbody>*/
+/*                                         {% endfor %}*/
 /*                                     </table>*/
-/* */
 /*                                 </section>*/
 /* */
 /*                             </div>*/
@@ -624,42 +585,43 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 /*                                 <section class="container">*/
 /*                                     <h4>Liste des fonctions</h4>*/
 /*                                     <table class="col-md-7 table-bordered table-striped table-condensed ">*/
-/*                                         <tbody>*/
+/*                                         {% for fonction in vehicule.fonctions %}*/
+/*                                             <tbody>*/
 /*                                             <tr >*/
-/*                                                 <th colspan="2">Limiteur de vitesse</th>*/
+/*                                                 <th colspan="2">{{ fonction.nomFonction.nom }}</th>*/
 /*                                             </tr>*/
+/* */
 /*                                             <tr>*/
 /*                                                 <td>Activation logique</td>*/
-/*                                                 <td>Oui</td>*/
+/*                                                 {% if fonction.activationLogique is not null %}*/
+/*                                                     <td>Oui</td>*/
+/*                                                 {% else %}*/
+/*                                                     <td>Non</td>*/
+/*                                                 {% endif %}*/
 /*                                             </tr>*/
 /*                                             <tr>*/
 /*                                                 <td>Activation physique</td>*/
-/*                                                 <td>Oui</td>*/
+/*                                                 {% if fonction.activationPhysique is not null %}*/
+/*                                                     <td>Oui</td>*/
+/*                                                 {% else %}*/
+/*                                                     <td>Non</td>*/
+/*                                                 {% endif %}*/
 /*                                             </tr>*/
+/* */
 /*                                             <tr>*/
 /*                                                 <td>Retour Activation</td>*/
-/*                                                 <td>Oui</td>*/
+/*                                                 {% if fonction.retourActivation is not null%}*/
+/*                                                     <td><span class="glyphicon glyphicon-ok"></span></td>*/
+/*                                                 {% else %}*/
+/*                                                     <td>Non</td>*/
+/*                                                 {% endif %}*/
 /*                                             </tr>*/
-/*                                         </tbody>*/
 /* */
 /* */
-/*                                         <tbody>*/
-/*                                             <tr >*/
-/*                                                 <th colspan="2">Stabilisateur de trajectoire</th>*/
-/*                                             </tr>*/
-/*                                             <tr>*/
-/*                                                 <td>Activation logique</td>*/
-/*                                                 <td>Oui</td>*/
-/*                                             </tr>*/
-/*                                             <tr>*/
-/*                                                 <td>Activation physique</td>*/
-/*                                                 <td>Oui</td>*/
-/*                                             </tr>*/
-/*                                             <tr>*/
-/*                                                 <td>Retour Activation</td>*/
-/*                                                 <td>Oui</td>*/
-/*                                             </tr>*/
-/*                                         </tbody>*/
+/*                                             </tbody>*/
+/*                                         {% endfor %}*/
+/* */
+/* */
 /*                                     </table>*/
 /* */
 /*                                 </section>*/

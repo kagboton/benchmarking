@@ -87,6 +87,7 @@ class VehiculeController extends Controller
     public function addAction(Request $request)
     {
             $vehicule = new Vehicule();
+
             // Création du formBuilder
             $form = $this->createForm(VehiculeType::class, $vehicule);
 
@@ -96,6 +97,7 @@ class VehiculeController extends Controller
                 // On récupère l'EntityManager
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($vehicule);
+                
 
                 $em->flush();
                 
@@ -142,5 +144,22 @@ class VehiculeController extends Controller
         ));
     }
 
+/*
+    public function menuAction($limit)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $listVehicules = $em->getRepository('BenchmarkingBundle:Advert')->findBy(
+            array(),                 // Pas de critère
+            array('date' => 'desc'), // On trie par date décroissante
+            $limit,                  // On sélectionne $limit annonces
+            0                        // À partir du premier
+        );
+
+        return $this->render('OCPlatformBundle:Advert:menu.html.twig', array(
+            'listVehicules' => $listVehicules
+        ));
+    }
+*/
   
 }

@@ -6,31 +6,7 @@
     </div>
 
     <div class="panel-body">
-        {{ form_start(form) }}
-        {{ form_errors(form) }}
-
-        <div class="form-group">
-            {{ form_row(form.nom) }}
-        </div>
-        <div class="form-group">
-            {{ form_row(form.marque) }}
-        </div>
-        <div class="form-group">
-            {{ form_row(form.annee) }}
-        </div>
-        <div class="form-group">
-            {{ form_row(form.segment) }}
-        </div>
-        <div class="form-group">
-            {{ form_row(form.motorisation) }}
-        </div>
-        <div class="form-group">
-            {{ form_row(form.boiteVitesse) }}
-        </div>
-
-        <div class="form-group">
-            {{ form_row(form.image) }}
-        </div>
+        {{ form(form) }}
     </div>
 
 
@@ -58,10 +34,10 @@
     </div>
 </div>
 
-    {{ form_rest(form) }}
 
+    {{ form_rest(form) }}
     {{  form_row(form.enregistrer) }}
 
-{{ form_end(form) }}
+
 
 

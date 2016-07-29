@@ -85,13 +85,13 @@ class Vehicule
     private $image;
 
     /**
-     * @ORM\ManyToMany(targetEntity="BenchmarkingBundle\Entity\Fonction", cascade={"persist"}, inversedBy="vehicules")
+     * @ORM\ManyToMany(targetEntity="BenchmarkingBundle\Entity\Fonction", cascade={"persist", "remove"}, inversedBy="vehicules")
      * @ORM\JoinColumn(nullable=false)
      */
     private $fonctions;
 
     /**
-     * @ORM\ManyToMany(targetEntity="BenchmarkingBundle\Entity\ComposantAffichage", cascade={"persist"}, inversedBy="vehicules")
+     * @ORM\ManyToMany(targetEntity="BenchmarkingBundle\Entity\ComposantAffichage", cascade={"persist", "remove"}, inversedBy="vehicules")
      * @ORM\JoinColumn(nullable=false)
      */
     private $composantsAffichage;

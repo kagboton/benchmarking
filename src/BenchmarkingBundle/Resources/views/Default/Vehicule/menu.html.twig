@@ -1,0 +1,8 @@
+
+  {% for vehicule in listVehicules %}
+    <li>
+      <a href="{{ path('vehicule_view', {'id': vehicule.id}) }}">
+        {{ vehicule.marque.nom }} {{ vehicule.nom }}
+      </a>
+    </li>
+  {% endfor %}

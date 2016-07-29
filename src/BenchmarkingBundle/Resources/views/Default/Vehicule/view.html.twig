@@ -53,12 +53,12 @@
                                     Ajouter pour comparer
                                 </button>
                             </div>
-                            <br>
-                            <div>
+
+                            <p>
                                 {% if is_granted('ROLE_ADMIN') %}
                                     <a href="{{ path('vehicule_delete', {'id': vehicule.id}) }}"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Supprimé le véhicule</button></a>
                                 {% endif %}
-                            </div>
+                            </p>
 
 
                         </div>
@@ -120,91 +120,40 @@
 
                                 <section class="container">
                                     <h4>Liste des composants</h4>
+
                                     <table class="col-md-7 table-bordered table-striped table-condensed ">
-                                        <tbody>
-                                            <tr >
-                                                <th colspan="2">Tableau de bord</th>
-                                            </tr>
-                                            <tr>
-                                                <td>Type TdB</td>
-                                                <td>Full TFT</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Technologie afficheur</td>
-                                                <td>TFT Couleur</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sous technologie afficheur</td>
-                                                <td>Normally Black</td>
-                                            </tr>
 
-                                            <tr>
-                                                <td>Taille écran</td>
-                                                <td>4"</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Format écran</td>
-                                                <td>16/9</td>
-                                            </tr>
+                                        {% for composant in vehicule.composantsAffichage %}
+                                            <tbody>
+                                                <tr >
+                                                    <th colspan="2">{{ composant.nomAfficheur.nom }}</th>
+                                                </tr>
+                                                {% if composant.nomAfficheur.nom  == "Tableau de bord" %}
+                                                <tr>
+                                                    <td>Type TdB</td>
+                                                    <td>{{ composant.typeTdB.nom }}</td>
+                                                </tr>
+                                                {% endif %}
+                                                <tr>
+                                                    <td>Technologie afficheur</td>
+                                                    <td>{{ composant.technologieAfficheur.nom }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sous technologie afficheur</td>
+                                                    <td>{{ composant.sousTechnologieAfficheur.nom }}</td>
+                                                </tr>
 
-                                        </tbody>
-
-                                        <tbody>
-                                        <tr >
-                                            <th colspan="2">Ecran central</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Type TdB</td>
-                                            <td>Full TFT</td>
-                                            <td rowspan="5"><a href="{{ asset('img/benchmarking/voitures/mazda3.jpg') }}"><img src="{{ asset('img/benchmarking/voitures/mazda3_mini.jpg') }}" class="img-responsive"></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Technologie afficheur</td>
-                                            <td>TFT Couleur</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sous technologie afficheur</td>
-                                            <td>Normally Black</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Taille écran</td>
-                                            <td>4"</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Format écran</td>
-                                            <td>16/9</td>
-                                        </tr>
-                                        </tbody>
-
-                                        <tbody>
-                                        <tr >
-                                            <th colspan="2">HUD</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Type TdB</td>
-                                            <td>Full TFT</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Technologie afficheur</td>
-                                            <td>TFT Couleur</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sous technologie afficheur</td>
-                                            <td>Normally Black</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Taille écran</td>
-                                            <td>2"</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Format écran</td>
-                                            <td>4/3</td>
-                                        </tr>
-                                        </tbody>
+                                                <tr>
+                                                    <td>Taille écran</td>
+                                                    <td>{{ composant.tailleEcran.taille }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Format écran</td>
+                                                    <td>{{ composant.formatEcran.format }}</td>
+                                                </tr>
+                                            </tbody>
+                                        {% endfor %}
                                     </table>
-
                                 </section>
 
                             </div>
@@ -213,42 +162,43 @@
                                 <section class="container">
                                     <h4>Liste des fonctions</h4>
                                     <table class="col-md-7 table-bordered table-striped table-condensed ">
-                                        <tbody>
+                                        {% for fonction in vehicule.fonctions %}
+                                            <tbody>
                                             <tr >
-                                                <th colspan="2">Limiteur de vitesse</th>
+                                                <th colspan="2">{{ fonction.nomFonction.nom }}</th>
                                             </tr>
+
                                             <tr>
                                                 <td>Activation logique</td>
-                                                <td>Oui</td>
+                                                {% if fonction.activationLogique is not null %}
+                                                    <td>Oui</td>
+                                                {% else %}
+                                                    <td>Non</td>
+                                                {% endif %}
                                             </tr>
                                             <tr>
                                                 <td>Activation physique</td>
-                                                <td>Oui</td>
+                                                {% if fonction.activationPhysique is not null %}
+                                                    <td>Oui</td>
+                                                {% else %}
+                                                    <td>Non</td>
+                                                {% endif %}
                                             </tr>
+
                                             <tr>
                                                 <td>Retour Activation</td>
-                                                <td>Oui</td>
+                                                {% if fonction.retourActivation is not null%}
+                                                    <td><span class="glyphicon glyphicon-ok"></span></td>
+                                                {% else %}
+                                                    <td>Non</td>
+                                                {% endif %}
                                             </tr>
-                                        </tbody>
 
 
-                                        <tbody>
-                                            <tr >
-                                                <th colspan="2">Stabilisateur de trajectoire</th>
-                                            </tr>
-                                            <tr>
-                                                <td>Activation logique</td>
-                                                <td>Oui</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Activation physique</td>
-                                                <td>Oui</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Retour Activation</td>
-                                                <td>Oui</td>
-                                            </tr>
-                                        </tbody>
+                                            </tbody>
+                                        {% endfor %}
+
+
                                     </table>
 
                                 </section>
