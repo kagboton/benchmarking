@@ -4,12 +4,14 @@ namespace BenchmarkingBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Vehicule
  *
  * @ORM\Table(name="vehicule")
  * @ORM\Entity(repositoryClass="BenchmarkingBundle\Repository\VehiculeRepository")
+ *
  */
 class Vehicule
 {
@@ -37,9 +39,16 @@ class Vehicule
     private $nom;
 
     /**
-     * @var \DateTime
+     * @var \int
      *
-     * @ORM\Column(name="annee", type="datetime")
+     * @ORM\Column(name="annee", type="integer")
+     * @Assert\Range(
+     *      min = 1999,
+     *      max = 2020,
+     *      minMessage = "La date minimal est {{ limit }}",
+     *      maxMessage = "La date maximal est {{ limit }}",
+     *      invalidMessage = "Cette valeur doit être un nombre"
+     * )
      */
     private $annee;
 
@@ -94,7 +103,6 @@ class Vehicule
     public function __construct()
     {
         $this->date = new \Datetime();
-        $this->annee = new \DateTime();
         $this->fonctions = new ArrayCollection();
         $this->composantsAffichage = new ArrayCollection();
     }

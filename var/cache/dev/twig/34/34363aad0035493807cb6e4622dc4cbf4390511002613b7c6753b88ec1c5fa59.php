@@ -15,8 +15,8 @@ class __TwigTemplate_290cd5c524d96374f5f00bcad3dd1ec6194677153bcbd27147ad46427be
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_082741c60fed88b364241a5e3427dbe1ab9eef82b3644d622e2e4d98a665c468 = $this->env->getExtension("native_profiler");
-        $__internal_082741c60fed88b364241a5e3427dbe1ab9eef82b3644d622e2e4d98a665c468->enter($__internal_082741c60fed88b364241a5e3427dbe1ab9eef82b3644d622e2e4d98a665c468_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BenchmarkingBundle:Default:Vehicule/add.html.twig"));
+        $__internal_2c5b7183276654c8a21e47be896519da49c02c91ee49c986bd51b1465dd4d353 = $this->env->getExtension("native_profiler");
+        $__internal_2c5b7183276654c8a21e47be896519da49c02c91ee49c986bd51b1465dd4d353->enter($__internal_2c5b7183276654c8a21e47be896519da49c02c91ee49c986bd51b1465dd4d353_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BenchmarkingBundle:Default:Vehicule/add.html.twig"));
 
         // line 2
         echo "
@@ -54,9 +54,10 @@ class __TwigTemplate_290cd5c524d96374f5f00bcad3dd1ec6194677153bcbd27147ad46427be
             <h4 class=\"panel-title\">Ajouter un véhicule</h4>
         </div>
         <div class=\"panel-body\">
+
             ";
-        // line 20
-        echo twig_include($this->env, $context, "BenchmarkingBundle:Default:Vehicule/form.html.twig");
+        // line 21
+        echo twig_include($this->env, $context, "BenchmarkingBundle:Default:Vehicule/formAdd.html.twig");
         echo "
         </div>
 
@@ -70,11 +71,11 @@ class __TwigTemplate_290cd5c524d96374f5f00bcad3dd1ec6194677153bcbd27147ad46427be
 
 
 ";
-        // line 32
+        // line 33
         if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
             // asset "d5704ff_0"
             $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_d5704ff_0") : $this->env->getExtension('asset')->getAssetUrl("_controller/js/d5704ff_form-wizard-validation_1.js");
-            // line 37
+            // line 38
             echo "<script type=\"text/javascript\" src=\"";
             echo twig_escape_filter($this->env, (isset($context["asset_url"]) ? $context["asset_url"] : $this->getContext($context, "asset_url")), "html", null, true);
             echo "\"></script>
@@ -101,7 +102,7 @@ class __TwigTemplate_290cd5c524d96374f5f00bcad3dd1ec6194677153bcbd27147ad46427be
         }
         unset($context["asset_url"]);
         
-        $__internal_082741c60fed88b364241a5e3427dbe1ab9eef82b3644d622e2e4d98a665c468->leave($__internal_082741c60fed88b364241a5e3427dbe1ab9eef82b3644d622e2e4d98a665c468_prof);
+        $__internal_2c5b7183276654c8a21e47be896519da49c02c91ee49c986bd51b1465dd4d353->leave($__internal_2c5b7183276654c8a21e47be896519da49c02c91ee49c986bd51b1465dd4d353_prof);
 
     }
 
@@ -117,7 +118,7 @@ class __TwigTemplate_290cd5c524d96374f5f00bcad3dd1ec6194677153bcbd27147ad46427be
 
     public function getDebugInfo()
     {
-        return array (  78 => 37,  74 => 32,  59 => 20,  47 => 10,  33 => 8,  29 => 7,  22 => 2,);
+        return array (  79 => 38,  75 => 33,  60 => 21,  47 => 10,  33 => 8,  29 => 7,  22 => 2,);
     }
 }
 /* {# src/BenchmarkingBundle/Resources/views/Default/Vehicule/add.html.twig #}*/
@@ -139,7 +140,8 @@ class __TwigTemplate_290cd5c524d96374f5f00bcad3dd1ec6194677153bcbd27147ad46427be
 /*             <h4 class="panel-title">Ajouter un véhicule</h4>*/
 /*         </div>*/
 /*         <div class="panel-body">*/
-/*             {{ include("BenchmarkingBundle:Default:Vehicule/form.html.twig") }}*/
+/* */
+/*             {{ include("BenchmarkingBundle:Default:Vehicule/formAdd.html.twig") }}*/
 /*         </div>*/
 /* */
 /*     </div>*/

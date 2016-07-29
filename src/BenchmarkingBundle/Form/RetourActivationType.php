@@ -18,7 +18,10 @@ class RetourActivationType extends AbstractType
         $builder
             ->add('typeRetourActivation', EntityType::class, array(
                 'class' => 'BenchmarkingBundle:TypeRetourActivation',
-                'choice_label' => 'nom'
+                'choice_label' => 'nom',
+                'required'    => false,
+                'placeholder' => 'Retour Activation',
+                'empty_data'  => null
             ))
             ->add('image', ImageType::class, array(
                 'label' => 'Photo du retour d\'activation'

@@ -424,8 +424,8 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         if (0 === strpos($pathinfo, '/vehicule')) {
             // vehicules
-            if ($pathinfo === '/vehicule/liste') {
-                return array (  '_controller' => 'BenchmarkingBundle\\Controller\\VehiculeController::indexAction',  '_route' => 'vehicules',);
+            if (0 === strpos($pathinfo, '/vehicule/liste') && preg_match('#^/vehicule/liste(?:/(?P<page>\\d*))?$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'vehicules')), array (  '_controller' => 'BenchmarkingBundle\\Controller\\VehiculeController::indexAction',  'page' => 1,));
             }
 
             // vehicule_view

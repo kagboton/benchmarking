@@ -1,15 +1,67 @@
 {# src/BenchmarkingBundle/Resources/views/Default/Vehicule/form.html.twig #}
 
-<div class="well">
-    {{ form(form) }}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title"> Informations générales</h4>
+    </div>
 
+    <div class="panel-body">
+        {{ form_start(form) }}
+        {{ form_errors(form) }}
 
-        {{  form_row(form.composantsAffichage) }}
-        <a href="#" id="add_composantAffichage" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Ajouter un composant</a>
+        <div class="form-group">
+            {{ form_row(form.nom) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(form.marque) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(form.annee) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(form.segment) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(form.motorisation) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(form.boiteVitesse) }}
+        </div>
 
+        <div class="form-group">
+            {{ form_row(form.image) }}
+        </div>
+    </div>
 
-        {{  form_row(form.fonctions) }}
-        <a href="#" id="add_fonction" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Ajouter une fonction</a>
 
 </div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title"> {{ form_label(form.composantsAffichage) }}</h4>
+    </div>
+
+    <div class="panel-body">
+        {{  form_row(form.composantsAffichage) }}
+        <a href="#" id="add_composantAffichage" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Ajouter un composant</a>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title"> {{ form_label(form.fonctions) }}</h4>
+    </div>
+
+    <div class="panel-body">
+        {{  form_row(form.fonctions) }}
+        <a href="#" id="add_fonction" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Ajouter une fonction</a>
+    </div>
+</div>
+
+    {{ form_rest(form) }}
+
+    {{  form_row(form.enregistrer) }}
+
+{{ form_end(form) }}
+
 

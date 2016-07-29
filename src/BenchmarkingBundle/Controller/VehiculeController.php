@@ -12,15 +12,37 @@ use Symfony\Component\HttpFoundation\Request;
 class VehiculeController extends Controller
 {
     
-    public function indexAction()
+    public function indexAction($page)
     {
+        if ($page < 1) {
+            throw new NotFoundHttpException('Page "'.$page.'" inexistante.');
+        }
 
+        // Ici je fixe le nombre de véhicules par page à 9
+        // Mais bien sûr il faudrait utiliser un paramètre, et y accéder via $this->container->getParameter('nb_per_page')
+        $nbPerPage = 9;
+
+        
+        // On récupère notre objet Paginator
         $listVehicules = $this->getDoctrine()
-            ->getManager()->getRepository('BenchmarkingBundle:Vehicule')->findAll();
+            ->getManager()
+            ->getRepository('BenchmarkingBundle:Vehicule')
+            ->getVehicules($page, $nbPerPage)
+        ;
 
+        // On calcule le nombre total de pages grâce au count($listAdverts) qui retourne le nombre total de véhicules
+        $nbPages = ceil(count($listVehicules) / $nbPerPage);
 
+        // Si la page n'existe pas, on retourne une 404
+        if ($page > $nbPages) {
+            throw $this->createNotFoundException("La page ".$page." n'existe pas.");
+        }
+
+        // On donne toutes les informations nécessaires à la vue
         return $this->render('BenchmarkingBundle:Default:Vehicule/index.html.twig', array(
             'listVehicules' => $listVehicules,
+            'nbPages'     => $nbPages,
+            'page'        => $page,
         ));
     }
     
@@ -79,8 +101,8 @@ class VehiculeController extends Controller
                 
                 $request->getSession()->getFlashBag()->add('info', 'Véhicule bien enregistré.');
 
-                // On redirige vers la page de visualisation de ce véhicule
-                // return $this->redirectToRoute('vehicule_view', array('id' => $vehicule->getId()));
+                // On redirige vers la page d'accueil
+                 return $this->redirectToRoute('admin_homepage');
             }
 
 
@@ -89,6 +111,35 @@ class VehiculeController extends Controller
             'form' => $form->createView(),
         ));
 
+    }
+
+    public function deleteAction(Request $request, $id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $vehicule = $em->getRepository('BenchmarkingBundle:Vehicule')->find($id);
+
+        if (null === $vehicule) {
+            throw new NotFoundHttpException("Le véhicule d'id ".$id." n'existe pas.");
+        }
+
+        // On crée un formulaire vide, qui ne contiendra que le champ CSRF
+        // Cela permet de protéger la suppression du véhicule contre cette faille
+        $form = $this->get('form.factory')->create();
+
+        if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
+            $em->remove($vehicule);
+            $em->flush();
+
+            $request->getSession()->getFlashBag()->add('info', "Le véhicule a bien été supprimé.");
+
+            return $this->redirectToRoute('vehicules');
+        }
+
+        return $this->render('BenchmarkingBundle:Default:Vehicule/delete.html.twig', array(
+            'vehicule' => $vehicule,
+            'form'   => $form->createView(),
+        ));
     }
 
   

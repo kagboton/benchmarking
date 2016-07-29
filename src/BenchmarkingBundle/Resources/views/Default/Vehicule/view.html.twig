@@ -13,7 +13,6 @@
         }
     </style>
 
-
 {% endblock %}
 
 
@@ -38,15 +37,15 @@
                 <div class="item-container">
                     <div class="container">
                         <div class="col-md-5  col-sm-6 col-xs-6 thumbnail">
-
-                            <img src="{{ asset('img/benchmarking/voitures/mazda3.jpg') }}" class="img-responsive">
-
+                            {% if vehicule.image is not null %}
+                                <img src="{{asset(vehicule.image.webPath)}}" alt="{{ vehicule.image.alt }}" class="img-responsive">
+                            {% endif %}
                         </div><!--col-md-4 col-sm-6 col-xs-6-->
 
 
                         <div class="col-md-3 col-md-offset-1">
-                            <div class="product-title">Mazda 3</div>
-                            <div class="product-desc">Ceci est un message de test </div>
+                            <div class="product-title">{{ vehicule.marque.nom }} {{ vehicule.nom }}</div>
+
                             <hr>
 
                             <div class="btn-group cart">
@@ -54,6 +53,13 @@
                                     Ajouter pour comparer
                                 </button>
                             </div>
+                            <br>
+                            <div>
+                                {% if is_granted('ROLE_ADMIN') %}
+                                    <a href="{{ path('vehicule_delete', {'id': vehicule.id}) }}"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Supprimé le véhicule</button></a>
+                                {% endif %}
+                            </div>
+
 
                         </div>
                     </div>
@@ -77,32 +83,32 @@
                                         <tbody>
                                         <tr>
                                             <th>Marque</th>
-                                            <td>Mazda</td>
+                                            <td>{{ vehicule.marque.nom }}</td>
                                         </tr>
                                         <tr>
                                             <th>Modèle</th>
-                                            <td>3</td>
+                                            <td>{{ vehicule.nom }}</td>
                                         </tr>
                                         <tr>
                                             <th>Année</th>
-                                            <td>2011</td>
+                                            <td>{{ vehicule.annee }}</td>
                                         </tr>
 
                                         <tr>
                                             <th>Segment</th>
-                                            <td>B0</td>
+                                            <td>{{ vehicule.segment.nom }}</td>
                                         </tr>
                                         <tr>
                                             <th>Boîte Vitesse</th>
-                                            <td>Automatique</td>
+                                            <td>{{ vehicule.boiteVitesse.nom }}</td>
                                         </tr>
                                         <tr>
                                             <th>Motorisation</th>
-                                            <td>Themique</td>
+                                            <td>{{ vehicule.motorisation.nom }}</td>
                                         </tr>
                                         <tr>
                                             <th>Ajouté le</th>
-                                            <td>27/06/2016</td>
+                                            <td>{{ vehicule.date|date('d/m/Y') }}</td>
                                         </tr>
 
                                         </tbody>

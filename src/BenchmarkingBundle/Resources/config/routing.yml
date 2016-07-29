@@ -3,12 +3,22 @@ benchmarking_homepage:
     defaults: { _controller: BenchmarkingBundle:Benchmarking:accueil }
 
 vehicules:
-    path:     /vehicule/liste
-    defaults: { _controller: BenchmarkingBundle:Vehicule:index }
+    path:     /vehicule/liste/{page}
+    defaults:
+        _controller: BenchmarkingBundle:Vehicule:index
+        page:    1
+    requirements:
+        page: \d*
 
 vehicule_view:
     path:     /vehicule/{id}
     defaults: { _controller: BenchmarkingBundle:Vehicule:view }
+    requirements:
+        id: \d*
+
+vehicule_delete:
+    path:     /vehicule/delete/{id}
+    defaults: { _controller: BenchmarkingBundle:Vehicule:delete }
     requirements:
         id: \d*
 

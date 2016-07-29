@@ -147,6 +147,7 @@
                                         <div class="panel-body">
                                             <ul class="nav navbar-nav">
                                                 <li><a href="{{ path('vehicule_add') }}"><span class="glyphicon glyphicon-plus"></span> Ajouter un véhicule</a></li>
+                                                <li><a href="{{ path('vehicules') }}"><span class="glyphicon glyphicon-plus"></span>Liste des véhicules</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -167,6 +168,13 @@
                         Tableau de bord
                     </div>
                     <div class="panel-body">
+                        {% for flashMessage in app.session.flashbag.get('info') %}
+
+                            <p class="alert alert-info">
+                                {{ flashMessage }}
+                            </p>
+
+                        {% endfor %}
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

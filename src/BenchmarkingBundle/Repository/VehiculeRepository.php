@@ -2,6 +2,9 @@
 
 namespace BenchmarkingBundle\Repository;
 
+use Doctrine\ORM\QueryBuilder;
+use Doctrine\ORM\Tools\Pagination\Paginator;
+
 /**
  * VehiculeRepository
  *
@@ -10,4 +13,41 @@ namespace BenchmarkingBundle\Repository;
  */
 class VehiculeRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    
+    public function getVehicules($page, $nbPerPage)
+    {
+        $query = $this->createQueryBuilder('v')
+            ->leftJoin('v.motorisation', 'm')
+            ->addSelect('m')
+            ->leftJoin('v.marque', 'mq')
+            ->addSelect('mq')
+            ->leftJoin('v.boiteVitesse', 'b')
+            ->addSelect('b')
+            ->leftJoin('v.segment', 's')
+            ->addSelect('s')
+            ->leftJoin('v.image', 'i')
+            ->addSelect('i')
+            ->leftJoin('v.fonctions', 'f')
+            ->addSelect('f')
+            ->leftJoin('v.composantsAffichage', 'c')
+            ->addSelect('c')
+            ->orderBy('v.date', 'DESC')
+            ->getQuery()
+        ;
+
+        $query
+            // On définit l'annonce à partir de laquelle commencer la liste
+            ->setFirstResult(($page-1) * $nbPerPage)
+            // Ainsi que le nombre d'annonce à afficher sur une page
+            ->setMaxResults($nbPerPage)
+        ;
+
+        // Enfin, on retourne l'objet Paginator correspondant à la requête construite
+        // (n'oubliez pas le use correspondant en début de fichier)
+        return new Paginator($query, true);
+    }
+    
+
+
 }

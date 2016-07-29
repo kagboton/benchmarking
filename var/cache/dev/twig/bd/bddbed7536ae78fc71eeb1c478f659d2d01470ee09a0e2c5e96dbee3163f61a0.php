@@ -23,20 +23,20 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_991925061398b3239b38d79da5d4fe48159db1ea5d862379dddc582658588eb8 = $this->env->getExtension("native_profiler");
-        $__internal_991925061398b3239b38d79da5d4fe48159db1ea5d862379dddc582658588eb8->enter($__internal_991925061398b3239b38d79da5d4fe48159db1ea5d862379dddc582658588eb8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BenchmarkingBundle:Default:Vehicule/view.html.twig"));
+        $__internal_2f603dce00e58d37078c5f46dc02aaf471698530711d49e437cf15478abb7769 = $this->env->getExtension("native_profiler");
+        $__internal_2f603dce00e58d37078c5f46dc02aaf471698530711d49e437cf15478abb7769->enter($__internal_2f603dce00e58d37078c5f46dc02aaf471698530711d49e437cf15478abb7769_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BenchmarkingBundle:Default:Vehicule/view.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_991925061398b3239b38d79da5d4fe48159db1ea5d862379dddc582658588eb8->leave($__internal_991925061398b3239b38d79da5d4fe48159db1ea5d862379dddc582658588eb8_prof);
+        $__internal_2f603dce00e58d37078c5f46dc02aaf471698530711d49e437cf15478abb7769->leave($__internal_2f603dce00e58d37078c5f46dc02aaf471698530711d49e437cf15478abb7769_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_42e7d6d452a95345cfb4fdbe1e79881cee1b61305c112cc27cfd12aa5a1f609f = $this->env->getExtension("native_profiler");
-        $__internal_42e7d6d452a95345cfb4fdbe1e79881cee1b61305c112cc27cfd12aa5a1f609f->enter($__internal_42e7d6d452a95345cfb4fdbe1e79881cee1b61305c112cc27cfd12aa5a1f609f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_68ca397264045df99f76ee7c44ed91005b422173adfe117b726c6657793a649f = $this->env->getExtension("native_profiler");
+        $__internal_68ca397264045df99f76ee7c44ed91005b422173adfe117b726c6657793a649f->enter($__internal_68ca397264045df99f76ee7c44ed91005b422173adfe117b726c6657793a649f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 6
         echo "    ";
@@ -48,15 +48,15 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
         echo "
 ";
         
-        $__internal_42e7d6d452a95345cfb4fdbe1e79881cee1b61305c112cc27cfd12aa5a1f609f->leave($__internal_42e7d6d452a95345cfb4fdbe1e79881cee1b61305c112cc27cfd12aa5a1f609f_prof);
+        $__internal_68ca397264045df99f76ee7c44ed91005b422173adfe117b726c6657793a649f->leave($__internal_68ca397264045df99f76ee7c44ed91005b422173adfe117b726c6657793a649f_prof);
 
     }
 
     // line 9
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_794c29dbf5e26a76eb89f09039baeae429289a4a2392ad13d1926b2ca135699c = $this->env->getExtension("native_profiler");
-        $__internal_794c29dbf5e26a76eb89f09039baeae429289a4a2392ad13d1926b2ca135699c->enter($__internal_794c29dbf5e26a76eb89f09039baeae429289a4a2392ad13d1926b2ca135699c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_b6691825941e3eac9e54101d165df1facc31f3bf2551a82c246fae3fc502517a = $this->env->getExtension("native_profiler");
+        $__internal_b6691825941e3eac9e54101d165df1facc31f3bf2551a82c246fae3fc502517a->enter($__internal_b6691825941e3eac9e54101d165df1facc31f3bf2551a82c246fae3fc502517a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 10
         echo "    <style type=\"text/css\">
@@ -65,31 +65,30 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
         }
     </style>
 
-
 ";
         
-        $__internal_794c29dbf5e26a76eb89f09039baeae429289a4a2392ad13d1926b2ca135699c->leave($__internal_794c29dbf5e26a76eb89f09039baeae429289a4a2392ad13d1926b2ca135699c_prof);
+        $__internal_b6691825941e3eac9e54101d165df1facc31f3bf2551a82c246fae3fc502517a->leave($__internal_b6691825941e3eac9e54101d165df1facc31f3bf2551a82c246fae3fc502517a_prof);
 
     }
 
-    // line 21
+    // line 20
     public function block_benchmarking_body($context, array $blocks = array())
     {
-        $__internal_f6c6f18b0e144dda4b70a7e8e4ff274e2937540a20220401270d0acde08595c9 = $this->env->getExtension("native_profiler");
-        $__internal_f6c6f18b0e144dda4b70a7e8e4ff274e2937540a20220401270d0acde08595c9->enter($__internal_f6c6f18b0e144dda4b70a7e8e4ff274e2937540a20220401270d0acde08595c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "benchmarking_body"));
+        $__internal_cb00c9e8753c1d3da361c71b2baf454bbb2617af2643397bb5a8a36f64412f17 = $this->env->getExtension("native_profiler");
+        $__internal_cb00c9e8753c1d3da361c71b2baf454bbb2617af2643397bb5a8a36f64412f17->enter($__internal_cb00c9e8753c1d3da361c71b2baf454bbb2617af2643397bb5a8a36f64412f17_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "benchmarking_body"));
 
-        // line 22
+        // line 21
         echo "
     ";
-        // line 23
+        // line 22
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "flashbag", array()), "get", array(0 => "info"), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["flashMessage"]) {
-            // line 24
+            // line 23
             echo "
         <p class=\"alert alert-info\">
             ";
-            // line 26
+            // line 25
             echo twig_escape_filter($this->env, $context["flashMessage"], "html", null, true);
             echo "
         </p>
@@ -99,11 +98,11 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['flashMessage'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 30
+        // line 29
         echo "
     <div class=\"panel-heading\">
         <h2 class=\"panel-title\">";
-        // line 32
+        // line 31
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "marque", array()), "nom", array()), "html", null, true);
         echo " ";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "nom", array()), "html", null, true);
@@ -116,18 +115,29 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
                 <div class=\"item-container\">
                     <div class=\"container\">
                         <div class=\"col-md-5  col-sm-6 col-xs-6 thumbnail\">
-
-                            <img src=\"";
-        // line 42
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/benchmarking/voitures/mazda3.jpg"), "html", null, true);
-        echo "\" class=\"img-responsive\">
-
-                        </div><!--col-md-4 col-sm-6 col-xs-6-->
+                            ";
+        // line 40
+        if ( !(null === $this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "image", array()))) {
+            // line 41
+            echo "                                <img src=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl($this->getAttribute($this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "image", array()), "webPath", array())), "html", null, true);
+            echo "\" alt=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "image", array()), "alt", array()), "html", null, true);
+            echo "\" class=\"img-responsive\">
+                            ";
+        }
+        // line 43
+        echo "                        </div><!--col-md-4 col-sm-6 col-xs-6-->
 
 
                         <div class=\"col-md-3 col-md-offset-1\">
-                            <div class=\"product-title\">Mazda 3</div>
-                            <div class=\"product-desc\">Ceci est un message de test </div>
+                            <div class=\"product-title\">";
+        // line 47
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "marque", array()), "nom", array()), "html", null, true);
+        echo " ";
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "nom", array()), "html", null, true);
+        echo "</div>
+
                             <hr>
 
                             <div class=\"btn-group cart\">
@@ -135,6 +145,20 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
                                     Ajouter pour comparer
                                 </button>
                             </div>
+                            <br>
+                            <div>
+                                ";
+        // line 58
+        if ($this->env->getExtension('security')->isGranted("ROLE_ADMIN")) {
+            // line 59
+            echo "                                    <a href=\"";
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("vehicule_delete", array("id" => $this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "id", array()))), "html", null, true);
+            echo "\"><button type=\"button\" class=\"btn btn-danger\"><span class=\"glyphicon glyphicon-trash\"></span> Supprimé le véhicule</button></a>
+                                ";
+        }
+        // line 61
+        echo "                            </div>
+
 
                         </div>
                     </div>
@@ -158,32 +182,53 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
                                         <tbody>
                                         <tr>
                                             <th>Marque</th>
-                                            <td>Mazda</td>
+                                            <td>";
+        // line 86
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "marque", array()), "nom", array()), "html", null, true);
+        echo "</td>
                                         </tr>
                                         <tr>
                                             <th>Modèle</th>
-                                            <td>3</td>
+                                            <td>";
+        // line 90
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "nom", array()), "html", null, true);
+        echo "</td>
                                         </tr>
                                         <tr>
                                             <th>Année</th>
-                                            <td>2011</td>
+                                            <td>";
+        // line 94
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "annee", array()), "html", null, true);
+        echo "</td>
                                         </tr>
 
                                         <tr>
                                             <th>Segment</th>
-                                            <td>B0</td>
+                                            <td>";
+        // line 99
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "segment", array()), "nom", array()), "html", null, true);
+        echo "</td>
                                         </tr>
                                         <tr>
                                             <th>Boîte Vitesse</th>
-                                            <td>Automatique</td>
+                                            <td>";
+        // line 103
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "boiteVitesse", array()), "nom", array()), "html", null, true);
+        echo "</td>
                                         </tr>
                                         <tr>
                                             <th>Motorisation</th>
-                                            <td>Themique</td>
+                                            <td>";
+        // line 107
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "motorisation", array()), "nom", array()), "html", null, true);
+        echo "</td>
                                         </tr>
                                         <tr>
                                             <th>Ajouté le</th>
-                                            <td>27/06/2016</td>
+                                            <td>";
+        // line 111
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute((isset($context["vehicule"]) ? $context["vehicule"] : $this->getContext($context, "vehicule")), "date", array()), "d/m/Y"), "html", null, true);
+        echo "</td>
                                         </tr>
 
                                         </tbody>
@@ -232,7 +277,7 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
                                             <td>Type TdB</td>
                                             <td>Full TFT</td>
                                             <td rowspan=\"5\"><a href=\"";
-        // line 153
+        // line 159
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/benchmarking/voitures/mazda3.jpg"), "html", null, true);
         echo "\"><img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/benchmarking/voitures/mazda3_mini.jpg"), "html", null, true);
@@ -345,7 +390,7 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 
 ";
         
-        $__internal_f6c6f18b0e144dda4b70a7e8e4ff274e2937540a20220401270d0acde08595c9->leave($__internal_f6c6f18b0e144dda4b70a7e8e4ff274e2937540a20220401270d0acde08595c9_prof);
+        $__internal_cb00c9e8753c1d3da361c71b2baf454bbb2617af2643397bb5a8a36f64412f17->leave($__internal_cb00c9e8753c1d3da361c71b2baf454bbb2617af2643397bb5a8a36f64412f17_prof);
 
     }
 
@@ -361,7 +406,7 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 
     public function getDebugInfo()
     {
-        return array (  236 => 153,  122 => 42,  107 => 32,  103 => 30,  93 => 26,  89 => 24,  85 => 23,  82 => 22,  76 => 21,  62 => 10,  56 => 9,  42 => 6,  36 => 5,  11 => 3,);
+        return array (  281 => 159,  230 => 111,  223 => 107,  216 => 103,  209 => 99,  201 => 94,  194 => 90,  187 => 86,  160 => 61,  154 => 59,  152 => 58,  136 => 47,  130 => 43,  122 => 41,  120 => 40,  106 => 31,  102 => 29,  92 => 25,  88 => 23,  84 => 22,  81 => 21,  75 => 20,  62 => 10,  56 => 9,  42 => 6,  36 => 5,  11 => 3,);
     }
 }
 /* {# src/BenchmarkingBundle/Resources/view/Default/Vehicule/index.html.twig #}*/
@@ -378,7 +423,6 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 /*             width: 100%;*/
 /*         }*/
 /*     </style>*/
-/* */
 /* */
 /* {% endblock %}*/
 /* */
@@ -404,15 +448,15 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 /*                 <div class="item-container">*/
 /*                     <div class="container">*/
 /*                         <div class="col-md-5  col-sm-6 col-xs-6 thumbnail">*/
-/* */
-/*                             <img src="{{ asset('img/benchmarking/voitures/mazda3.jpg') }}" class="img-responsive">*/
-/* */
+/*                             {% if vehicule.image is not null %}*/
+/*                                 <img src="{{asset(vehicule.image.webPath)}}" alt="{{ vehicule.image.alt }}" class="img-responsive">*/
+/*                             {% endif %}*/
 /*                         </div><!--col-md-4 col-sm-6 col-xs-6-->*/
 /* */
 /* */
 /*                         <div class="col-md-3 col-md-offset-1">*/
-/*                             <div class="product-title">Mazda 3</div>*/
-/*                             <div class="product-desc">Ceci est un message de test </div>*/
+/*                             <div class="product-title">{{ vehicule.marque.nom }} {{ vehicule.nom }}</div>*/
+/* */
 /*                             <hr>*/
 /* */
 /*                             <div class="btn-group cart">*/
@@ -420,6 +464,13 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 /*                                     Ajouter pour comparer*/
 /*                                 </button>*/
 /*                             </div>*/
+/*                             <br>*/
+/*                             <div>*/
+/*                                 {% if is_granted('ROLE_ADMIN') %}*/
+/*                                     <a href="{{ path('vehicule_delete', {'id': vehicule.id}) }}"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Supprimé le véhicule</button></a>*/
+/*                                 {% endif %}*/
+/*                             </div>*/
+/* */
 /* */
 /*                         </div>*/
 /*                     </div>*/
@@ -443,32 +494,32 @@ class __TwigTemplate_f752373ba957145e2b18de280c656de77332b4bf4375d82d3da6222749a
 /*                                         <tbody>*/
 /*                                         <tr>*/
 /*                                             <th>Marque</th>*/
-/*                                             <td>Mazda</td>*/
+/*                                             <td>{{ vehicule.marque.nom }}</td>*/
 /*                                         </tr>*/
 /*                                         <tr>*/
 /*                                             <th>Modèle</th>*/
-/*                                             <td>3</td>*/
+/*                                             <td>{{ vehicule.nom }}</td>*/
 /*                                         </tr>*/
 /*                                         <tr>*/
 /*                                             <th>Année</th>*/
-/*                                             <td>2011</td>*/
+/*                                             <td>{{ vehicule.annee }}</td>*/
 /*                                         </tr>*/
 /* */
 /*                                         <tr>*/
 /*                                             <th>Segment</th>*/
-/*                                             <td>B0</td>*/
+/*                                             <td>{{ vehicule.segment.nom }}</td>*/
 /*                                         </tr>*/
 /*                                         <tr>*/
 /*                                             <th>Boîte Vitesse</th>*/
-/*                                             <td>Automatique</td>*/
+/*                                             <td>{{ vehicule.boiteVitesse.nom }}</td>*/
 /*                                         </tr>*/
 /*                                         <tr>*/
 /*                                             <th>Motorisation</th>*/
-/*                                             <td>Themique</td>*/
+/*                                             <td>{{ vehicule.motorisation.nom }}</td>*/
 /*                                         </tr>*/
 /*                                         <tr>*/
 /*                                             <th>Ajouté le</th>*/
-/*                                             <td>27/06/2016</td>*/
+/*                                             <td>{{ vehicule.date|date('d/m/Y') }}</td>*/
 /*                                         </tr>*/
 /* */
 /*                                         </tbody>*/

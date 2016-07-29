@@ -1,0 +1,34 @@
+{# src/BenchmarkingBundle/Resources/view/Default/TypeTdB/delete.html.twig #}
+
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}
+  Supprimer un véhicule - {{ parent() }}
+{% endblock %}
+
+{% block benchmarking_body %}
+
+  <div class="panel-heading">
+    <h4 class="panel-title">Supprimer un véhicule</h4>
+  </div>
+  <div class="panel-body">
+    <p class="alert alert-danger">
+      Etes-vous certain de vouloir supprimer le véhicule "{{ vehicule.marque.nom }} {{ vehicule.nom }}" ?
+    </p>
+
+    {# On met l'id dans la route de l'action du formulaire #}
+    <form action="{{ path('vehicule_delete', {'id': vehicule.id}) }}" method="post">
+      <a href="{{ path('vehicule_view', {'id': vehicule.id}) }}" class="btn btn-default">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Retour au véhicule
+      </a>
+      {# Ici j'ai écrit le bouton de soumission à la main #}
+      <input type="submit" value="Supprimer" class="btn btn-danger" />
+      {# Ceci va générer le champ CSRF #}
+      {{ form_rest(form) }}
+    </form>
+
+  </div>
+
+
+{% endblock %}
