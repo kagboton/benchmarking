@@ -3,6 +3,7 @@
 namespace BenchmarkingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * RetourActivation
@@ -27,7 +28,8 @@ class RetourActivation
     private $typeRetourActivation;
 
     /**
-     * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\Image", cascade={"persist"})
+     * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\Image", cascade={"persist"})     *
+     * @Assert\File(maxSize = "4096k")
      */
     private $image;
 

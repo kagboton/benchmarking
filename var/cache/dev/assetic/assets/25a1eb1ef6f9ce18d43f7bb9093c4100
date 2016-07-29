@@ -1,0 +1,2 @@
+;$(document).ready(function(){var n=$('div#vehicule_fonctions'),e=n.find(':input').length;$('#add_fonction').click(function(e){a(n);e.preventDefault();return!1});if(e==0){a(n)}
+else{n.children('div').each(function(){t($(this))})};function a(n){var c=n.attr('data-prototype').replace(/__name__label__/g,'Fonction n°'+(e+1)).replace(/__name__/g,e),a=$(c);t(a);n.append(a);e++};function t(n){var e=$('<a href="#" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Supprimer</a>');n.append(e);e.click(function(e){n.remove();e.preventDefault();return!1})}});

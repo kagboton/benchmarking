@@ -1,26 +1,28 @@
 {# src/BenchmarkingBundle/Resources/view/Default/TypeTdB/edit.html.twig #}
 
-{% extends "::layout/layout.html.twig" %}
+{% extends "AdminBundle::layout.html.twig" %}
 
 {% block title %}
   Modifier un type de tableau de bord - {{ parent() }}
 {% endblock %}
 
-{% block benchmarking_body %}
+{% block admin_body %}
 
-  <h2>Modifier un type de tableau de bord</h2>
+  <div class="panel-heading">
+    <h4 class="panel-title">Modifier un type de tableau de bord</h4>
+  </div>
 
-  {{ include("BenchmarkingBundle:Default:TypeTdB/form.html.twig") }}
+  <div class="panel-body">
+    {{ include("BenchmarkingBundle:Default:TypeTdB/form.html.twig") }}
 
-  <p>
-    Modification d'un type de tableau de bord déjà existant.
-  </p>
+    <p>
+      <a href="{{ path('typeTdB_view', {'id': typeTdB.id}) }}" class="btn btn-default">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Retour au type de tableau de bord
+      </a>
+    </p>
+  </div>
 
-  <p>
-    <a href="{{ path('typeTdB_view', {'id': typeTdB.id}) }}" class="btn btn-default">
-      <i class="glyphicon glyphicon-chevron-left"></i>
-      Retour au type de tableau de bord
-    </a>
-  </p>
+
 
 {% endblock %}

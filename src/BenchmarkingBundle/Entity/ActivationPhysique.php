@@ -3,6 +3,7 @@
 namespace BenchmarkingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * ActivationPhysique
@@ -23,6 +24,7 @@ class ActivationPhysique
 
     /**
      * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\Image", cascade={"persist"})
+     * @Assert\File(maxSize = "4096k")
      */
     private $image;
 

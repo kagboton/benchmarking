@@ -4,6 +4,7 @@ namespace BenchmarkingBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * ComposantAffichage
@@ -32,6 +33,7 @@ class ComposantAffichage
 
     /**
      * @ORM\OneToOne(targetEntity="BenchmarkingBundle\Entity\Image", cascade={"persist"})
+     * @Assert\File(maxSize = "4096k")
      */
     private $image;
 

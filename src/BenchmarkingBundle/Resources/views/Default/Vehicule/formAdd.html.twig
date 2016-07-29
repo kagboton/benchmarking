@@ -6,37 +6,27 @@
     </div>
 
     <div class="panel-body">
+
         {{ form(form) }}
-    </div>
 
-
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h4 class="panel-title"> {{ form_label(form.composantsAffichage) }}</h4>
-    </div>
-
-    <div class="panel-body">
         {{  form_row(form.composantsAffichage) }}
         <a href="#" id="add_composantAffichage" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Ajouter un composant</a>
-    </div>
-</div>
 
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h4 class="panel-title"> {{ form_label(form.fonctions) }}</h4>
-    </div>
-
-    <div class="panel-body">
         {{  form_row(form.fonctions) }}
         <a href="#" id="add_fonction" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Ajouter une fonction</a>
+
+        {{ form_rest(form) }}
+
+        {{form_row(form.enregistrer) }}
+
+
     </div>
+
+
 </div>
 
 
-    {{ form_rest(form) }}
-    {{  form_row(form.enregistrer) }}
+
 
 
 

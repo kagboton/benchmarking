@@ -1,40 +1,37 @@
 {# src/BenchmarkingBundle/Resources/view/Default/TypeTdB/index.html.twig #}
 
-{% extends "::layout/layout.html.twig" %}
+{% extends "AdminBundle::layout.html.twig" %}
 
 {% block title %}
   Type TdB - {{ parent() }}
 {% endblock %}
 
-{% block benchmarking_body %}
+{% block admin_body %}
 
-  {% for flashMessage in app.session.flashbag.get('info') %}
+  <div class="panel-heading">
+    <h4 class="panel-title">Liste des types de tableau de bord</h4>
+  </div>
 
-    <p class="alert alert-info">
-      {{ flashMessage }}
-    </p>
+  <div class="panel-body">
+    <ul>
 
-  {% endfor %}
+      {% for typeTdB in listTypesTdB %}
+        <li>
+          <a href="{{ path('typeTdB_view', {'id': typeTdB.id}) }}">
+            {{ typeTdB.nom }}
+          </a>
+        </li>
+      {% else %}
+        <li>Pas (encore !) de type de tableau de bord</li>
+      {% endfor %}
+    </ul>
 
-  <h2>Liste des types de tableau de bord</h2>
+    <a href="{{ path('typeTdB_add') }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Ajouter un type de tableau de bord
+    </a>
+  </div>
 
-  <ul>
-
-    {% for typeTdB in listTypesTdB %}
-      <li>
-        <a href="{{ path('typeTdB_view', {'id': typeTdB.id}) }}">
-          {{ typeTdB.nom }}
-        </a>
-      </li>
-    {% else %}
-      <li>Pas (encore !) de type de tableau de bord</li>
-    {% endfor %}
-  </ul>
-
-  <a href="{{ path('typeTdB_add') }}" class="btn btn-default">
-    <i class="glyphicon glyphicon-chevron-left"></i>
-    Ajouter un type de tableau de bord
-  </a>
 
 
 {% endblock %}

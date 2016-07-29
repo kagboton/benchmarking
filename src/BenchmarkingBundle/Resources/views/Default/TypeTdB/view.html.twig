@@ -1,12 +1,12 @@
 {# src/BenchmarkingBundle/Resources/view/Default/TypeTdB/view.html.twig #}
 
-{% extends "::layout/layout.html.twig" %}
+{% extends "AdminBundle::layout.html.twig" %}
 
 {% block title %}
   Lecture d'un type de tableau de bord - {{ parent() }}
 {% endblock %}
 
-{% block benchmarking_body %}
+{% block admin_body %}
 
     {% for flashMessage in app.session.flashbag.get('info') %}
 
@@ -16,23 +16,27 @@
 
     {% endfor %}
 
-  <h2>{{ typeTdB.nom }}</h2>
+    <div class="panel-heading">
+        <h4 class="panel-title">{{ typeTdB.nom }}</h4>
+    </div>
 
+    <div class="panel-body">
+        <p>
+            <a href="{{ path('typesTdB') }}" class="btn btn-default">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+                Retour à la liste
+            </a>
+            <a href="{{ path('typeTdB_edit', {'id': typeTdB.id}) }}" class="btn btn-default">
+                <i class="glyphicon glyphicon-edit"></i>
+                Modifier le type de tableau de bord
+            </a>
+            <a href="{{ path('typeTdB_delete', {'id': typeTdB.id}) }}" class="btn btn-danger">
+                <i class="glyphicon glyphicon-trash"></i>
+                Supprimer le type de tableau de bord
+            </a>
+        </p>
+    </div>
 
-    <p>
-        <a href="{{ path('typesTdB') }}" class="btn btn-default">
-            <i class="glyphicon glyphicon-chevron-left"></i>
-            Retour à la liste
-        </a>
-        <a href="{{ path('typeTdB_edit', {'id': typeTdB.id}) }}" class="btn btn-default">
-            <i class="glyphicon glyphicon-edit"></i>
-            Modifier le type de tableau de bord
-        </a>
-        <a href="{{ path('typeTdB_delete', {'id': typeTdB.id}) }}" class="btn btn-danger">
-            <i class="glyphicon glyphicon-trash"></i>
-            Supprimer le type de tableau de bord
-        </a>
-    </p>
 
 
 {% endblock %}
